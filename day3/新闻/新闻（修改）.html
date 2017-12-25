@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<style type="text/css">
+			body{
+				background:#f7f7f7;
+			}
+			header{
+				height: 46px;
+				background: #587ca9;
+				text-align: center;
+			}
+			nav a{
+				color: white;
+				text-decoration: none;
+				float: left;
+				height: 46px;
+				line-height: 44px;
+				box-sizing: border-box;
+				border-right: none;
+				padding: 0 20px;
+				position: relative;
+			}
+			.home{
+				width: 200px;
+				background:#15306d;
+			}
+			.news{
+				background: linear-gradient(to right,#587ca9,#32528d );
+			}
+			.news:after{
+				border-left-color: #32528d;
+			}
+			.news:hover{
+				background: #e3e3e4;
+			}
+			.news:hover:after{
+				border-left-color: #e3e3e4;
+			}
+			.content{
+				padding-left: 25px;
+				background: linear-gradient(to right,#587ca9,#32528d );
+			}
+			.content:after{
+				border-left-color: #32528d;
+			}
+			.content:hover{
+				background: #e3e3e4;
+			}
+			.content:hover:after{
+				border-left-color: #e3e3e4;
+			}
+			nav a:after{
+				content: '';
+				position: absolute;
+				border-left: 18px solid #32528d;
+				border-top: 22px solid transparent;
+				border-bottom: 22px solid transparent;
+				right: -18px;
+				z-index: 1;
+			}
+			nav a:before{
+				content: '';
+				position: absolute;
+				border-left: 18px solid #32528d;
+				border-top: 22px solid transparent;
+				border-bottom: 22px solid transparent;
+				right: -18px;
+				z-index: 1;
+			}
+			nav a:nth-child(1):after{
+				display: none;
+			}
+			nav a:nth-child(1):before{
+				display: none;
+			}
+			section h1{
+				font-size: 20px;
+				text-align: center;
+				padding: 20px 0;
+			}
+			section .miss{
+				font-size: 12px;
+				color: #818181;
+				margin:10px 0 0  10px;
+			}
+			.xiaochang{
+				line-height:34px;
+				border-top: 2px solid #d6d6d6;
+				border-bottom: 1px solid white;
+				background: linear-gradient(to bottom,white 20%,#d6d6d6);
+				margin: 10px 0 20px 10px;
+				padding-left: 12px;
+			}
+			article span{
+				font-weight: bold;
+				margin-right: 380px;
+			}
+			.xiaochang a{
+				text-decoration: none;
+				font-weight: bold;
+				color: #666666;
+				border: 1px solid white;
+			}
+			.xiaochang a:hover{
+				color: #b1b1b1;
+				border: 1px solid #b5b5b5;
+			}
+			article h1{
+				margin: 10px 0;
+			}
+			article h1,p{
+				text-indent: 30px;
+				margin-left: 5px;
+			}
+			article p{
+				letter-spacing: 1px;
+				line-height: 150%;
+			}
+			footer{
+				margin-top: 20px;
+				overflow: hidden;
+				text-align: center;
+			}
+			footer p{
+				color: #717171;
+			}
+			footer a{
+				text-decoration: none;
+				color: #333;
+				font-weight: bold;
+			}
+			footer ul{
+				border-top: 1px solid #c1c1c1;
+				background: linear-gradient(to top, #f5f5f5 40%,#e2e2e2);
+				list-style: none;
+				overflow: hidden;
+				float: right;
+				width: 100%;
+			}
+			footer ul li{
+				float: right;
+				margin: 15px 0px ;
+				padding: 0 10px;
+				font-weight: bold;
+			}
+			footer ul li a{
+				text-decoration: none;
+				color: #333;
+			}
+			.three{
+				border-right: 1px solid #333;
+			}
+			.one a{
+				background: url(images/button_top.png) no-repeat -1px 1px;
+				background-size: 15px;
+				height: 15px;
+				width: 15px;
+				display: inline-block;
+			}
+			.out{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+			<a href="#" class="home">首页</a>
+			<a href="#" class="news">新闻中心</a>
+			<a href="#" class="content">正文</a>				
+			</nav>
+		</header>
+		<section>
+			<h1>发张信息经济 促进社会转型</h1>
+			<div class="miss">
+				<span>来源: &nbsp;&nbsp;&nbsp;<timme>2014年06月08日 14:06:00</timme></span>
+			</div>
+		</section>
+		<article>
+			<div class="xiaochang">
+			<span>阅读全文</span>
+			<a href="#" id="btn1">A-</a> <a href="#" id="btn2">A+</a>
+			</div>
+			<div id="change1">
+			<h1>信息经济及其重要特征</h1>
+			<p >信息经济是指由信息技术及其网络向经济、社会、生活各领域渗透形成的以信息产业为主导，以信息产品生产和信息服务为主体的新经济模式。它包括集成电路、电子元件、通信、计算机以及信息感测设备制造业和信息通信网络服务、数据平台服务、各类应用服务和软件服务业。信息经济最重要成分是服务。随着云计算、物联网、3D技术的进步，信息产品也越来越融入信息服务之中，“软件即服务”、“平台即服务”、“制造即服务”、“应用即服务”。</p>
+			<h1>必须实现三个创新</h1>
+			<p >信息经济要全面发展，必须重视三个方面的创新。第一是理论要创新。要努力突破传统工业经济理论，在信息生产力基础上构建信息时代均衡发展的新经济理论。第二是社会治理要创新。要超越政府调控和市场调节两元对立的老路，走出一条发挥“市场决定作用、政府引导作用、社会监督作用”的三元协同治理的新路。第三是企业经营要创新。</p>				
+			</div>
+		</article>
+		<footer>
+			<ul>
+				<li class="out"><a href="#">新华网手机版</a> </li>
+				<li class="one"><a href="#"></a></li>
+				<li class="two"><a href="#">联系我们</a></li>
+				<li class="three"><a href="#">导航</a></li>
+			</ul>
+			<p>Copyright &copy; 2014 XINHUANET</p>
+		</footer>
+		<script type="text/javascript">
+			var btn1=document.getElementById("btn1");
+			var btn2=document.getElementById("btn2");
+			var change1=document.getElementById("change1");
+			var i=16;  
+			btn2.onclick=function(){
+				i++;  ;
+				change1.style.fontSize=i+'px';
+			}
+			btn1.onclick=function(){
+				i--;
+				if(i<=12){
+					i=12;
+				}
+				change1.style.fontSize=i+'px';
+			}
+		</script>
+	</body>
+</html>
