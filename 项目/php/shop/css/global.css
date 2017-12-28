@@ -1,0 +1,68 @@
+html,body,ul,li,dl,dd,dt,button,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+    color: #333;
+}
+a:hover{
+    color: red
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*清除浮动 */
+.clear{
+    clear: both;
+}
+.clearfix:after{
+    content:'.';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+/*网站框架*/
+.header{
+    width: 900px;
+    margin: 10px auto 0px;
+}
+.wrap{
+    width: 900px;
+    margin: 10px auto 0px;
+}
+.footer{
+    width: 900px;
+    margin: 10px auto 0px;
+}
+.nav ul{
+    width: 570px;
+    margin: 0 auto;
+}
+.nav ul li{
+    float: left;
+    width: 120px;
+    height: 30px;
+    background-color: #999999;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.nav ul li:hover{
+    background-color: #04569A;
+}
+.nav ul li.active{
+    background-color: #04569A;
+}
+.nav ul li:nth-child(4){
+    margin-right: 0;
+}
+.nav ul li a{
+    color: #fff;
+    display: block;
+}
+.footer{
+    text-align: center;
+}

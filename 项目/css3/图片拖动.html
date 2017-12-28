@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="base.css"/>
+		<style type="text/css">
+			header{
+				width: 100%;
+				height:50px ;
+				background: darkturquoise;
+				display: flex;
+			}
+			header .left{
+				width: 50px;
+				height: 50px;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+			}
+			header .left img{
+				width:20px ;
+				height: 25px;
+				max-width: 100%;
+			}
+			header h2{
+				font-size: 20px;
+				color: white;
+				margin: 10px auto;
+			}
+			header .right{
+				display: inline-flex;
+				width: 50px;
+				height: 50px;
+				justify-content: center;		
+				flex-wrap: wrap;
+				color:white ;	
+				font-size: 14px;	
+			}
+			header .right img{
+				width: 30px;
+				height: 25px;
+				margin-right: 10px;
+			}
+			article section h3{
+				padding:5px 20px ;
+				border-bottom: 1px solid silver;
+				font-size: 17px;
+			}
+			article section .container{
+				height: 112px;
+				display: flex;
+				align-items: center;
+				/*box-sizing: border-box;
+				justify-content: flex-start;*/
+			}
+			.container img{
+				width:92px ;
+				height: 72px;
+				margin-left: 20px;
+			}
+			footer{
+				background:aliceblue ;
+			}
+			footer .row1{
+				height: 40px;
+				border-bottom: 1px solid silver;
+			}
+			footer .row1 a{
+				line-height: 40px;
+				margin-left: 25px;
+				color:mediumturquoise;
+			}
+			footer .row2{
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+			}
+			footer .row2 a{
+				margin-right: 20px;
+				color:mediumturquoise ;
+			}
+			footer .row3{
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				color:silver ;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="#" class="left">
+				<img src="images/header-left-arrow_l.png" alt="img" />
+			</a>
+			<h2>九寨沟</h2>
+			<a href="#" class="right">
+				<img src="images/logo_l.png" alt="img" /><span>首页</span>
+			</a>
+		</header>
+		<article>
+			<section>
+				<h3>景点图片源</h3>
+				<div class="container"  ondragover="allow(event)" ondrop="drop(event)">
+					<img src="images/01.jpg" alt="img" draggable="true" ondragstart="drag(event)" id="flashed"/>
+					<img src="images/02.jpg" alt="img" draggable="true" ondragstart="drag(event)"id="flashe"/>
+					<img src="images/03.jpg" alt="img" draggable="true" ondragstart="drag(event)"id="flash"/>
+					<img src="images/04.jpg" alt="img" draggable="true" ondragstart="drag(event)"id="flas"/>
+					<img src="images/06.jpg" alt="img" draggable="true" ondragstart="drag(event)"id="fla"/>
+					<img src="images/05.jpg" alt="img"draggable="true" 	ondragstart="drag(event)" id="fl"/>
+					<img src="images/07.jpg" alt="img" draggable="true" ondragstart="drag(event)"id="f"/>
+					<img src="images/08.jpg" alt="img" draggable="true" ondragstart="drag(event)"id="d"/>
+				</div>
+			</section>
+			<section>
+				<h3>图片目的地</h3>
+				<div class="container" ondragover="allow(event)" ondrop="drop(event)">
+				</div>
+			</section>
+		</article>
+		<footer>
+			<nav class="row1">
+				<a href="#">登入</a>
+				<a href="#">最近浏览</a>
+				<a href="#">关于我们</a>
+			</nav>
+			<nav class="row2">
+				<a href="#">触屏版</a>
+				<a href="#">电脑版</a>
+			</nav>
+			<nav class="row3">
+				<p>Qunar &nbsp;京ICP备05021087 意见反馈</p>
+			</nav>
+		</footer>
+		<script type="text/javascript">
+			function drag(e){
+				e.dataTransfer.setData('a',e.target.id)
+			}
+			function allow(e){
+				e.preventDefault();
+			}
+			function drop(e){
+				e.preventDefault();
+				var a=e.dataTransfer.getData('a');
+				var flash=document.getElementById(a);
+				e.target.appendChild(flash);
+			}
+		</script>
+	</body>
+</html>

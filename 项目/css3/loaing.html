@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../base.css"/>
+		<style type="text/css">
+			.running {
+			  width: 60px;
+			  height: 60px;
+			  background-color: #67CF22;
+			  margin: 20px auto;
+			  animation: runs 1.2s infinite ease-in-out;
+			}
+			.run {
+			  width: 100px;
+			  height: 100px;
+			  margin: 80px auto;
+			  background-color: cyan;
+			  border-radius: 100%; 
+			  animation: run 1.0s infinite ease-in-out;
+			}
+			@keyframes runs {
+			  0% { transform:  rotateX(0deg) rotateY(0deg);} 
+			  50% { transform:  rotateX(-180deg) rotateY(0deg);}
+			  100% { transform:  rotateX(-180deg) rotateY(-180deg);  }
+			}
+			@keyframes run {
+			 0%  { transform: scale(0);} 
+			100% {transform: scale(1.0);opacity: 0;}
+			}
+		</style>
+	</head>
+	<body>
+	<div class="running"></div>
+	<div class="run"></div>
+	</body>
+</html>
