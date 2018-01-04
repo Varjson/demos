@@ -5,12 +5,15 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
 		<link rel="stylesheet" href="css/base.css" />
 		<title></title>
+		<script src="js/ox.js"></script>
 		<script type="text/javascript">
 !function(a,b){var c=a.documentElement,d="orientationchange"in window?"orientationchange":"resize",e=function(){var a=c.clientWidth;a&&(c.style.fontSize=100*(a/1242)+"px")};a.addEventListener&&(b.addEventListener(d,e,!1),a.addEventListener("DOMContentLoaded",e,!1))}(document,window);
-    	</script>
+   </script>
+   
     	<style>
     		body{
     			background: #ececec;
+    			padding-bottom: 2.25rem;
     		}
     		.header-top{
     			height: .85rem;
@@ -149,6 +152,7 @@
 
 			}
 			.header-nav ul li a{
+				display: block;
 				color: #cdb47e;
 				text-decoration: none;
 			}
@@ -264,7 +268,7 @@
 			.article-group{
 				width: 11.47rem;
 				height: 2.85rem;
-				margin-bottom: .42rem;
+				padding-bottom: .42rem;
 			}
 			.article-group img{
 				width: 5.04rem;
@@ -290,13 +294,21 @@
 				position: absolute;
 			}
 			/*推荐部分结束*/
+			.article-blank{
+				width: 100%;
+				height: .5rem;
+				background: #ececec;
+			}
 			/*尾部开始*/
 			.footer{
+				width: 100%;
 				height: 2.25rem;
 				background: #FFFFFF;
-				margin-top: .5rem;
 				box-sizing: border-box;
 				padding: .42rem 1.04rem 0 1.14rem;
+				position: fixed;
+				bottom: 0;
+				z-index: 99;
 			}
 			.footer ul a{
 				width: 1.01rem;
@@ -335,7 +347,7 @@
     	</style>
 	</head>
 	<body>
-		<div class="header-top clearfix">
+		<!--<div class="header-top clearfix">
 			<div class="fl">
 				<ul class="clearfix">
 				<li></li>
@@ -350,7 +362,7 @@
 			<div class="fr">
 				<font>100%</font><img src="images/power.png"/>
 			</div>
-		</div>
+		</div>-->
 		<div class="header-return">
 			<a href="#"><span>返回  <font>＞</font></span></a>
 		</div>
@@ -360,7 +372,7 @@
 		</div>
 		<div class="header-nav">
 			<ul class="clearfix">
-				<li><a href="#">任务大厅</a></li>
+				<li class="active"><a href="#">任务大厅</a></li>
 				<li><a href="#">战队</a></li>
 				<li><a href="#">游戏生活</a></li>
 				<li><a href="#">游戏资讯</a></li>
@@ -478,6 +490,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="article-blank"></div>
 		<div class="footer">
 			<ul class="clearfix">
 				<a href="#"><li>首页</li></a>
