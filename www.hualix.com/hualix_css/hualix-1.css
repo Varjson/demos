@@ -1,0 +1,628 @@
+
+/*Global Styling*/
+body{
+    color:#385266; /* old: #666666 */
+}
+
+h2{
+    font-size: 1.9rem;
+}
+.updates .latest_updates .update_text p{
+    font-size: 1rem;
+}
+
+/* hualix special */
+.text-floated{
+   background: #f0f0f0;
+   padding: 20px;
+   filter:alpha(opacity:50);
+   opacity:0.5;
+}
+
+/* Helper Classes & Shorcodes */
+
+.bglight{
+    background: #f0f0f0; /* #d4d3d0 */
+}
+.bgdark{
+    background: #d4f5f4;
+}
+.bgdefault{
+    background: #f0f0f0; /* #d4d3d0 */
+}
+.whitecolor{
+    color: #ffffff;
+}
+.oystercolor{
+    color: #d4f5f4;
+}
+.darkcolor{
+    color: #385266; /* old: #385266 */
+}
+.darkcolor hover{
+    /* old: color: #fff; #385266 */
+    color: #C8B06F;
+}
+.goldcolor{
+    color: #ad9765;
+}
+.colorblack{
+    color: #232323;
+}
+
+
+/*sidebar search*/
+.widget_search .form-control {
+    border: 2px #e8ecf0 solid;
+}
+.widget_search .input-group-addon {
+    background: transparent;
+    border: 2px #e8ecf0 solid;
+    color: #d4f5f4;
+}
+.widget .media-body > a{
+    color: #385266;
+}
+
+
+/*Categories*/
+.category li {
+    border-bottom: 1px solid #e8ecf0;
+}
+.category li a{
+    color: #666666;
+}
+.category li a:hover, .category li a:focus,
+.widget .media-body > a:hover{
+    color: #d4f5f4;  
+}
+
+
+/*Tags*/
+ul.web_tags li a {
+    background: #d4f5f4;
+    color: #fff;
+}
+ul.web_tags li a::after {
+    background: #ffffff ;
+}
+
+/*Pagination*/
+.pager{
+    border-bottom: 2px solid #ebebeb;
+}
+.pager li > a {
+    background: rgba(0, 0, 0, 0);
+    color: #999999;
+}
+.pager li > a:before{
+    background: #d4f5f4;
+}
+
+.pager li > a:hover,
+.pager li > a:focus,
+.pager li.active > a{
+    color: #d4f5f4;
+    background: transparent;
+}
+
+/*Comment Profile*/
+.eny_profile {
+    border-bottom: 1px solid #e4e4e4;
+}
+/* Social Icons */
+ul.social li a{
+    border:1px solid #bdbdbd;
+    color:#151515;
+}
+ul.social li a:before{
+    background:#385266;
+}
+
+ul.social li a:hover,
+ul.social li a:focus{
+	color:#fff;
+}
+ul.social_vertical li a{
+    color: #385266;
+}
+ul.social.white li a{
+    border:1px solid #fff;
+}
+ul.social_simple.white li a,
+ul.social.white li a{
+    color: #fff;
+}
+ul.social_simple li a:hover,
+ul.social_simple li a:focus,
+ul.social_vertical li a:hover,
+ul.social_vertical li a:focus,
+.topbar .topbar_inner span > a:hover,
+.topbar .topbar_inner span > a:focus{
+    color: #d4f5f4;
+}
+
+
+.back-top {
+  background:#385266;
+  color:#fff;
+}
+
+.back-top:hover, .back-top:focus{
+	color:#fff;
+}
+
+
+/* Helper Classes ends */
+
+
+/* Buttons */
+
+.button.dark, .button.light{
+    color: #ffffff;
+}
+.button.gold, .button.light{
+    color: #ffffff;
+}
+.button.dark{
+    background: #385266; /* old: #385266 */
+}
+.button.gold{
+    background: #C8B06F; /* old: #385266 */
+}
+.button.light{
+    background: #6c96ac;
+}
+.button.white{
+    background: #fff;
+    color: #385266;
+    border: 2px solid #fff;
+}
+
+/* hover */
+.button.white:before{
+    background: #385266;
+}
+.button.white:hover,
+.button.white:focus{
+    border: 2px solid #385266;
+    color: #fff;
+}
+
+.button.light:before{
+    background: #385266;
+}
+.button.light:hover,
+.button.light:focus{
+    border: 2px solid #385266;
+}
+.button.dark:before{
+     background: #6c96ac;
+}
+.button.gold:before{
+     background: #6c96ac;
+}
+.button.dark:hover, 
+.button.dark:focus{
+    border: 2px solid #6c96ac;
+}
+.button.gold:hover, 
+.button.gold:focus{
+    /*
+    border: 2px solid #FFFF99;
+    */
+    border: 2px solid #C8B06F;
+}
+#maxo-main .button.light:before{
+    background: #385266;
+  
+}
+#maxo-main .button.light:hover,
+#maxo-main .button.light:focus{
+    color: #fff;
+    border:2px solid #385266;
+}
+
+
+/* Some Short Codes or helper classes */
+
+
+
+/* ------ Headers Starts ------ */
+
+header.default nav.navbar.bootsnav.navbar-fixed{
+    background: #385266;
+    padding: 0px;
+}
+header.default nav.navbar.bootsnav.navbar-fixed ul.nav > li > a{
+    /*
+    color: #d4f5f4;
+    */
+     color: #C8B06F;
+    
+}
+
+header.default .bootsnav.fixedmenu{
+    background: #385266 !important;
+}
+
+nav.navbar.bootsnav .navbar-toggle {
+    color: #fff;
+}
+
+
+header.default nav.navbar.bootsnav ul.nav > li > a,
+header.default .bootsnav.fixedmenu ul.nav > li > a,
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu ul.nav > li > a{
+    /*
+    color: #d4f5f4;
+    */
+    color:#C8B06F;
+    
+}
+
+/* bar */
+nav.navbar.bootsnav ul.nav > li > a:before
+{
+		/*
+    background: #d4f5f4; old
+    */
+    background: #C8B06F;
+}
+
+.cbp-l-filters .cbp-filter-item span:after,
+.overlay-menu ul.full-nav  li a:before{
+    background: #385266;
+}
+
+nav.navbar.bootsnav.navbar-fixed.fixedmenu ul.nav > li > a:before {
+    /*
+    background: #d4f5f4; old
+    */
+    background: #C8B06F;
+}
+
+/*OVERLAY Menu*/
+.menu-icon span,
+.menu-icon span:before,
+.menu-icon span:after,
+header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span,
+header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:before,
+header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:after{
+    background: #385266;
+}
+
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span,
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:before,
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:after{
+    background: #fff;
+}
+
+.overlay-menu {
+  color: #385266;
+}
+.overlay-menu ul.full-nav li {
+	background: #f5f5f5;
+}
+.overlay-menu ul.full-nav li > span {
+	color: #385266;
+}
+.overlay-menu ul.full-nav  li a{
+    color: #385266;
+}
+
+
+/*-----  Headers Ends ------ */
+
+
+
+/* ------ main Slider Starts ------ */
+
+/*Bullets
+Swiper & Revotion*/
+.tp-bullet,
+.swiper-pagination-bullet{
+    background: #385266;
+}
+.tp-bullet:hover,
+.tp-bullet.selected,
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet-active{
+    background: #d4f5f4;
+}
+
+/* ------ main Slider ends ------ */
+
+
+/* ------ Swiper slider ------ */
+
+
+/*Testimonial & Latest News*/
+.testimonial .testimonial_slide .photo {
+    border: 3px solid #385266;
+}
+.ivydatedate{
+    color: #385266;
+}
+.ivydatedate:hover, .ivydatedate:focus{
+    color: #fff;
+    background: #d4f5f4;
+}
+.updates .latest_updates .update_text h6:hover a,
+.updates .latest_updates .update_text h6:focus a{
+    color: #385266;
+}
+
+/*Tweets*/
+.tweet_box .twee_inner p > a{
+    color: #385266;
+}
+.tweet_box .twittername:hover,
+.tweet_box .twee_inner p > a:hover{
+    color: #d4f5f4;
+}
+/* ------ Swiper Slider ends ------ */
+
+
+/* ------ POrtfolio starts ------ */
+.overlay,
+.overlay .likeus{
+/*
+    background: rgba(212,245,244,.9);
+	color: #385266; lod
+	
+	background: #385266;
+	color: #fff;
+	*/	
+	background: rgba(56,82,102,.9);
+	color: #C8B06F;
+}
+
+/*Filters*/
+.cbp-l-filters .cbp-filter-item span {
+    color: #385266;
+}
+.cbp-item .text_wrap{
+    color: #202020;
+}
+.cbp-item .text_wrap p{
+    color: transparent;
+}
+/*PopUp*/
+.fancybox-thumbs > ul > li::before {
+  border: 4px solid #385266;
+}
+
+/* ------ Portfolio ends ------ */
+
+
+
+/* ------ Page Header starts ------ */
+
+.breadcrumb{
+    background: transparent;
+}
+.breadcrumb li,
+.breadcrumb li a{
+    color: #fff;
+}
+.breadcrumb li a:hover{
+    color: #d4f5f4;
+}
+/* ------ Page Header ends ------ */
+
+
+/* ------ Parallax  & Bg starts ------ */
+.parallax h2 i{
+    color: #9c9c9c;
+}
+.parallax.parallax-bg p{
+    color: #d4f5f4;
+}
+
+/* ------ Parallax starts ------ */
+
+
+
+/* ------ Features ------ */
+
+.icon_wrap .icon_box i{
+  color:#ad9765; /* old: #d4f5f4 */
+}
+.icon_wrap .icon_box:hover i,
+.icon_wrap .icon_box.active i,
+.icon_wrap .icon_box.active h4,
+.icon_wrap .icon_box:hover h4,
+.icon_wrap .icon_box:hover p{
+	color:#ad9765;
+}
+.icon_wrap .icon_box:hover,
+.icon_wrap .icon_box.active{
+	background:#385266; /* old: #d4f5f4 */
+}
+
+.icon_wrap .icon_box{
+    -webkit-box-shadow:0 0 3px 0 rgba(173, 151, 101, 0.9);
+    -o-box-shadow:0 0 3px 0 rgba(173, 151, 101, 0.9);
+    box-shadow:0 0 3px 0 rgba(173, 151, 101, 0.9);
+}
+/* ------ Features ends ------ */
+
+
+/* ------ Our Team ------ */
+.ourteam .team_caption {
+    background: #385266; /* old: #385266 */
+}
+.team_caption .overlay {
+    background: #ad9765; /* old: #d4f5f4 */
+}
+.ourteam .social_vertical {
+    background: #ffffff;
+}
+
+/* ------ Our Team ------ */
+
+
+/* ------ Our Blog ------ */
+
+.ourblog:hover h3 a,
+.readmore, .blog_item:hover h3 a{
+    color: #d4f5f4;
+}
+.blog_slider .blog_inner {
+    background: rgba(212,245,244,.9);
+    color: #385266;
+}
+
+.blog_author.borderleft .metas > i,
+.blog_author.borderleft .authorname a,
+.blog_author.flat .metas > i,
+.blog_author.flat .authorname a{
+    color: #385266;
+}
+
+.postanchor{
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+}
+
+.postanchor .previous > a,
+.postanchor .nextpost > a{
+    color: #385266;
+}
+
+.postanchor .share {
+    color: #ffffff;
+}
+.share_purpose, .share_purpose::before {
+    background: #d4f5f4;
+}
+.share_purpose .social_simple li a{
+    border-left: 1px solid #62d3db;
+}
+.share_purpose .social_simple li a:hover{
+    color: #385266;
+}
+
+/* ------ Our Blog ------ */
+
+
+/* ------ Pricings ------ */
+
+.pricing_item.active{
+    background: #d4f5f4; /* old: #d4f5f4 */
+    color: #385266; /* old: #fff */
+}
+.pricing_item.active p,
+.pricing_item.active .darkcolor{
+    color: #385266; /* old: #fff */
+    
+    
+}
+.pricing_item.active .goldencolor{
+    color: #C8B06F; /* old: #fff */
+}
+.pricing_item .pricebox{
+    /*
+    border-bottom: 1px solid #ad9765;
+    */
+}
+.pricebox .price_title .ratings i{
+    color: #d4f5f4;
+}
+
+
+
+
+.pricing_item  .availability:before{
+    color: #385266;
+}
+.pricing_item.active  .availability:before{
+    color: #ffffff;
+}
+.pricing_item.active .button.light{
+    background: #ffffff;
+    color: #385266;
+}
+.pricing_item.active .button.light:hover, 
+.pricing_item.active .button.light:focus {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.pricing_item.active .button.light:before{
+    background: #d4f5f4;
+}
+
+.pricing_item:hover p, .pricing_item:hover h3 {
+	 /* color:#fff; */ 
+	 color:#C8B06F;
+}
+.pricing_item:hover{
+	/* background:#d4f5f4;  old */
+	background:#385266;
+	/* #385266 */
+	color:#fff;
+	
+}
+/* ------ Pricings ends ------ */
+
+
+
+/* ------ Contact Us starts ------ */
+
+/* ------ Contact Us ends ------ */
+
+
+/*Loader*/
+.dot1{
+	background-color: #d4f5f4;
+}	
+.dot2 {
+  background-color: #385266;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    /*Header*/
+    header.default nav.navbar.bootsnav.navbar-fixed{
+        background: #385266;
+    }
+    nav.navbar.bootsnav ul.nav > li{
+        margin: 0;
+    }
+    header.default nav.navbar.bootsnav.navbar-fixed ul.nav > li > a{
+        color: #fff;
+    }
+    .menu-icon span, .menu-icon span:before, .menu-icon span:after,
+    header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span,
+    header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:before,
+    header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:after,
+    header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span,
+    header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:before,
+    header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:after{
+        background: #d4f5f4;
+    }
+    
+}
+
+/* hualix */
+.qrcode .image img {
+	width: 12rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.floater {
+  background:#d4f5f4;
+  color: #385266;
+}
+
+.myaddr {
+  display: inline-block;
+  font-size: 1.10rem;
+  margin: 0 auto;
+  position: relative;
+}
