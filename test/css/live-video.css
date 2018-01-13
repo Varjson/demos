@@ -1,0 +1,275 @@
+body {
+	background: #ececec;
+	padding-bottom: 2.25rem;
+}
+
+
+/*头部返回部分开始*/
+
+.header-return {
+	height: 1.48rem;
+	text-align: right;
+	background: url(../images/ox.png) no-repeat .5rem center;
+	background-size: 20%;
+	background-color: #010101;
+}
+
+.header-return a {
+	width: 3.26rem;
+	height: 1.48rem;
+	line-height: 1.48rem;
+	font-size: .55rem;
+	text-decoration: none;
+	color: #b1b1b1;
+	display: inline-block;
+	margin-right: .64rem;
+	cursor: pointer;
+	text-align: right;
+	background: url(../images/chat.png) no-repeat left .3rem;
+	background-size: 30%;
+}
+
+.header-return a font {
+	font-size: .60rem;
+	color: #828282;
+}
+
+
+/*头部返回部分结束*/
+
+/*页面头部about部分开始*/
+.about-bg{
+	height: 7.92rem;
+}
+.about-bg a{
+	width:100% ;
+}
+.about-bg a img{
+	width: 100%;
+}
+.about-article{
+	height:3.8rem ;
+	background: #FFFEFF;
+	box-sizing: border-box;
+	padding: .75rem 1.3rem 0 .65rem;
+	margin-bottom:.22rem ;
+}
+.about-article h3{
+	font-size: .52rem;
+	color: #3d3d3d;
+	margin-bottom: .5rem;
+	
+}
+.about-article p{
+	font-size: .48rem;
+	color: #f3503d;
+	
+}
+.about-article p span{
+	font-size: .85rem;
+	color: #f3503d;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: .05rem;
+	
+}
+/*页面头部about部分结束*/
+
+/*页面section部分开始*/
+.section{
+	height: 4.68rem;
+	padding: .88rem .48rem 0 .48rem;
+	background: #FFFFFF;
+	
+	box-sizing: border-box;
+}
+.section-box{
+	width: 100%;
+	height: 100%;
+	border: .01rem solid #afafaf;
+	position: relative;
+}
+.section-group{
+	width: 7.22rem;
+	height: 1.5rem;
+	background: #FFFFFF;
+	position: absolute;
+	padding-left: 1.02rem;
+	box-sizing: border-box;
+	left: 50%;
+	top: -.32rem;
+	margin-left: -3.61rem;
+	z-index: 99;
+}
+.section-group-img{
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: .75rem;
+}
+.section-group-img img{
+	width: 100%;
+}
+.section-group-name{
+	width: 3.72rem;
+	margin-left: .4rem;
+}
+.section-group-name h2{
+	height: .75rem;
+	font-size: .5rem;
+	color: #222222;
+	display: inline-block;
+	border-bottom: .02rem solid #dddddd;
+	
+}
+.section-group-name h2 span{
+	height: .75rem;
+	display: inline-block;
+	border-bottom:.02rem solid  #ca9c6b;
+	z-index: 3;
+}
+.section-group-name p{
+	font-size:.32rem ;
+	color: #b8b8b8;
+	white-space: nowrap;
+} 
+.section-group-name p font{
+	display: inline-block;
+	margin: 0 .15rem;
+	font-weight: bold;
+	color: #222222;
+}
+.section-group-name p span{
+	color: #deb98d;
+}
+.section-article{
+	margin: 1.56rem 0.5rem 0 .5rem;
+	font-size: .36rem;
+	color: #999999;
+}
+.section-article p{
+	letter-spacing: .06rem;
+}
+/*页面section部分结束*/
+.section-blank{
+	height: .3rem;
+	background: #FFFFFF;
+}
+/*广告图片开始*/
+.download{
+	height: 2.05rem;
+	margin: .2rem 0;
+}
+.download a{
+	width: 100%;
+	height: 100%;
+}
+.download a img{
+	width: 100%;
+}
+/*广告图片结束*/
+
+/*推荐部分开始*/
+
+.article {
+	padding: .47rem .47rem 0 .27rem;
+	margin-bottom: .5rem;
+	background: #ffffff;
+}
+
+.article h2 {
+	font-size: .58rem;
+	color: #101010;
+	padding-left: .22rem;
+	margin-bottom: .37rem;
+}
+
+.article-group {
+	width: 11.47rem;
+	height: 2.85rem;
+	padding-bottom: .42rem;
+}
+
+.article-group img {
+	width: 5.04rem;
+	height: 2.85rem;
+}
+.article-detail {
+	width: 6.43rem;
+	height: 2.85rem;
+	float: right;
+	padding-left: .36rem;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.article-detail p {
+	font-size: .52rem;
+	color: #373737;
+}
+
+.article-detail time {
+	font-size: .42rem;
+	color: #afafaf;
+	bottom: 0;
+	position: absolute;
+}
+
+
+/*推荐部分结束*/
+
+
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 2.25rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .42rem 1.04rem 0 1.14rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+
+.footer ul a {
+	width: 1.01rem;
+	height: 1.5rem;
+	float: left;
+	text-decoration: none;
+	padding-left: .1rem;
+	line-height: 2.3rem;
+	font-size: .45rem;
+	color: #2b2b2b;
+}
+
+.footer ul li {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.footer ul a:nth-child(1) {
+	background: url(../images/footer-home.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 1.56rem;
+}
+
+.footer ul a:nth-child(2) {
+	background: url(../images/footer-publish.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(3) {
+	background: url(../images/footer-tv.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(4) {
+	background: url(../images/footer-user.png) no-repeat top center;
+	background-size: 75%;
+}
+
+
+/*尾部结束*/
+

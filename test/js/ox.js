@@ -1,31 +1,22 @@
+!function(a,b){var c=a.documentElement,d="orientationchange"in window?"orientationchange":"resize",e=function(){var a=c.clientWidth;a&&(c.style.fontSize=100*(a/1242)+"px")};a.addEventListener&&(b.addEventListener(d,e,!1),a.addEventListener("DOMContentLoaded",e,!1))}(document,window);
 window.onload = function() {
 	var Navlist = document.querySelectorAll(".header-nav li");
-	var Aboutlist = document.querySelectorAll('.header-about a');	 
+	var Aboutlist = document.querySelectorAll('.header-about li a');	 
 	for(var i = 0; i < Navlist.length; i++) {
-		Navlist[i].onmouseover = function() {
-			this.style.borderBottom = '.03rem solid #e0c49c';
-			if(this == Navlist[0]) {
-				Navlist[0].style.borderBottom = '.03rem solid #e0c49c';
-			} else {
-				Navlist[0].style.borderBottom = 'none';
+		Navlist[i].onclick = function() {
+			for(var j =0; j<Navlist.length;j++){
+			Navlist[j].className ='';
 			}
-		}
-		Navlist[i].onmouseout = function() {
-			this.style.borderBottom = 'none';
+			this.className+='nav-active';
 		}
 	}
 	
 	for(var j = 0; j < Aboutlist.length; j++) {
-		Aboutlist[j].onmouseover = function() {
-			this.style.color = '#c8a771';
-			if(this == Aboutlist[1]) {
-				Aboutlist[1].style.color = '#c8a771';
-			} else {
-				Aboutlist[1].style.color = '#010101';
+		Aboutlist[j].onclick = function() {
+			for(var i=0; i<Aboutlist.length;i++){
+				Aboutlist[i].className= '';
 			}
-		}
-		Aboutlist[j].onmouseout = function() {
-			this.style.color = '#010101';
+			this.className+='about-active';
 		}
 	}
 }

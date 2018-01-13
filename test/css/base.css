@@ -18,6 +18,7 @@ a:hover {
 }
 /* 默认不显示下划线，保持页面简洁 */
 a{
+	display: inline-block;
     text-decoration:none;
 }
 /* 去除 ie6 & ie7 焦点点状线 */

@@ -1,0 +1,265 @@
+body {
+	background: #ececec;
+	padding-bottom: 2.25rem;
+}
+/*头部返回部分开始*/
+
+.header-return {
+	height: 1.05rem;
+	text-align: right;
+	background-color: #010101;
+}
+
+.header-return a {
+	height: 1.05rem;
+	line-height: 1.3rem;
+	font-size: .55rem;
+	text-decoration: none;
+	color: #b1b1b1;
+	display: inline-block;
+	margin-right: .64rem;
+	cursor: pointer;
+}
+
+.header-return a font {
+	font-size: .60rem;
+	color: #828282;
+}
+
+
+/*头部返回部分结束*/
+
+/*头部user部分开始*/
+.header-user{
+	height: 4.15rem;
+	background:#010101 ;
+	text-align: center;
+}
+.header-user a{
+	width: 2.06rem;
+	height: 2.06rem;
+	border-radius: 1.24rem;
+	/*border:.01rem solid #d2ac7b ;
+	box-sizing: border-box;
+	padding: .2rem;*/
+	background-color:#010101 ;
+}
+.header-user a img{
+	width: 100%;
+	border-radius:50% ;
+}
+.header-user p{
+	font-size: .38rem;
+	color: #c9cbe4;
+	line-height: .38rem;
+	margin-top: .5rem;
+	padding-left: 1.8rem;
+}
+.header-user p span{
+	color:#d2ad80 ;
+}
+.header-user p a{
+	width: .4rem;
+	height: .4rem;
+	vertical-align: middle;
+	margin: 0 .1rem ;
+}
+.header-user p a img{
+	width: 100%;
+}
+/*头部user部分结束*/
+
+/*section中基本信息开始*/
+.section-info{
+	height: 6.8rem;
+	background: #FFFFFF;
+	margin-top: .2rem;
+}
+.section-info-base{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .01rem solid #d2ae7e;
+}
+.section-info-base p{
+	padding-left: .5rem;
+	font-size: .52rem;
+	color: #070707;
+}
+.section-info-phone{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .02rem solid #ececec;
+	padding-left: .5rem;
+}
+.section-info-phone p{
+	font-size:.52rem ;
+	color: #a4a4a4;
+	padding-right: .48rem;
+}
+.section-info-email{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .02rem solid #ececec;
+	padding-left: .5rem;
+}
+.section-info-email p{
+	font-size:.52rem ;
+	color: #a4a4a4;
+	padding-right: .48rem;
+}
+.section-info-sex{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .02rem solid #ececec;
+	padding-left: .5rem;
+}
+.section-info-sex div{
+	font-size:.52rem ;
+	color: #a4a4a4;
+	padding-right: .48rem;
+}
+.section-info-sex div p .male{
+	margin-right: .6rem;
+}
+.section-info-sex div p i{
+	width: .25rem;
+	height: .25rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: .2rem;
+	border-radius: 50%;
+	border: .08rem solid #a4a4a4;
+}
+.section-info-sex div p .male .active{
+	border: .08rem solid #ceae7f;
+}
+
+.section-contact{
+	height: 5.1rem;
+	background: #FFFFFF;
+	margin-top: .2rem;
+}
+.section-contact-way{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .01rem solid #d2ae7e;
+}
+.section-contact-way p{
+	padding-left: .5rem;
+	font-size: .52rem;
+	color: #070707;
+}
+.section-contact-qq{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .02rem solid #ececec;
+	padding-left: .5rem;
+}
+.section-contact-qq p{
+	font-size:.52rem ;
+	color: #a4a4a4;
+	padding-right: .48rem;
+}
+.section-contact-chat{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .02rem solid #ececec;
+	padding-left: .5rem;
+}
+.section-contact-chat p{
+	font-size:.52rem ;
+	color: #a4a4a4;
+	padding-right: .48rem;
+}
+
+.section-task{
+	background: #FFFFFF;
+	margin-top: .2rem;
+	margin-bottom: .75rem;
+}
+.section-task-my{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	border-bottom: .01rem solid #d2ae7e;
+}
+.section-task-my a{
+	display: block;
+	padding-left: .5rem;
+	font-size: .52rem;
+	color: #070707;
+	text-decoration: none;
+}
+.section-task-my a span{
+	color: #a4a4a4;
+	margin-right: .5rem;
+}
+/*section中基本信息结束*/
+
+/*退出登入开始*/
+.exit{
+	height:1.7rem ;
+	line-height: 1.7rem;
+	background:#cba372 ;
+	text-align: center;
+	color: #ffffff;
+	font-size: .5rem;
+	margin-bottom: .2rem;
+}
+/*退出登入结束*/
+
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 2.25rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .42rem 1.04rem 0 1.14rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+
+.footer ul a {
+	width: 1.01rem;
+	height: 1.5rem;
+	float: left;
+	text-decoration: none;
+	padding-left: .1rem;
+	line-height: 2.3rem;
+	font-size: .45rem;
+	color: #2b2b2b;
+}
+
+.footer ul li {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.footer ul a:nth-child(1) {
+	background: url(../images/footer-home.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 1.56rem;
+}
+
+.footer ul a:nth-child(2) {
+	background: url(../images/footer-publish.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(3) {
+	background: url(../images/footer-tv.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(4) {
+	background: url(../images/footer-user.png) no-repeat top center;
+	background-size: 75%;
+}
+
+
+/*尾部结束*/
+
+
