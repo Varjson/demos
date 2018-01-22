@@ -1,0 +1,263 @@
+body {
+	background: #ececec;
+	padding-bottom: 2.25rem;
+}
+/*头部返回部分开始*/
+
+
+.header-return {
+	width: 100%;
+	height: 1.48rem;
+	text-align: left;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	background-color: #010101;
+}
+
+.header-return a {
+	height: 1.48rem;
+	line-height: 1.48rem;
+	font-size: .55rem;
+	text-decoration: none;
+	color: #b1b1b1;
+	margin-left: .64rem;
+}
+
+.header-return a font {
+	font-size: .90rem;
+	color: #e4e2e2;
+}
+
+
+/*头部返回部分结束*/
+
+/*头部search部分开始*/
+
+.header-search {
+	height: 1.44rem;
+	box-sizing: border-box;
+	padding: .22rem .5rem;
+	background: #ececec;
+	font-size: .44rem;
+	position: relative;
+	top: 1.48rem;
+}
+
+.header-search input {
+	width: 100%;
+	height: 100%;
+	border-radius: .45rem;
+	border: .03rem solid #ceaf78;
+	font-size: .44rem;
+	box-sizing: border-box;
+	padding-left: 1.08rem;
+}
+
+.header-search ::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #e5d4c6;
+}
+
+.header-search .icon {
+	width: 1.72rem;
+	height: 1.02rem;
+	top: .23rem;
+	right: .4rem;
+	text-align: center;
+	line-height: 1.4rem;
+	border-top-right-radius: .45rem;
+	border-bottom-right-radius: .45rem;
+	background: #d1ad7d;
+	position: absolute;
+	z-index: 10;
+}
+
+.header-search .icon img {
+	height: 70%;
+	max-width: 100%;
+	text-align: center;
+}
+
+
+/*头部search部分结束*/
+
+
+/*头部导航条部分开始*/
+
+.header-nav {
+	height: 1.44rem;
+	background: #0f0f0f;
+	padding-bottom: .22rem;
+	margin-top: 1.48rem;
+	font-size: .56rem;
+	overflow: hidden;
+}
+.header-nav ul{
+	width: 120%;
+	border-bottom: .01rem solid #2c2c2c;
+	}
+.header-nav ul li {
+	line-height: 1.44rem;
+	float: left;
+	background: #0f0f0f;
+}
+.nav-active{
+	border-bottom: .03rem solid #e0c49c;
+}
+.header-nav ul li a {
+	display: block;
+	color: #cdb47e;
+	text-decoration: none;
+}
+
+.header-nav ul li:nth-child(1) {
+	margin: 0 .55rem 0 .7rem;
+}
+
+.header-nav ul li:nth-child(2),
+.header-nav ul li:nth-child(3) {
+	margin-right: .64rem;
+}
+
+.header-nav ul li:nth-child(4) {
+	margin-right: .5rem;
+}
+
+.header-about {
+	height: 1.45rem;
+	background: #ffffff;
+	line-height: 1.45rem;
+	font-size: .48rem;
+	color: #010101;
+}
+
+.header-about ul li {
+	float: left;
+}
+
+.header-about ul li a {
+	text-decoration: none;
+	color: #010101;
+}
+.header-about ul li .about-active{
+	color: #c8a771;
+}
+.header-about ul li:nth-child(1) a {
+	margin: 0 .78rem 0 .5rem;
+}
+
+.header-about ul li:nth-child(2) a {
+	margin-right: .96rem;
+
+}
+
+
+/*头部导航条部分结束*/
+
+.header-picture{
+	height: 2.7rem;
+	box-sizing: border-box;
+	padding-bottom: .25rem;
+	background: #FFFFFF;
+}
+.header-picture a{
+	width: 100%;
+	height: 2.45rem;
+}
+.header-picture a img{
+	width: 100%;
+}
+
+/*中间文字article部分开始*/
+.article{
+	padding:.25rem .6rem 0 .4rem;
+	margin-top: .25rem;
+	margin-bottom: .5rem;
+	background: #FFFFFF;
+}
+.article-about{
+	font-size:.4rem ;
+	color: #626262;
+	line-height: .6rem;
+	letter-spacing: .02rem;
+	margin-bottom: .5rem;
+}
+.article-range{
+	font-size:.4rem ;
+	color: #626262;
+	line-height: .6rem;
+	letter-spacing: .02rem;
+	padding-bottom: 1rem;
+}
+/*中间文字article部分结束*/
+
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 2.25rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .42rem 1.04rem 0 1.14rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+
+.footer ul a {
+	width: 1.01rem;
+	height: 1.5rem;
+	float: left;
+	text-decoration: none;
+	padding-left: .1rem;
+	line-height: 2.3rem;
+	font-size: .45rem;
+	color: #2b2b2b;
+}
+
+.footer ul li {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.footer ul a:nth-child(1) {
+	background: url(../images/footer-home.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 1.56rem;
+}
+
+.footer ul a:nth-child(2) {
+	background: url(../images/footer-publish.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(3) {
+	background: url(../images/footer-tv.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(4) {
+	background: url(../images/footer-user.png) no-repeat top center;
+	background-size: 75%;
+	position: relative;
+}
+.footer ul a:nth-child(4) span{
+	width: .6rem;
+	height: .6rem;
+	text-align: center;
+	line-height: .6rem;
+	border-radius:50% ;
+	position: absolute;
+	top: -.25rem;
+	left: .5rem;
+	background: #dd0000;
+	font-size: .3rem;
+	color: #FFFFFF;
+}
+
+/*尾部结束*/
+
+

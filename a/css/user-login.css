@@ -1,0 +1,170 @@
+body {
+	background: #ececec;
+	padding-bottom: 2.25rem;
+}
+/*头部返回部分开始*/
+
+.header-return {
+	height: 1.45rem;
+	line-height: 1.45rem;
+	background-color: #010101;
+	text-align: center;
+	font-size:.62rem ;
+	color: #FFFFFF;
+	position: relative;
+}
+
+/*头部返回部分结束*/
+
+/*中间section部分开始*/
+.section{
+	padding:1.72rem .4rem 0 ;
+	background: #FFFFFF;
+}
+.section ::-webkit-input-placeholder{
+	color: #9c9c9c;
+}
+.section-user{
+	width: 100%;
+	height: 1.56rem;
+	background:#ececec url(../images/user-login-phone.png) .5rem center no-repeat;
+	background-size:.55rem .7rem;
+	box-sizing: border-box;
+	padding-left:1.65rem;
+	border-radius: .15rem;
+	font-size: .45rem;
+	color: #000000;
+	border: none;
+	margin-bottom: .48rem;
+}
+.section-password{
+	width: 100%;
+	height: 1.56rem;
+	background:#ececec url(../images/user-login-password.png) .5rem center no-repeat;
+	background-size:.55rem .7rem;
+	box-sizing: border-box;
+	padding-left:1.65rem;
+	border-radius: .15rem;
+	font-size: .45rem;
+	color: #000000;
+	border: none;
+	margin-bottom: .34rem;
+}
+.section a{
+	font-size: .45rem;
+	color: #1a1a1a;
+	padding-right: .06rem;
+	display: block;
+	text-align: right;
+	text-decoration: none;
+}
+.section-login{
+	width: 100%;
+	height: 1.58rem;
+	font-size: .52rem;
+	border-radius: .15rem;
+	text-align: center;
+	background: #dbb989;
+	color: #FFFFFF;
+	border: none;
+	margin:.65rem 0 .5rem;
+	cursor: pointer;
+}
+.section-register{
+	width: 100%;
+	height: 1.58rem;
+	font-size: .52rem;
+	border-radius: .15rem;
+	text-align: center;
+	background: #1a1a1a;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 3.65rem;
+}
+.section p{
+	font-size:.4rem ;
+	color: #9b9b9b;
+	text-align: center;
+	padding-bottom: .25rem;
+	border-bottom: .02rem solid #dbe0e4;
+}
+.section-contact{
+	height: 1.4rem;
+	margin-top:.24rem;
+	padding-bottom: .74rem;
+	text-align: center;
+}
+.section-contact a{
+	width: 1.35rem;
+	height: 1.4rem;
+	border-radius:50% ;
+	display: inline-block;
+}
+.section-contact a img{
+	width: 100%;
+}
+.section-contact a:nth-child(1){
+	margin-right: .5rem;
+}
+/*中间section部分结束*/
+.blank{
+	height:.4rem;
+	background: #ececec;
+}
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 2.25rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .42rem 1.04rem 0 1.14rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+
+.footer ul a {
+	width: 1.01rem;
+	height: 1.5rem;
+	float: left;
+	text-decoration: none;
+	padding-left: .1rem;
+	line-height: 2.3rem;
+	font-size: .45rem;
+	color: #2b2b2b;
+}
+
+.footer ul li {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.footer ul a:nth-child(1) {
+	background: url(../images/footer-home.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 1.56rem;
+}
+
+.footer ul a:nth-child(2) {
+	background: url(../images/footer-publish.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(3) {
+	background: url(../images/footer-tv.png) no-repeat top center;
+	background-size: 75%;
+	margin-right: 2rem;
+}
+
+.footer ul a:nth-child(4) {
+	background: url(../images/footer-user.png) no-repeat top center;
+	background-size: 75%;
+}
+
+
+/*尾部结束*/
+
+
