@@ -1,6 +1,6 @@
 body {
 	background: #ececec;
-	padding-bottom: 2.25rem;
+	padding-bottom: 1.9rem;
 }
 
 .top{
@@ -13,112 +13,52 @@ body {
 /*头部返回部分开始*/
 
 .header-return {
-	height: 1.48rem;
-	text-align: right;
+	height: 1rem;
 	background: url(../images/ox.png) no-repeat .5rem center;
-	background-size: 20%;
+	background-size: 15%;
 	background-color: #010101;
+	text-align: right;
 }
-/*头部返回部分结束*/
-
-/*头部search部分开始*/
-
-.header-search {
-	height: 1.44rem;
-	box-sizing: border-box;
-	padding: .22rem .5rem;
-	background: #ececec;
-	font-size: .44rem;
-	position: relative;
+.header-return a{
+	width: .4rem;
+	height: .4rem;
+	margin: .3rem .3rem 0 0;
 }
-
-.header-search input {
+.header-return a img{
 	width: 100%;
 	height: 100%;
-	border-radius: .45rem;
-	border: .03rem solid #ceaf78;
-	font-size: .44rem;
-	box-sizing: border-box;
-	padding-left: 1.08rem;
 }
-
-.header-search ::-webkit-input-placeholder {
-	/* WebKit browsers */
-	color: #e5d4c6;
-}
-
-.header-search .icon {
-	width: 1.72rem;
-	height: 1.02rem;
-	top: .23rem;
-	right: .4rem;
-	text-align: center;
-	line-height: 1.4rem;
-	border-top-right-radius: .45rem;
-	border-bottom-right-radius: .45rem;
-	background: #d1ad7d;
-	position: absolute;
-	z-index: 10;
-}
-
-.header-search .icon img {
-	height: 70%;
-	max-width: 100%;
-	text-align: center;
-}
-
-
-/*头部search部分结束*/
+/*头部返回部分结束*/
 
 
 /*头部导航条部分开始*/
 
 .header-nav {
-	height: 1.44rem;
+	height: 1rem;
 	background: #0f0f0f;
-	padding-bottom: .22rem;
-	font-size: .56rem;
-	overflow: hidden;
+	padding-bottom: .15rem;
+	margin-top: -.05rem;
 }
-.header-nav ul{
-	width: 120%;
+.header-nav .header-menu{
 	border-bottom: .01rem solid #2c2c2c;
+	line-height: 1rem;
+	display: flex;
+	justify-content: space-around;
 	}
-.header-nav ul .nav-active{
-	border-bottom: .03rem solid #e0c49c;
-}
-.header-nav ul li {
-	line-height: 1.44rem;
-	float: left;
-	background: #0f0f0f;
-}
-
-.header-nav ul li a {
-	display: block;
-	color: #cdb47e;
+.header-nav .header-menu a {
+	height: 100%;
+	color: #ebc18c;
 	text-decoration: none;
-}
-
-.header-nav ul li:nth-child(1) {
-	margin: 0 .55rem 0 .7rem;
-}
-
-.header-nav ul li:nth-child(2),
-.header-nav ul li:nth-child(3) {
-	margin-right: .64rem;
-}
-
-.header-nav ul li:nth-child(4) {
-	margin-right: .5rem;
+	font-size: .48rem;
 }
 
 /*头部导航条部分结束*/
 
 /*轮播图开始*/
 .swiper-container{
-	margin: 4.56rem 0 .25rem;
+	margin: 2.1rem 0 .25rem;
 	width: 100%;
-	height: 3rem;
+	height: 2.5rem;
 }
 .swiper-container a{
 	width: 100%;
@@ -134,7 +74,7 @@ body {
 #slideDown{margin-top: 0;width: 100%;} 
 #slideDown1,#slideDown2{width: 100%;height: .7rem;;background: #e9f4f7;display: none;} 
 #slideDown1{height: .2rem;} 
-#slideDown1>p,#slideDown2>p{margin: .2rem auto;text-align:center;font-size: .14rem;color: #37bbf5;}
+#slideDown1>p,#slideDown2>p{margin: .2rem auto;text-align:center;font-size: .2rem;color: #37bbf5;}
 /*下拉刷新结束*/
 
 /*轮播图下面战报开始*/
@@ -573,10 +513,10 @@ body {
 
 .footer {
 	width: 100%;
-	height: 2.25rem;
+	height: 1.7rem;
 	background: #FFFFFF;
 	box-sizing: border-box;
-	padding: .42rem 1.04rem 0 1.14rem;
+	padding: .24rem 1rem .1rem 1rem;
 	position: fixed;
 	bottom: 0;
 	z-index: 99;
@@ -588,7 +528,7 @@ body {
 	float: left;
 	text-decoration: none;
 	padding-left: .1rem;
-	line-height: 2.3rem;
+	line-height: 2.1rem;
 	font-size: .45rem;
 	color: #2b2b2b;
 }
@@ -600,25 +540,25 @@ body {
 
 .footer ul a:nth-child(1) {
 	background: url(../images/footer-home.png) no-repeat top center;
-	background-size: 75%;
+	background-size: 70%;
 	margin-right: 1.56rem;
 }
 
 .footer ul a:nth-child(2) {
 	background: url(../images/footer-publish.png) no-repeat top center;
-	background-size: 75%;
+	background-size: 70%;
 	margin-right: 2rem;
 }
 
 .footer ul a:nth-child(3) {
 	background: url(../images/footer-tv.png) no-repeat top center;
-	background-size: 75%;
+	background-size: 70%;
 	margin-right: 2rem;
 }
 
 .footer ul a:nth-child(4) {
 	background: url(../images/footer-user.png) no-repeat top center;
-	background-size: 75%;
+	background-size: 70%;
 	position: relative;
 }
 .footer ul a:nth-child(4) span{
