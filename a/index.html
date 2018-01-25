@@ -7,23 +7,33 @@
 		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		
-		<title></title>	
+		<title>首页</title>	
 	</head>
 	<body>
 		<div class="top">
 			<div class="header-return">
-				<a href="#"><img src="images/search.png"/></a>
+				<a href="search-detail.html"><img src="images/search.png"/></a>
 			</div>
+			
 		<div class="header-nav">
 			<div class="header-menu">
-				<a href="index.html">任务大厅</a>
+				<a href="task.html">任务大厅</a>
 				<a href="information.html">游戏资讯</a>
 				<a href="live.html">游戏生活</a>
 				<a href="together.html">关于我们</a>
 			</div>
 		</div>
 		</div>
+		
+		<div id="content"> 
+        <div id="slideDown"> 
+            <div id="slideDown1"> 
+                <p>松开刷新</p> 
+            </div> 
+            <div id="slideDown2"> 
+                <p>正在刷新 <span class="fa fa-spinner fa-pulse"></span></p> 
+            </div> 
+        </div> 
         <div class="swiper-container">
    			 <div class="swiper-wrapper">
         <div class="swiper-slide"><a href="#"><img src="images/beauty-header-picture.png"/></a></div>
@@ -32,16 +42,6 @@
   			  </div>
   			  <div class="swiper-pagination"></div>
 		</div>
-		
-        <div id="content"> 
-        <div id="slideDown"> 
-            <div id="slideDown1"> 
-                <p>松开刷新</p> 
-            </div> 
-            <div id="slideDown2"> 
-                <p>正在刷新 ...</p> 
-            </div> 
-        </div> 
         	<div class="new">
         		<h3>任天堂正式公布 "LABO" 主机还能这样玩!</h3>
         		<p class="clearfix"><a href="#">【电竞快讯】</a>&nbsp;<a href="#">在&laquo;星露谷物语&raquo;里求婚成功</a><span class="news fa fa-commenting-o fr">12</span> <span class="eye fa fa-eye fr">2018</span></p>
@@ -53,15 +53,15 @@
         			<div class="lol">
         				<a href="#">
         					<video muted="true" poster="images/beauty-section-nine.png"  >
-								<source src="video/guard.mp4"></source>
+								<source src="video/g1uard.mp4"></source>
 							</video>
         				</a>
         				<p class="clearfix"><span class="hot-section-title fl">小鱼人TOP5:中单卡特</span><span class="sum fa fa-eye fr">6.1万</span></p>
         			</div>
         			<div class="king">
         				<a href="#">
-        					<video muted="true" autoplay="">
-								<source src="video/guard.mp4"></source>
+        					<video muted="true" autoplay="" poster="images/beauty-section-nine.png">
+								<source src="video/gu1ard.mp4"></source>
 							</video>
         				</a>
         				<p class="clearfix"><span class="hot-section-title fl">苹果公司将加入电池</span><span class="sum fa fa-eye fr">8.2万</span></p>
@@ -303,14 +303,24 @@
 		</div>
 		
 		<div class="footer">
-			<ul class="clearfix">
-				<a href="index.html"><li>首页</li></a>
-				<a href="#"><li>发布</li></a>
-				<a href="#"><li>直播</li></a>
-				<a href="user.html"><li>我的<span>2</span></li></a>
-			</ul>
+			<a href="index.html">
+				<img src="images/footer-home.png"/>
+				<span>首页</span>
+			</a>
+			<a href="#">
+				<img src="images/footer-send.png"/>
+				<span>发布</span>
+			</a>
+			<a href="video.html">
+				<img src="images/footer-tv.png"/>
+				<span>直播</span>
+			</a>
+			<a href="user.html" class="footer-info">
+				<img src="images/fotter-user.png"/>
+				<span>我的</span>
+				<font>2</font>
+			</a>
 		</div>
-		
 <script src='js/swiper-3.4.2.min.js'></script>
 <script src="js/zepto.min.js"></script>
 <script src="js/ox.js"></script>
