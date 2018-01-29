@@ -1,0 +1,163 @@
+body{
+	background: #ececec;
+	padding-bottom: 1.7rem;
+}	
+
+.header{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	background-color: #010101;
+	text-align: center;
+	font-size: .4rem;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.header a{
+	height: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    color: #b1b1b1;
+    position: absolute;
+}
+.header .left{
+	left: .3rem;
+    font-size: .90rem;
+    color: #e4e2e2;
+}
+.about{
+	padding: .35rem .3rem;
+	margin-top: 1rem;
+	background: #55c0ec;
+	font-size: .5rem;
+}
+.about p{
+	margin: 0;
+	color: #FFFFFF;
+}
+.about span{
+	color: yellow;
+}
+
+/*价格部分开始*/
+.price h4{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	font-size: .35rem;
+	color: skyblue;
+	background:#ececec ;
+	padding: 0 .3rem;
+	font-weight: normal;
+	margin: 0;
+}
+.price p{
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: .35rem;
+	background: #FFFFFF;
+	padding: 0 .4rem 0 .3rem;
+	margin: 0;
+	border-bottom: .01rem solid #ececec;
+}
+.price input{
+	width: 68%;
+	height: 90%;
+	border: none;
+	margin-left: .8rem;
+}
+.price input::-webkit-input-placeholder {
+    background: #fff;
+    color: #333333;
+    font-size: .35rem;
+}
+.price font{
+	color:#a9a9a9 ;
+}
+.name input{
+	margin-left: .48rem;
+}
+.name input::-webkit-input-placeholder{
+	color: #a9a9a9;
+}
+
+.price .info{
+	width: 100%;
+	line-height: .6rem;
+	font-size: .35rem;
+	box-sizing: border-box;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	padding: .2rem .3rem;
+	background: #FFFFFF;
+	color:#6f6f6f;
+	resize: none;
+}
+.footer{
+	width: 100%;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #55c0ec;
+	text-align: center;
+}
+.footer a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: .4rem;
+	text-decoration: none;
+}
+
+.modal-content{
+	border-radius: .6rem;
+}
+.modal-header{
+	padding: .3rem;
+}
+.modal-body {
+	line-height: .7rem;
+}
+.modal-body span{
+	color: #908e8e;
+}
+.modal-body span font{
+	color: orangered;
+}
+.modal-body p{
+	color: skyblue;
+	text-decoration: underline;
+}
+.modal-body input{
+	width: 80%;
+	border: .01rem solid #ECECEC;
+	padding: .15rem .3rem;
+}
+.modal-footer{
+	height: 1.5rem;
+	padding: 0;
+	-webkit-border-bottom-left-radius: .04rem;
+}
+.modal-footer span{
+	height: 1.5rem;
+	line-height: 1.5rem;
+	width: 50%;
+	text-align: center;
+	font-size: .5rem;
+	color: #07b7ff;	
+	border-right: .01rem solid #ececec;
+}
+.modal.in .modal-dialog{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 6rem;
+}
+.modal-backdrop.in{
+	display: none;
+}

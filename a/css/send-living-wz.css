@@ -1,0 +1,154 @@
+body{
+	background: #ececec;
+}	
+
+.header{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	background-color: #010101;
+	text-align: center;
+	font-size: .4rem;
+	color: #FFFFFF;
+}
+.header a{
+	height: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    color: #b1b1b1;
+    position: absolute;
+}
+.header .left{
+	left: .3rem;
+    font-size: .90rem;
+    color: #e4e2e2;
+}
+.header .right{
+	right: .6rem;
+    font-size: .4rem;
+    color: #FFFFFF;
+}
+
+/*···········*/
+.hide{
+	display: none;
+}
+#pickuptimeContener{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 1;
+}
+.footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height:4rem;
+	z-index: 99;
+}
+.pickuptime-box{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background:#ececec ;
+}
+.pickuptime-title{
+	width: 100%;
+	height: 1rem;
+	box-sizing: border-box;
+    line-height: 1rem;
+    padding: 0 .5rem;
+    color: #333;
+    font-size: .4rem;
+    background: #fff;
+}
+.pickuptime-box ul{
+	height: 3rem;
+	font-size: .35rem;
+	overflow-y: scroll;
+	border-left: .01rem solid #f2f2f2;
+}
+.diff_1 ul{
+	width: 50%;
+}
+.pickuptime-data_1{
+	width: 50%;
+}
+
+.diff_2 ul{
+	width: 100%;
+}
+.pickuptime-data_2{
+	width: 100%;
+}
+.diff_3 ul{
+	width: 50%;
+}
+.pickuptime-data_3{
+	width: 50%;
+}
+.pickuptime-datap{
+	height: .8rem;
+	line-height: .8rem;
+	padding: 0px .3rem;
+	font-size: .4rem;
+}
+.pickuptime-data-on{
+	color: #ff5701;
+}
+.pickuptime{
+	text-align: center;
+	height: .8rem;
+	line-height: .8rem;
+	padding: 0px .6rem;
+}
+.pickuptime-on{
+	color: #ff5701;
+}
+/*··········*/
+.section{
+	width: 100%;
+	height: 1.2rem;
+	box-sizing: border-box;
+	line-height: 1.2rem;
+	font-size: .4rem;
+	padding: 0 .4rem;
+	text-align: left;
+}
+.section span{
+	display: inline-block;
+	margin-left: 1rem;
+	color: #828282;
+}
+.section font{
+	font-size: .6rem;
+}
+.section input{
+	width: 60%;
+	margin-left: 1rem;
+	font-size: .4rem;
+	border: none;
+}
+.section input::-webkit-input-placeholder {
+	color: #828282;
+    background: #ececec;
+}
+.next{
+	width: 100%;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-size: .5rem;
+	background: lightskyblue;
+}
+.next a {
+	color: #FFFFFF;
+	text-decoration: none;
+}

@@ -101,6 +101,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	font-size: .4rem;
+	color: #333131;
 	justify-content: center;
 	text-align: center;
 	text-decoration: none;
