@@ -132,8 +132,10 @@ body{
 }
 .section input{
 	width: 60%;
+	height: 90%;
 	margin-left: 1rem;
 	font-size: .4rem;
+	background: #ececec ;
 	border: none;
 }
 .section input::-webkit-input-placeholder {
@@ -149,11 +151,8 @@ body{
 	bottom: 0;
 	left: 0;
 	font-size: .5rem;
-	background: lightskyblue;
-}
-.next a {
 	color: #FFFFFF;
-	text-decoration: none;
+	background: rgb(128,128,128);
 }
 .word-color{
 	color: #333333;

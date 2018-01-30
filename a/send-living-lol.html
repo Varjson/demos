@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="header"><span id="switch_word">英雄联盟陪练</span>
-		<a href="#" class="left"><font><</font></a>
+		<a href="javascript:window.location.href = 'send.html';" class="left"><font><</font></a>
 		<a href="#" class="right" id="switch">切换游戏</a>
 	</div>
 	<div class="section clearfix" id='service'>
@@ -25,7 +25,7 @@
 		排位类型<span id="pw_type-content">请选组排方式</span><font class="fr">></font>
 	</div>
 	<div class="section clearfix section-color" id='pl_type'>
-		代练类型<span id="pl_type-content">排位赛</span><font class="fr">></font>
+		代练类型<span id="pl_type-content">排位赛/晋级赛/定位赛</span><font class="fr">></font>
 	</div>
 	<div class="section clearfix section-num_" id='now'>
 		当前段位<span id="now-content">请选择角色现在段位</span><font class="fr">></font>
@@ -34,7 +34,7 @@
 		目标段位<span id="target-content">请选择角色要达到段位</span><font class="fr">></font>
 	</div>
 	<div class="section clearfix section-num" id='target'>
-		当前胜点<input type="text" placeholder="请输入当前胜点" /><span class="fr">点</span>
+		当前胜点<input type="text" id="targets-content" placeholder="请输入当前胜点" /><span class="fr">点</span>
 	</div>
 	<div style="display: none;" class="section clearfix section-sum" id='sum'>
 		当前胜场<span id="sum-content">请选择当前胜场</span><font class="fr">></font>
@@ -269,7 +269,7 @@
 	</div>	
 	<!--上赛季段位选择结束-->
 	
-	<div class="next"><a href="send-info.html">下一步</a></div>
+	<div class="next" id="submit"  onclick="url()">下一步</div>
 <script type="text/javascript">
 	var lq = 1;
 	var la = 1;
@@ -330,12 +330,14 @@
 			$("#service-content").text(riqi+'/'+shij);
 			$("#service-content").css('color','#333333');
 			$(".footer").hide();
+			is_state();
 	});
 	$('#pw-decide_2').on('click',function(){
 		var pw_duanwei = $("#pw_duanwei_"+lc).text();
 		$("#pw_type-content").text(pw_duanwei);
 		$("#pw_type-content").css('color','#333333');
 		$(".footer").hide();
+		is_state();
 	});
 	$('#pl-decide_2').on('click',function(){
 		if(("#pl_duanwei_"+lh)=='#pl_duanwei_2'){
@@ -358,6 +360,7 @@
 		var pl_duanwei = $("#pl_duanwei_"+lh).text();
 		$("#pl_type-content").text(pl_duanwei);
 		$(".footer").hide();
+		is_state();
 	});
 	
 	$('#decide_3').on('click',function(){
@@ -366,6 +369,7 @@
 		$("#now-content").text(now+'/'+star);
 		$("#now-content").css('color','#333333');
 		$(".footer").hide();
+		is_state();
 	});
 	$('#decide_4').on('click',function(){
 		var target = $("#target_"+lf).text();
@@ -373,30 +377,35 @@
 		$("#target-content").text(target+'/'+nstar);
 		$("#target-content").css('color','#333333');
 		$(".footer").hide();
+		is_state();
 	});
 	$('#decide_5').on('click',function(){
 		var sum = $('#sum_duanwei_'+li).text();
 		$('#sum-content').text(sum);
 		$('#sum-content').css('color','#333333');
 		$(".footer").hide();
+		is_state_();
 	});
 	$('#decide_6').on('click',function(){
 		var n_sum = $('#n_sum_duanwei_'+lj).text();
 		$('#n_sum-content').text(n_sum);
 		$('#n_sum-content').css('color','#333333');
 		$(".footer").hide();
+		is_state_();
 	});
 	$('#decide_7').on('click',function(){
 		var _num = $('#_num_duanwei_'+lm).text();
 		$('#_num-content').text(_num);
 		$('#_num-content').css('color','#333333');
 		$(".footer").hide();
+		_is_state_();
 	});
 	$('#decide_8').on('click',function(){
 		var o_num = $('#o_num_duanwei_'+ln).text();
 		$('#o_num-content').text(o_num);
 		$('#o_num-content').css('color','#333333');
 		$(".footer").hide();
+		_is_state_();
 	});
 	$('.close').on('click',function(){
 		$(".footer").hide();
@@ -467,6 +476,99 @@
 		$("#o_num_duanwei_"+n).addClass("pickuptime-on");
 		$("#o_num_duanwei_"+ln).removeClass("pickuptime-on");
 		ln	=	n;
+	}
+	
+		// 监听事件
+	$("#targets-content").bind("input propertychange change",function(event){
+		is_state();
+	});
+	// 判断状态
+	function is_state(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var pw_type_content	=	$("#pw_type-content").text();
+		if(pw_type_content == '请选组排方式'){
+			return false;
+		}
+		var pl_type_content	=	$("#pl_type-content").text();
+		if(pl_type_content == '排位赛/晋级赛/定位赛'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var target_content	=	$("#target-content").text();
+		if(target_content == '请选择角色要达到段位'){
+			return false;
+		}
+		var targets_content	=	$("#targets-content").val();
+		if(!targets_content){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	function is_state_(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var pw_type_content	=	$("#pw_type-content").text();
+		if(pw_type_content == '请选组排方式'){
+			return false;
+		}
+		var pl_type_content	=	$("#pl_type-content").text();
+		if(pl_type_content == '排位赛/晋级赛/定位赛'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var sum_content	=	$("#sum-content").text();
+		if(sum_content == '请选择当前胜场'){
+			return false;
+		}
+		var n_sum_content	=	$("#n_sum-content").text();
+		if(n_sum_content == '请选择已负场次'){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	function _is_state_(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var pw_type_content	=	$("#pw_type-content").text();
+		if(pw_type_content == '请选组排方式'){
+			return false;
+		}
+		var pl_type_content	=	$("#pl_type-content").text();
+		if(pl_type_content == '排位赛/晋级赛/定位赛'){
+			return false;
+		}
+		var _num_content	=	$("#_num-content").text();
+		if(_num_content == '请选择上赛季段位'){
+			return false;
+		}
+		var o_num_content	=	$("#o_num-content").text();
+		if(o_num_content == '请选择需要代练场次'){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	// 下一步
+	function url(){
+		var url_color	=	$("#submit").css('background-color');
+		if(url_color != 'rgb(128, 128, 128)'){
+			window.location.href = "send-info.html";
+		}
 	}
 </script>
 </body>

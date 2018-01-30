@@ -14,14 +14,14 @@
 </head>
 <body>
 	<div class="header"><span id="switch_word">王者荣耀代练</span>
-		<a href="#" class="left"><font><</font></a>
+		<a href="javascript:window.location.href = 'send.html';" class="left"><font><</font></a>
 		<a href="#" class="right" id="switch">切换游戏</a>
 	</div>
 	<div class="section clearfix" id='service'>
 		游戏区服<span id="service-content">请选择您所在的区服</span><font class="fr">></font>
 	</div>
 	<div class="section clearfix" id='service'>
-		铭文等级<input type="text" placeholder="请输入铭文等级1-150" /><span class="fr">级</span>
+		铭文等级<input type="text" id="ming-class" placeholder="请输入铭文等级1-150" /><span class="fr">级</span>
 	</div>
 	
 	<div class="section clearfix" id='now'>
@@ -208,7 +208,7 @@
 	</div>
 	</div>
 	<!--目标段位结束-->
-	<div class="next"><a href="send-info.html">下一步</a></div>
+	<div class="next" id="submit" onclick="url()">下一步</div>
 <script type="text/javascript">
 	var lq = 1;
 	var la = 1;
@@ -251,18 +251,21 @@
 		var shij = $("#shij_"+lb).text();
 		$("#service-content").text(riqi+'/'+shij);
 		$(".footer").hide();
+		is_state()
 	});
 	$('#decide_3').on('click',function(){
 		var now = $("#now_"+ld).text();
 		var star =$('#star_'+le).text();
 		$("#now-content").text(now+'/'+star);
 		$(".footer").hide();
+		is_state()
 	});
 	$('#decide_4').on('click',function(){
 		var target = $("#target_"+lf).text();
 		var nstar =$('#nstar_'+lg).text();
 		$("#target-content").text(target+'/'+nstar);
 		$(".footer").hide();
+		is_state()
 	});
 	$('.close').on('click',function(){
 		$(".footer").hide();
@@ -284,11 +287,6 @@
 		$("#shij_"+lb).removeClass("pickuptime-on");
 		lb	=	b;
 	}
-//	function duanwei(c){
-//		$("#duanwei_"+c).addClass("pickuptime-on");
-//		$("#duanwei_"+lc).removeClass("pickuptime-on");
-//		lc=	c;
-//	}
 	function now(d){
 		$("#now_"+d).addClass("pickuptime-on");
 		$("#now_"+ld).removeClass("pickuptime-on");
@@ -309,12 +307,45 @@
 		$("#nstar_"+lg).removeClass("pickuptime-on");
 		lg	=	g;
 	}
-//	function sum_duanwei(i){
-//		$("#nstar_"+i).addClass("pickuptime-on");
-//		$("#nstar_"+li).removeClass("pickuptime-on");
-//		li	=	i;
-//	}
 	
+	// 监听事件
+	$("#ming-class").bind("input propertychange change",function(event){
+		is_state();
+	});
+	
+	// 判断状态
+	function is_state(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var pl_type_content	=	$("#pl_type-content").text();
+		if(pl_type_content == '场次'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var target_content	=	$("#target-content").text();
+		if(target_content == '请选择目标段位'){
+			return false;
+		}
+		var ming_class = $('#ming-class').val();
+		if(!ming_class){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	
+	// 下一步
+	function url(){
+		var url_color	=	$("#submit").css('background-color');
+		if(url_color != 'rgb(128, 128, 128)'){
+			window.location.href = "send-info.html";
+		}
+	}
 </script>
 </body>
 </html>

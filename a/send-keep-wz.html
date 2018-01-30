@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="header"><span id="switch_word">王者荣耀陪练</span>
-		<a href="#" class="left"><font><</font></a>
+		<a href="javascript:window.location.href = 'send.html';" class="left"><font><</font></a>
 		<a href="#" class="right" id="switch">切换游戏</a>
 	</div>
 	<div class="section clearfix" id='service'>
@@ -22,7 +22,7 @@
 	</div>
 	
 	<div class="section clearfix" id='type'>
-		陪练类型<span id="type-content">场次</span><font class="fr">></font>
+		陪练类型<span id="type-content">段位或场次</span><font class="fr">></font>
 	</div>
 	
 	<div class="section clearfix" id='now'>
@@ -229,7 +229,7 @@
 	</div>
 	</div>	
 	<!--场次选择结束-->
-	<div class="next"><a href="send-info.html">下一步</a></div>
+	<div class="next" id="submit" onclick="url()">下一步</div>
 <script type="text/javascript">
 	var lq = 1;
 	var la = 1;
@@ -274,19 +274,27 @@
 		$("#service-content").text(riqi+'/'+shij);
 		$("#service-content").css('color','#333333');
 		$(".footer").hide();
+		is_state();
 	});
 	$('#decide_2').on('click',function(){
-		if(("#pl_duanwei_"+lc)=='#pl_duanwei_2'){
+		if(("#duanwei_"+lc)=='#duanwei_2'){
 			$('.section-num').hide();
 			$('.section-sum').show();
+			var duanwei = $("#duanwei_"+lc).text();
+			$("#type-content").text(duanwei);
+			$("#type-content").css('color','#333333');
+			$(".footer").hide();
+			is_state_();
 		}else{
 			$('.section-num').show();
 			$('.section-sum').hide();
+			var duanwei = $("#duanwei_"+lc).text();
+			$("#type-content").text(duanwei);
+			$("#type-content").css('color','#333333');
+			$(".footer").hide();
+			is_state();
 		}
-		var duanwei = $("#duanwei_"+lc).text();
-		$("#type-content").text(duanwei);
-		$("#type-content").css('color','#333333');
-		$(".footer").hide();
+		
 	});
 	$('#decide_3').on('click',function(){
 		var now = $("#now_"+ld).text();
@@ -294,6 +302,7 @@
 		$("#now-content").text(now+'/'+star);
 		$("#now-content").css('color','#333333');
 		$(".footer").hide();
+		is_state();
 	});
 	$('#decide_4').on('click',function(){
 		var target = $("#target_"+lf).text();
@@ -301,16 +310,15 @@
 		$("#target-content").text(target+'/'+nstar);
 		$("#target-content").css('color','#333333');
 		$(".footer").hide();
+		is_state();
 	});
 	$('#decide_5').on('click',function(){
 		var sum = $('#sum_duanwei_'+li).text();
 		$('#sum-content').text(sum);
 		$('#sum-content').css('color','#333333');
 		$(".footer").hide();
+		is_state_();
 	});
-	$('#target-content').bind('span propertychange',function(){
-		console.log(1);
-	})
 	$('.close').on('click',function(){
 		$(".footer").hide();
 	});
@@ -362,6 +370,55 @@
 		li	=	i;
 	}
 	
+	
+	function is_state(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var type_content	=	$("#type-content").text();
+		if(type_content != '段位'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var target_content	=	$("#target-content").text();
+		if(target_content == '请选择目标段位'){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	
+	function is_state_(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var type_content	=	$("#type-content").text();
+		if(type_content != '场次'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var sum_content	=	$("#sum-content").text();
+		if(sum_content == '请选择需要陪练的场次'){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	// 下一步
+	function url(){
+		var url_color	=	$("#submit").css('background-color');
+		if(url_color != 'rgb(128, 128, 128)'){
+			window.location.href = "send-info.html";
+		}
+	}
 </script>
 </body>
 </html>
