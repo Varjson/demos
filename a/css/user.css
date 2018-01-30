@@ -1,4 +1,4 @@
-body{
+﻿body{
 	background: #ececec;
 	padding-bottom: 2.25rem;
 	background: url(../images/user-bg.png)  0 .5rem;
@@ -129,7 +129,6 @@ body{
 	font-size: .4rem;
 	text-decoration: none;
 	display: inline-block;
-	background: url();
 	background-size:.6rem .6rem ;
 	background-color: #FFFFFF;
 	border-radius: .25rem;
