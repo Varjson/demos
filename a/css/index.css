@@ -60,7 +60,7 @@ body {
 .swiper-container{
 	margin: 2.1rem 0 .15rem;
 	width: 100%;
-	height: 2.5rem;
+	height: 3.5rem;
 }
 .swiper-container a{
 	width: 100%;
@@ -92,7 +92,7 @@ body {
 .new h3{
 	font-size:.48rem ;
 	color: #ea0000;
-	margin-bottom:.2rem ;
+	margin:.2rem 0 .3rem 0;
 	text-align: center;
 }
 .new p{
@@ -131,7 +131,7 @@ body {
 	font-size: .35rem;
 	line-height: .5rem;
 	color: #000000;
-	margin-bottom: .05rem;
+	margin-top: .08rem;
 }
 .hot-section p .hot-section-title{
 	width: 70%;
@@ -209,6 +209,7 @@ body {
 	font-size: .35rem;
 	color: #757575;
 	margin-bottom: .05rem;
+	margin-top: .08rem;
 }
 .star-section .lol{
 	width: 5.5rem;
@@ -287,8 +288,8 @@ body {
 .download-one {
 	height: 4.5rem;
 	box-sizing: border-box;
-	padding: .15rem 0;
-	background: #ececec;
+	padding: .15rem .36rem;
+	background: #FFFFFF;
 }
 .download-one a{
 	width: 100%;
@@ -514,10 +515,10 @@ body {
 
 .footer {
 	width: 100%;
-	height: 1.5rem;
+	height: 1.8rem;
 	background: #FFFFFF;
 	box-sizing: border-box;
-	padding: .15rem .8rem 0 .8rem;
+	padding: .2rem .8rem 0 .8rem;
 	border-top: .01rem solid #d2d0d0;
 	display: flex;
 	justify-content: space-around;
@@ -535,8 +536,8 @@ body {
 	text-align: center;
 }
 .footer a img{
-	width: .6rem;
-	height: .6rem;
+	width: .8rem;
+	height: .8rem;
 	margin: 0 auto;
 }
 .footer a span{

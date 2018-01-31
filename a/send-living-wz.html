@@ -51,54 +51,12 @@
 		<span class="fl close">取消</span><span id="decide_1" class="fr">确定</span>
 	</div>
 	
-	<div class="pickuptime-box diff_1">
-		<ul class="pickuptime-data_1">
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
 			<li id="riqi_1" class="pickuptime pickuptime-on" onclick="riqi(1)">安卓QQ</li>
 			<li id="riqi_2" class="pickuptime" onclick="riqi(2)">安卓微信</li>
 			<li id="riqi_3" class="pickuptime" onclick="riqi(3)">苹果QQ</li>
 			<li id="riqi_4" class="pickuptime" onclick="riqi(4)">苹果微信</li>
-		</ul>
-		<ul id="dx_1">
-			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">默认服</li>
-			<li id="shij_2" class="pickuptime" onclick="shij(2)">手Q1区</li>
-			<li id="shij_3" class="pickuptime" onclick="shij(3)">手Q2区</li>
-			<li id="shij_4" class="pickuptime" onclick="shij(4)">手Q3区</li>
-			<li id="shij_5" class="pickuptime" onclick="shij(5)">手Q4区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">手Q5区</li>
-		</ul>
-		<ul id="dx_2" style="display: none;">
-			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">默认服</li>
-			<li id="shij_2" class="pickuptime" onclick="shij(2)">微信1区</li>
-			<li id="shij_3" class="pickuptime" onclick="shij(3)">微信2区</li>
-			<li id="shij_4" class="pickuptime" onclick="shij(4)">微信3区</li>
-			<li id="shij_5" class="pickuptime" onclick="shij(5)">微信4区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信5区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信6区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信7区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信8区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信9区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信10区</li>
-		</ul>
-		<ul id="dx_3" style="display: none;">
-			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">默认服</li>
-			<li id="shij_2" class="pickuptime" onclick="shij(2)">手Q1区</li>
-			<li id="shij_3" class="pickuptime" onclick="shij(3)">手Q2区</li>
-			<li id="shij_4" class="pickuptime" onclick="shij(4)">手Q3区</li>
-			<li id="shij_5" class="pickuptime" onclick="shij(5)">手Q4区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">手Q5区</li>
-		</ul>
-		<ul id="dx_4" style="display: none;">
-			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">默认服</li>
-			<li id="shij_2" class="pickuptime" onclick="shij(2)">微信1区</li>
-			<li id="shij_3" class="pickuptime" onclick="shij(3)">微信2区</li>
-			<li id="shij_4" class="pickuptime" onclick="shij(4)">微信3区</li>
-			<li id="shij_5" class="pickuptime" onclick="shij(5)">微信4区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信5区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信6区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信7区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信8区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信9区</li>
-			<li id="shij_6" class="pickuptime" onclick="shij(6)">微信10区</li>
 		</ul>
 	</div>
 </div>
@@ -248,8 +206,7 @@
 	});
 	$('#decide_1').on('click',function(){
 		var riqi = $("#riqi_"+la).text();
-		var shij = $("#shij_"+lb).text();
-		$("#service-content").text(riqi+'/'+shij);
+		$("#service-content").text(riqi);
 		$(".footer").hide();
 		is_state()
 	});

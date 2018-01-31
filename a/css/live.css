@@ -121,10 +121,10 @@ body {
 
 .footer {
 	width: 100%;
-	height: 1.5rem;
+	height: 1.8rem;
 	background: #FFFFFF;
 	box-sizing: border-box;
-	padding: .15rem .8rem 0 .8rem;
+	padding: .2rem .8rem 0 .8rem;
 	border-top: .01rem solid #d2d0d0;
 	display: flex;
 	justify-content: space-around;
@@ -142,8 +142,8 @@ body {
 	text-align: center;
 }
 .footer a img{
-	width: .6rem;
-	height: .6rem;
+	width: .8rem;
+	height: .8rem;
 	margin: 0 auto;
 }
 .footer a span{

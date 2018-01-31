@@ -119,69 +119,56 @@ body {
 
 /*中间section结束*/
 /*尾部开始*/
-
 .footer {
 	width: 100%;
-	height: 1.7rem;
+	height: 1.8rem;
 	background: #FFFFFF;
 	box-sizing: border-box;
-	padding: .24rem 1rem .1rem 1rem;
+	padding: .2rem .8rem 0 .8rem;
+	border-top: .01rem solid #d2d0d0;
+	display: flex;
+	justify-content: space-around;
 	position: fixed;
 	bottom: 0;
 	z-index: 99;
 }
-
-.footer ul a {
-	width: 1.01rem;
+.footer a {
+	width: 1rem;
 	height: 1.5rem;
-	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 	text-decoration: none;
-	padding-left: .1rem;
-	line-height: 2.1rem;
-	font-size: .45rem;
-	color: #2b2b2b;
-}
-
-.footer ul li {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.footer ul a:nth-child(1) {
-	background: url(../images/footer-home.png) no-repeat top center;
-	background-size: 70%;
-	margin-right: 1.56rem;
-}
-
-.footer ul a:nth-child(2) {
-	background: url(../images/footer-publish.png) no-repeat top center;
-	background-size: 70%;
-	margin-right: 2rem;
-}
-
-.footer ul a:nth-child(3) {
-	background: url(../images/footer-tv.png) no-repeat top center;
-	background-size: 70%;
-	margin-right: 2rem;
-}
-
-.footer ul a:nth-child(4) {
-	background: url(../images/footer-user.png) no-repeat top center;
-	background-size: 70%;
-	position: relative;
-}
-.footer ul a:nth-child(4) span{
-	width: .6rem;
-	height: .6rem;
 	text-align: center;
-	line-height: .6rem;
-	border-radius:50% ;
+}
+.footer a img{
+	width: .8rem;
+	height: .8rem;
+	margin: 0 auto;
+}
+.footer a span{
+	width: 1rem;
+	font-size: .4rem;
+	color: #000;
+	margin-top: .05rem;
+}
+.footer-info{
+	position: relative;	
+}
+.footer-info font{
 	position: absolute;
-	top: -.25rem;
-	left: .5rem;
-	background: #dd0000;
+	width: .5rem;
+	height: .5rem;
+	line-height: .5rem;
+	border-radius: 50%;
+	text-align: center;
+	background: red;
 	font-size: .3rem;
-	color: #FFFFFF;
+	color: white;
+	top: -.16rem;
+	right: 0.02rem;
+	-webkit-text-size-adjust:none;
+	
 }
 
 /*尾部结束*/

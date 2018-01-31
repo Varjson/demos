@@ -1,6 +1,6 @@
 body {
 	background: #ececec;
-	padding-bottom: 2rem;
+	padding-bottom: 2.25rem;
 }
 /*头部返回部分开始*/
 
@@ -41,6 +41,11 @@ body {
 .header-user a{
 	width: 2.06rem;
 	height: 2.06rem;
+	border-radius: 1.24rem;
+	/*border:.01rem solid #d2ac7b ;
+	box-sizing: border-box;
+	padding: .2rem;*/
+	background-color:#010101 ;
 }
 .header-user a img{
 	width: 100%;
@@ -50,8 +55,8 @@ body {
 	font-size: .38rem;
 	color: #c9cbe4;
 	line-height: .38rem;
-	text-align: center;
 	margin-top: .5rem;
+	padding-left: 1.8rem;
 }
 .header-user p span{
 	color:#d2ad80 ;
@@ -69,23 +74,8 @@ body {
 
 /*section中基本信息开始*/
 .section-info{
+	margin-top: 1rem;
 	background: #FFFFFF;
-	margin-top: .2rem;
-}
-.section-info div p input{
-	width: 40%;
-	height: 100%;
-	font-size: .5rem;
-	color: #757575;
-	border: none;
-	margin-left: .5rem;
-}
-.section-info div p input::-webkit-input-placeholder{
-	background: #FFFFFF;
-}
-.section-info div span{
-	display: inline-block;
-	width: 2rem;
 }
 .section-info-base{
 	height:1.7rem ;
@@ -114,88 +104,37 @@ body {
 	border-bottom: .02rem solid #ececec;
 	padding-left: .5rem;
 }
+.section-info-email select{
+	margin-top: .6rem;
+	font-size: .4rem;
+}
+.section-info-email select option{
+	font-size: .4rem;
+}
 .section-info-email p{
 	font-size:.52rem ;
 	color: #333333;
 	padding-right: .48rem;
 }
-.section-info-sex{
-	height:1.7rem ;
-	line-height: 1.7rem;
+.section-advice{
+	height:3rem ;
+	line-height: 3rem;
 	border-bottom: .02rem solid #ececec;
+	padding-left: .5rem;
+}
+.section-advice p{
 	font-size:.52rem ;
 	color: #333333;
-	padding-left: .48rem;
+	padding-right: .48rem;
 }
-.section-info-sex p {
-	display: inline-block;
-	margin-left: .4rem;
-}
-.section-info-sex p .male{
-	margin-right: .4rem;
-}
-.section-info-sex p i{
-	width: .25rem;
-	height: .25rem;
-	display: inline-block;
+.section-advice textarea{
+	width: 60%;
+	height: 2rem;
 	vertical-align: middle;
-	margin-right: .2rem;
-	border-radius: 50%;
-	border: .08rem solid #a4a4a4;
-}
-.section-info-sex p .active{
-	border: .08rem solid #ceae7f;
-}
-
-/*联系方式开始*/
-.section-contact{
-	height: 5.1rem;
-	background: #FFFFFF;
-	margin-top: .2rem;
-}
-.section-contact div p input{
-	width: 40%;
-	height: 100%;
-	font-size: .5rem;
-	color: #757575;
-	border: none;
-	margin-left: .5rem;
-}
-.section-contact div span{
-	display: inline-block;
-	width: 2rem;
-}
-.section-contact-way{
-	height:1.7rem ;
-	line-height: 1.7rem;
-	border-bottom: .01rem solid #d2ae7e;
-}
-.section-contact-way p{
-	padding-left: .5rem;
-	font-size: .52rem;
-	color: #333333;
-}
-.section-contact-qq{
-	height:1.7rem ;
-	line-height: 1.7rem;
-	border-bottom: .02rem solid #ececec;
-	padding-left: .5rem;
-}
-.section-contact-qq p{
-	font-size:.52rem ;
-	color: #333333;
-	padding-right: .48rem;
-}
-.section-contact-chat{
-	height:1.7rem ;
-	line-height: 1.7rem;
-	border-bottom: .02rem solid #ececec;
-	padding-left: .5rem;
-}
-.section-contact-chat p{
-	font-size:.52rem ;
-	color: #333333;
-	padding-right: .48rem;
+	line-height: .5rem;
+	border: .01rem solid #ECECEC;
+	font-size: .35rem;
+	resize: none;
 }
 /*section中基本信息结束*/
 
@@ -209,17 +148,16 @@ body {
 	color: #ffffff;
 	font-size: .5rem;
 	margin-top: .5rem;
-	}
+}
 /*退出登入结束*/
 
 /*尾部开始*/
-
 .footer {
 	width: 100%;
-	height: 1.8rem;
+	height: 1.5rem;
 	background: #FFFFFF;
 	box-sizing: border-box;
-	padding: .2rem .8rem 0 .8rem;
+	padding: .15rem .8rem 0 .8rem;
 	border-top: .01rem solid #d2d0d0;
 	display: flex;
 	justify-content: space-around;
@@ -237,8 +175,8 @@ body {
 	text-align: center;
 }
 .footer a img{
-	width: .8rem;
-	height: .8rem;
+	width: .6rem;
+	height: .6rem;
 	margin: 0 auto;
 }
 .footer a span{

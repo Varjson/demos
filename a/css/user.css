@@ -1,8 +1,6 @@
-﻿body{
+body{
 	background: #ececec;
 	padding-bottom: 2.25rem;
-	background: url(../images/user-bg.png)  0 .5rem;
-	background-size: 100%;
 }
 .top{
 	height: 1rem;
@@ -34,15 +32,17 @@
 
 /*头部部分开始*/
 .header{
-	padding: .6rem .2rem 0 .5rem;
+	background-color: #2e2e2e;
+	background-image: url(../images/user.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: 100% 3rem;
 }
 .header .bg img{
 	width: 4.3rem;
 	height: 4.3rem;
 	box-sizing: border-box;
 	border-radius: 50%;
-	padding: .2rem;
-	background-color:#000000;
 }
 .header .user-name{
 	width: 6.5rem;
@@ -54,10 +54,6 @@
 	font-size:.65rem ;
 
 }
-.header .user-name p a img{
-	width: .67rem;
-	height: .67rem;	
-}
 .header .user-name span{
 	display: inline-block;
 	font-size: .58rem;
@@ -67,35 +63,33 @@
 	width: 4.1rem;
 	height: 1.3rem;
 }
-.header .coin{
-	height: 2.1rem;
-	font-size:.7rem ;
-	color:#fdd048 ;
-	text-align: right;
-	background: url(../images/user-coin-bg.png) no-repeat right bottom ;
-	background-size: 76%;
-}
-.header .coin span{
-	position: relative;
-	bottom: .25rem;
-}
-.header .coin img{
-	width: 1.8rem;
-	height: 1.8rem;
-	margin:  0 .5rem;
-}
 /*头部部分结束*/
 
 /*nav部分开始*/
-.nav{
-	margin: -.2rem .2rem .1rem;
+.nav-out{
+	width: 93%;
+	box-shadow:0 .1rem .1rem #b7b7b7;
+	border-radius: .3rem;
 	background: #FFFFFF;
-	height: 2.2rem;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	padding: .3rem 0 .6rem;
+
+}
+.nav-out p{
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .5rem;
+	padding-left: 1.4rem;
+	background: url(../images/user-1.png) no-repeat .4rem center;
+	background-size: .8rem .8rem;
+	margin-bottom: .4rem;
+}
+.nav{
 	display: flex;
 	justify-content: space-around;
-	border-radius: .2rem;
-	box-shadow:0 .1rem .1rem #b7b7b7;
 }
+
 .nav .column{
 	width: 2rem;
 	display: flex;
@@ -107,10 +101,10 @@
 	text-decoration: none;
 }
 .nav .column img{
-	width:.9rem ;
-	height: 1.04rem;
+	width:.8rem ;
+	height: .8rem;
 	margin: 0 auto;
-	margin-bottom: .12rem;
+	margin-bottom: .2rem;
 }
 /*nav部分结束*/
 
@@ -119,9 +113,7 @@
 	padding: 0 .5rem;
 	margin-bottom: .1rem;
 }
-.section-{
-	margin-top: .5rem;
-}
+
 .section a{
 	width: 100%;
 	height: 1.6rem;
@@ -158,9 +150,9 @@
 .four{
 	background: url(../images/user-revise.png) no-repeat .4rem center ;
 }
-.five{
+/*.five{
 	background: url(../images/user-revise.png) no-repeat .4rem center ;
-}
+}*/
 /*section部分结束*/
 
 
@@ -169,10 +161,10 @@
 
 .footer {
 	width: 100%;
-	height: 1.5rem;
+	height: 1.8rem;
 	background: #FFFFFF;
 	box-sizing: border-box;
-	padding: .15rem .8rem 0 .8rem;
+	padding: .2rem .8rem 0 .8rem;
 	border-top: .01rem solid #d2d0d0;
 	display: flex;
 	justify-content: space-around;
@@ -190,8 +182,8 @@
 	text-align: center;
 }
 .footer a img{
-	width: .6rem;
-	height: .6rem;
+	width: .8rem;
+	height: .8rem;
 	margin: 0 auto;
 }
 .footer a span{

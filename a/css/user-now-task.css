@@ -1,18 +1,17 @@
 body {
-	background: #ececec;
+	background: #FFFFFF;
 	padding-bottom: 2.25rem;
 }
 /*头部返回部分开始*/
 
-
 .header-return {
 	width: 100%;
 	height: 1rem;
-	line-height: 1rem;
+	text-align: left;
+	position: fixed;
+	top: 0;
+	z-index: 99;
 	background-color: #010101;
-	text-align: center;
-	font-size:.5rem ;
-	color: #FFFFFF;
 }
 
 .header-return a {
@@ -21,8 +20,7 @@ body {
 	font-size: .55rem;
 	text-decoration: none;
 	color: #b1b1b1;
-	position: absolute;
-	left: .6rem;
+	margin-left: .64rem;
 }
 
 .header-return a font {
@@ -33,31 +31,37 @@ body {
 
 /*头部返回部分结束*/
 
-/*section 部分开始*/
-.section-task{
-	height: 1.7rem;
-	line-height: 1.7rem;
-	background: #FFFFFF;
-	font-size:.52rem ;
-	color: 010101;
-	border-bottom: .02rem solid #d1d1d1;
+/*表格头部开始*/
+table{
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	border: .01rem solid #ECECEC;
 }
-.section-task-box{
-	padding:0 .5rem;
+table th{
+	width: 15%;
+	color: #6e717a;
+	font-size: .35rem;
+	background: #fbfbfb;
+	border-bottom: .01rem solid #E8E8E8;
+	padding: .4rem 0;
 }
-.long{
-	padding:0 .3rem 0 .5rem;
+table td{
+	width: 15%;
+	text-align: center;
+	padding: .25rem;
+	font-size: .35rem;
+	border-bottom: .01rem solid #E8E8E8;
+	color: #333333;
 }
-.section-task-box p span{
+table .no-more{
+	padding: .25rem;
 	font-size: .4rem;
-	color:#f3533b ;
+	color: #333333;
+	border-top: .01rem solid #E8E8E8;
 }
-/*section 部分结束*/
+/*表格头部结束*/
 
-.blank{
-	height:.4rem;
-	background: #ececec;
-}
 /*尾部开始*/
 
 .footer {
@@ -93,7 +97,6 @@ body {
 	color: #000;
 	margin-top: .05rem;
 }
-
 
 
 /*尾部结束*/

@@ -129,9 +129,11 @@ body{
 }
 .section input{
 	width: 60%;
+	height: 90%;
 	margin-left: 1rem;
 	font-size: .4rem;
 	border: none;
+	background: #ececec;
 }
 .section input::-webkit-input-placeholder {
 	color: #828282;
