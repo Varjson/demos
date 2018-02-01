@@ -1,0 +1,99 @@
+body {
+	background: #ececec;
+	padding-bottom: 2.25rem;
+}
+/*头部返回部分开始*/
+
+.header-return {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	background-color: #010101;
+	text-align: center;
+	font-size:.5rem ;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+.header-return a {
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .55rem;
+	text-decoration: none;
+	color: #b1b1b1;
+	position: absolute;
+	left: .6rem;
+}
+
+.header-return a font {
+	font-size: .90rem;
+	color: #e4e2e2;
+}
+
+/*头部返回部分结束*/
+
+/*section 部分开始*/
+.section{
+	background: #FFFEFF;
+	padding: .56rem .5rem 0 .5rem;
+	margin-top: 1rem;
+}
+.section h2{
+	text-align: center;
+	padding-bottom:.56rem ;
+	font-size: .54rem;
+}
+.section p{
+	font-size:.54rem ;
+	color: #737373;
+	line-height: .8rem;
+	padding-bottom: 8rem;
+}
+/*section 部分结束*/
+
+.blank{
+	height:.4rem;
+	background: #ececec;
+}
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 1.8rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .2rem .8rem 0 .8rem;
+	border-top: .01rem solid #d2d0d0;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+.footer a {
+	width: 1rem;
+	height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-decoration: none;
+	text-align: center;
+}
+.footer a img{
+	width: .8rem;
+	height: .8rem;
+	margin: 0 auto;
+}
+.footer a span{
+	width: 1rem;
+	font-size: .4rem;
+	color: #000;
+	margin-top: .05rem;
+}
+
+
+/*尾部结束*/
+
+

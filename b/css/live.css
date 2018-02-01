@@ -1,0 +1,269 @@
+﻿body {
+	background: #ececec;
+	padding-bottom: 1.9rem;
+}
+
+
+.top{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.header-nav {
+	width: 100%;
+	height: 1.2rem;
+	background: url(../images/ox.png) no-repeat .05rem center/2.5rem 1.1rem;
+	background-color: #222126;
+}
+.header-nav ul{
+	float: left;
+	margin-left:2.8rem;
+}
+.header-nav ul li{
+	display: inline-block;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	box-sizing: border-box;
+}
+.header-nav ul li a{
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	font-size: .4rem;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.header-nav ul .nav-active{
+	color:#f95150 ;
+	border-bottom: .04rem solid #db0b0b;
+}
+.header-nav ul li .nav-middle{
+	margin: 0 .25rem;
+}
+.header-nav .game{
+	width: 2rem;	
+	height: 1.1rem;
+	margin-left: .5rem;
+}
+@media only screen and (max-width:320px ) {
+.header-nav .game{
+	width: 2rem;	
+	height: 1.1rem;
+	margin-left: .2rem;
+}
+.header-nav ul li .nav-middle{
+	margin: 0 .15rem;
+}
+}
+.header-nav .game img{
+	width: 100%;
+	height: 100%;
+}
+.header-nav .search{
+	width: .8rem;
+	height: .7rem;
+	float: right;
+	margin: .2rem .2rem 0  0;
+}
+.header-nav .search img{
+	width: 100%;
+	height: 100%;
+}
+/*头部导航条部分结束*/
+
+/*轮播图开始*/
+#content{
+	margin-top: 1.2rem;
+}
+.swiper-container{
+	margin: 1.2rem 0 0rem;
+	width: 100%;
+	height: 5rem;
+}
+.swiper-container a{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container a img{
+	width: 100%;
+	height: 100%;
+}
+/*轮播图结束*/
+
+/*下拉刷新开始*/
+#slideDown{margin-top: 0;width: 100%;} 
+#slideDown1,#slideDown2{width: 100%;height: .7rem;;background: #e9f4f7;display: none;} 
+#slideDown1{height: .2rem;} 
+#slideDown1>p,#slideDown2>p{margin: .2rem auto;text-align:center;font-size: .2rem;color: #37bbf5;}
+/*下拉刷新结束*/
+
+/*滚动监听开始*/
+.add-fixed{
+	width: 100%;
+	position: fixed;
+	top: 1.2rem;
+	z-index: 99;
+}
+
+.nav>li{
+	display: inline-block;
+}
+.navbar{
+	height:2rem;
+	background: #FFFFFF;
+}
+/*滚动监听结束*/
+
+/*article部分开始*/
+.article {
+	padding: .1rem .36rem 0 .36rem;
+	background: #ffffff;
+}
+
+.article-group{
+	height: 3.06rem;
+	margin-top: .2rem;
+	border-bottom: .01rem solid #eae6e6;
+	position: relative;
+}
+.article-group:last-child{
+	border: none;
+	padding-bottom: .2rem;
+}
+.article-group a {
+	width: 5.04rem;
+	height: 2.85rem;
+}
+.article-group img {
+	width: 100%;
+	height: 100%;
+}
+.article-detail {
+	width: 6.43rem;
+	height: 2.85rem;
+	padding-left: .36rem;
+	box-sizing: border-box;
+
+}
+
+.article-detail p {
+	font-size: .52rem;
+	color: #373737;
+}
+
+.article-detail span {
+	font-size: .42rem;
+	color: #afafaf;
+	position: absolute;
+	bottom: .2rem;
+	right: 0;
+}
+.article-detail span font{
+	margin-right: .3rem;
+}
+.article-detail span font img{
+	width: .4rem;
+	height: .4rem;
+	vertical-align: middle;
+	margin-bottom: .08rem;
+}
+/*article部分结束*/
+
+/*文章另一种排版方式开始*/
+.group{
+	padding: .1rem .36rem;
+	background: #FFFFFF;
+	position: relative;
+	border-bottom: .01rem solid #ECECEC;
+	border-top: .01rem solid #ECECEC;
+}
+.group p{
+	font-size: .5rem;
+	font-weight: bold;
+	color: #333333;
+	margin: .2rem 0;
+}
+.group a{
+	height: 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.group a img{
+	width: 32%;
+	height: 100%;
+}
+.group span{
+	display: inline-block;
+	font-size: .3rem;
+	margin: .2rem 0;
+	color:#969696 ;
+}
+.group i{
+	position: absolute;
+	bottom: .2rem;
+	right: .36rem;
+	font-size: .3rem;
+	color: #646464;
+}
+.group i img{
+	width: .5rem;
+	height: .5rem;
+	vertical-align: middle;
+}
+/*文章另一种排版方式结束*/
+
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 1.8rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .2rem .8rem 0 .8rem;
+	border-top: .01rem solid #d2d0d0;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+.footer a {
+	width: 1rem;
+	height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-decoration: none;
+	text-align: center;
+}
+.footer a img{
+	width: .8rem;
+	height: .8rem;
+	margin: 0 auto;
+}
+.footer a span{
+	width: 1rem;
+	font-size: .4rem;
+	color: #000;
+	margin-top: .05rem;
+}
+.footer-info{
+	position: relative;	
+}
+.footer-info font{
+	position: absolute;
+	width: .5rem;
+	height: .5rem;
+	line-height: .5rem;
+	border-radius: 50%;
+	text-align: center;
+	background: red;
+	font-size: .3rem;
+	color: white;
+	top: -.16rem;
+	right: 0.02rem;
+	-webkit-text-size-adjust:none;
+	
+}
