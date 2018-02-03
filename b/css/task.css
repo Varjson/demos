@@ -155,10 +155,10 @@ table tr .one{
 	padding-left: 0;
 }
 table tr .two{
-	width: 10%;
+	width: 8%;
 }
 table tr .three a{
-	padding: .1rem;
+	padding: .05rem;
 	border: .01rem solid #f59986;
 	color: #f17155;
 	border-radius: .15rem;

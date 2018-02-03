@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商城取货时间选择插件</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" href="css/send-keep-wz.css">
+<script type="text/javascript">
+			!function(a,b){var c=a.documentElement,d="orientationchange"in window?"orientationchange":"resize",e=function(){var a=c.clientWidth;a&&(c.style.fontSize=100*(a/1242)+"px")};a.addEventListener&&(b.addEventListener(d,e,!1),a.addEventListener("DOMContentLoaded",e,!1))}(document,window);
+</script>
+<script src='js/jquery.min.js'></script>
+<script src="js/send-keep.js"></script>
+</head>
+<body>
+	<div class="header"><span id="switch_word">王者荣耀陪练</span>
+		<a href="javascript:window.location.href = 'send.html';" class="left"><font><img src="images/o-cart-.png"/></font></a>
+		<a href="#" class="right" id="switch">切换游戏</a>
+	</div>
+	<div class="section clearfix" id='service'>
+		游戏区服<span id="service-content">请选择您所在的区服</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	
+	<div class="section clearfix" id='type'>
+		陪练类型<span id="type-content">段位或场次</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	
+	<div class="section clearfix" id='now'>
+		当前段位<span id="now-content">请选择角色现在段位</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<div class="section clearfix section-num" id='target'>
+		目标段位<span id="target-content">请选择目标段位</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<div style="display: none;" class="section clearfix section-sum" id='sum'>
+		场次选择<span id="sum-content">请选择需要陪练的场次</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<!--切换部分开始-->
+		<div id="pickuptime_0" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_0" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="menu_1" class="pickuptime pickuptime-on" onclick="menu(1)">王者荣耀</li>
+			<li id="menu_2" class="pickuptime" onclick="menu(2)">英雄联盟</li>
+		</ul>
+	</div>
+		</div>
+	<!--切换部分结束-->
+	
+	<!--区服开始-->
+<div id="pickuptime_1" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_1" class="fr">确定</span>
+	</div>
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="riqi_1" class="pickuptime pickuptime-on" onclick="riqi(1)">安卓QQ</li>
+			<li id="riqi_2" class="pickuptime" onclick="riqi(2)">安卓微信</li>
+			<li id="riqi_3" class="pickuptime" onclick="riqi(3)">苹果QQ</li>
+			<li id="riqi_4" class="pickuptime" onclick="riqi(4)">苹果微信</li>
+		</ul>
+	</div>
+</div>
+	<!--区服结束-->
+	<!--类型开始-->
+<div id="pickuptime_2" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_2" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="duanwei_1" class="pickuptime pickuptime-on" onclick="duanwei(1)">段位</li>
+			<li id="duanwei_2" class="pickuptime" onclick="duanwei(2)">场次</li>
+		</ul>
+	</div>
+</div>	
+	<!--类型结束-->
+	<!--当前段位开始-->
+	<div id="pickuptime_3" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_3" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_3">
+		<ul class="pickuptime-data_3">
+			<li id="now_1" class="pickuptime pickuptime-on" onclick="now(1)">青铜3</li>
+			<li id="now_2" class="pickuptime" onclick="now(2)">青铜2</li>
+			<li id="now_3" class="pickuptime" onclick="now(3)">青铜1</li>
+			<li id="now_4" class="pickuptime" onclick="now(4)">白银3</li>
+			<li id="now_5" class="pickuptime" onclick="now(5)">白银2</li>
+			<li id="now_6" class="pickuptime" onclick="now(6)">白银1</li>
+			<li id="now_7" class="pickuptime" onclick="now(7)">黄金4</li>
+			<li id="now_8" class="pickuptime" onclick="now(8)">黄金3</li>
+			<li id="now_9" class="pickuptime" onclick="now(9)">黄金2</li>
+			<li id="now_10" class="pickuptime" onclick="now(10)">黄金1</li>
+			<li id="now_11" class="pickuptime" onclick="now(11)">铂金4</li>
+			<li id="now_12" class="pickuptime" onclick="now(12)">铂金3</li>
+			<li id="now_13" class="pickuptime" onclick="now(13)">铂金2</li>
+			<li id="now_14" class="pickuptime" onclick="now(14)">铂金1</li>
+			<li id="now_15" class="pickuptime" onclick="now(15)">砖石5</li>
+			<li id="now_16" class="pickuptime" onclick="now(16)">铂金4</li>
+			<li id="now_17" class="pickuptime" onclick="now(17)">铂金3</li>
+			<li id="now_18" class="pickuptime" onclick="now(18)">铂金2</li>
+			<li id="now_19" class="pickuptime" onclick="now(19)">铂金1</li>
+			<li id="now_20" class="pickuptime" onclick="now(20)">星耀5</li>
+			<li id="now_21" class="pickuptime" onclick="now(21)">星耀4</li>
+			<li id="now_22" class="pickuptime" onclick="now(22)">星耀3</li>
+			<li id="now_23" class="pickuptime" onclick="now(23)">星耀2</li>
+			<li id="now_24" class="pickuptime" onclick="now(24)">星耀1</li>
+			<li id="now_25" class="pickuptime" onclick="now(25)">最强王者</li>
+			
+		</ul>
+		<ul>
+			<li id="star_1" class="pickuptime pickuptime-on" onclick="star(1)">0星</li>
+			<li id="star_2" class="pickuptime" onclick="star(2)">1星</li>
+			<li id="star_3" class="pickuptime" onclick="star(3)">2星</li>
+			<li id="star_4" class="pickuptime" onclick="star(4)">3星</li>
+			<li id="star_5" class="pickuptime" onclick="star(5)">4星</li>
+		</ul>
+	</div>
+	</div>
+	<!--当前段位结束-->
+	
+	<!--目标段位开始-->
+	<div id="pickuptime_4" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_4" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_3">
+		<ul class="pickuptime-data_3">
+			<li id="target_1" class="pickuptime pickuptime-on" onclick="target(1)">青铜3</li>
+			<li id="target_2" class="pickuptime" onclick="target(2)">青铜2</li>
+			<li id="target_3" class="pickuptime" onclick="target(3)">青铜1</li>
+			<li id="target_4" class="pickuptime" onclick="target(4)">白银3</li>
+			<li id="target_5" class="pickuptime" onclick="target(5)">白银2</li>
+			<li id="target_6" class="pickuptime" onclick="target(6)">白银1</li>
+			<li id="target_7" class="pickuptime" onclick="target(7)">黄金4</li>
+			<li id="target_8" class="pickuptime" onclick="target(8)">黄金3</li>
+			<li id="target_9" class="pickuptime" onclick="target(9)">黄金2</li>
+			<li id="target_10" class="pickuptime" onclick="target(10)">黄金1</li>
+			<li id="target_11" class="pickuptime" onclick="target(11)">铂金4</li>
+			<li id="target_12" class="pickuptime" onclick="target(12)">铂金3</li>
+			<li id="target_13" class="pickuptime" onclick="target(13)">铂金2</li>
+			<li id="target_14" class="pickuptime" onclick="target(14)">铂金1</li>
+			<li id="target_15" class="pickuptime" onclick="target(15)">砖石5</li>
+			<li id="target_16" class="pickuptime" onclick="target(16)">铂金4</li>
+			<li id="target_17" class="pickuptime" onclick="target(17)">铂金3</li>
+			<li id="target_18" class="pickuptime" onclick="target(18)">铂金2</li>
+			<li id="target_19" class="pickuptime" onclick="target(19)">铂金1</li>
+			<li id="target_20" class="pickuptime" onclick="target(20)">星耀5</li>
+			<li id="target_21" class="pickuptime" onclick="target(21)">星耀4</li>
+			<li id="target_22" class="pickuptime" onclick="target(22)">星耀3</li>
+			<li id="target_23" class="pickuptime" onclick="target(23)">星耀2</li>
+			<li id="target_24" class="pickuptime" onclick="target(24)">星耀1</li>
+			<li id="target_25" class="pickuptime" onclick="target(25)">最强王者</li>
+			
+		</ul>
+		<ul>
+			<li id="nstar_1" class="pickuptime pickuptime-on" onclick="nstar(1)">0星</li>
+			<li id="nstar_2" class="pickuptime" onclick="nstar(2)">1星</li>
+			<li id="nstar_3" class="pickuptime" onclick="nstar(3)">2星</li>
+			<li id="nstar_4" class="pickuptime" onclick="nstar(4)">3星</li>
+			<li id="nstar_5" class="pickuptime" onclick="nstar(5)">4星</li>
+		</ul>
+	</div>
+	</div>
+	<!--目标段位结束-->
+	<!--场次选择开始-->
+	<div id="sum_pickuptime_5" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_5" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="sum_duanwei_1" class="pickuptime pickuptime-on" onclick="sum_duanwei(1)">1场</li>
+			<li id="sum_duanwei_2" class="pickuptime" onclick="sum_duanwei(2)">2场</li>
+			<li id="sum_duanwei_2" class="pickuptime" onclick="sum_duanwei(2)">3场</li>
+			<li id="sum_duanwei_2" class="pickuptime" onclick="sum_duanwei(2)">4场</li>
+			<li id="sum_duanwei_2" class="pickuptime" onclick="sum_duanwei(2)">5场</li>
+		</ul>
+	</div>
+	</div>	
+	<!--场次选择结束-->
+	<div class="next" id="submit" onclick="url()">下一步</div>
+<script type="text/javascript">
+	var lq = 1;
+	var la = 1;
+	var lb = 1;
+	var lc = 1;
+	var ld = 1;
+	var le = 1;
+	var lf = 1;
+	var lg = 1;
+	var li = 1;
+	// 开启弹层
+	$('#switch').on('click',function(){
+		$("#pickuptime_0").show();
+	});
+	$('#service').on('click',function(){
+		$("#pickuptime_1").show();
+	});
+	$('#type').on('click',function(){
+		$("#pickuptime_2").show();
+	});
+	$('#now').on('click',function(){
+		$("#pickuptime_3").show();
+	});
+	$('#target').on('click',function(){
+		$("#pickuptime_4").show();
+	});
+	$('#sum').on('click',function(){
+		$("#sum_pickuptime_5").show();
+	});
+	// 关闭弹层
+	$('#decide_0').on('click',function(){
+		if(('#menu_'+lq)=='#menu_2'){
+			window.location.href='send-keep-lol.html';
+		}
+		var game = $('#menu_'+lq).text();
+		$('#switch_word').text(game+'陪练');
+		$(".footer").hide();
+	});
+	$('#decide_1').on('click',function(){
+		var riqi = $("#riqi_"+la).text();
+		$("#service-content").text(riqi);
+		$("#service-content").css('color','#333333');
+		$(".footer").hide();
+		is_state();
+	});
+	$('#decide_2').on('click',function(){
+		if(("#duanwei_"+lc)=='#duanwei_2'){
+			$('.section-num').hide();
+			$('.section-sum').show();
+			var duanwei = $("#duanwei_"+lc).text();
+			$("#type-content").text(duanwei);
+			$("#type-content").css('color','#333333');
+			$(".footer").hide();
+			is_state_();
+		}else{
+			$('.section-num').show();
+			$('.section-sum').hide();
+			var duanwei = $("#duanwei_"+lc).text();
+			$("#type-content").text(duanwei);
+			$("#type-content").css('color','#333333');
+			$(".footer").hide();
+			is_state();
+		}
+		
+	});
+	$('#decide_3').on('click',function(){
+		var now = $("#now_"+ld).text();
+		var star =$('#star_'+le).text();
+		$("#now-content").text(now+'/'+star);
+		$("#now-content").css('color','#333333');
+		$(".footer").hide();
+		is_state();
+	});
+	$('#decide_4').on('click',function(){
+		var target = $("#target_"+lf).text();
+		var nstar =$('#nstar_'+lg).text();
+		$("#target-content").text(target+'/'+nstar);
+		$("#target-content").css('color','#333333');
+		$(".footer").hide();
+		is_state();
+	});
+	$('#decide_5').on('click',function(){
+		var sum = $('#sum_duanwei_'+li).text();
+		$('#sum-content').text(sum);
+		$('#sum-content').css('color','#333333');
+		$(".footer").hide();
+		is_state_();
+	});
+	$('.close').on('click',function(){
+		$(".footer").hide();
+	});
+	function menu(q){
+		$('#menu_'+q).addClass('pickuptime-on');
+		$("#menu_"+lq).removeClass("pickuptime-on");
+		lq = q;
+	}
+	function riqi(a){
+		$("#riqi_"+a).addClass("pickuptime-on");
+		$("#riqi_"+la).removeClass("pickuptime-on");
+		$('#dx_'+a).show();
+		$('#dx_'+la).hide();
+		la	=	a;
+	}
+	function shij(b){
+		$("#shij_"+b).addClass("pickuptime-on");
+		$("#shij_"+lb).removeClass("pickuptime-on");
+		lb	=	b;
+	}
+	function duanwei(c){
+		$("#duanwei_"+c).addClass("pickuptime-on");
+		$("#duanwei_"+lc).removeClass("pickuptime-on");
+		lc=	c;
+	}
+	function now(d){
+		$("#now_"+d).addClass("pickuptime-on");
+		$("#now_"+ld).removeClass("pickuptime-on");
+		ld	=	d;
+	}
+	function star(e){
+		$("#star_"+e).addClass("pickuptime-on");
+		$("#star_"+le).removeClass("pickuptime-on");
+		le	=	e;
+	}
+	function target(f){
+		$("#target_"+f).addClass("pickuptime-on");
+		$("#target_"+lf).removeClass("pickuptime-on");
+		lf	=	f;
+	}
+	function nstar(g){
+		$("#nstar_"+g).addClass("pickuptime-on");
+		$("#nstar_"+lg).removeClass("pickuptime-on");
+		lg	=	g;
+	}
+	function sum_duanwei(i){
+		$("#nstar_"+i).addClass("pickuptime-on");
+		$("#nstar_"+li).removeClass("pickuptime-on");
+		li	=	i;
+	}
+	
+	
+	function is_state(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var type_content	=	$("#type-content").text();
+		if(type_content != '段位'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var target_content	=	$("#target-content").text();
+		if(target_content == '请选择目标段位'){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	
+	function is_state_(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var type_content	=	$("#type-content").text();
+		if(type_content != '场次'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var sum_content	=	$("#sum-content").text();
+		if(sum_content == '请选择需要陪练的场次'){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	// 下一步
+	function url(){
+		var url_color	=	$("#submit").css('background-color');
+		if(url_color != 'rgb(128, 128, 128)'){
+			window.location.href = "send-info.html";
+		}
+	}
+</script>
+</body>
+</html>
+

@@ -138,10 +138,13 @@ body {
 	padding-bottom: .2rem;
 	border-bottom:.01rem solid #ECECEC ;
 }
-
+/*牛直播开始*/
 .star{
 	width: 100%;
 	background: #FFFFFF;
+}
+.star h3{
+	margin-bottom: .15rem;
 }
 .star h3 a {
 	font-size: .5rem;
@@ -149,7 +152,7 @@ body {
 	line-height: .6rem;
 	display: block;
 	padding: .2rem .5rem .15rem 1.3rem;
-	background: url(../images/o-video.png) no-repeat .6rem center;
+	background: url(../images/o-video.png) no-repeat .6rem .3rem;
 	background-size: .5rem .5rem;
 	color: #333333;
 
@@ -190,9 +193,15 @@ body {
 	width: 100%;
 	height: 100%;
 }
+.star-border .lol a{
+	width: 100%;
+	height: 3rem;
+	border-radius: .2rem;
+}
 .star-border .lol a img{
 	width: 100%;
 	height: 100%;
+	border-radius: .2rem;
 }
 .star-border a font{
 	width: 100%;
@@ -224,10 +233,12 @@ body {
 .star-border .king a{
 	width: 100%;
 	height: 3rem;
+	border-radius: .2rem;
 }
 .star .king a img{
 	width: 100%;
 	height: 100%;
+	border-radius: .2rem;
 }
 .star-border span a{
 	display: inline;
@@ -235,6 +246,7 @@ body {
 	text-decoration: none;
 	color: #fbaf4e;
 }
+/*牛直播结束*/
 /*轮播图下面战报结束*/
 
 /*广告部分开始*/
@@ -393,6 +405,12 @@ body {
 .article-group img {
 	width: 100%;
 	height: 100%;
+}
+.article-group .article-video{
+	border-radius: .2rem;
+}
+.article-group .article-video img{
+	border-radius: .2rem;
 }
 .article-detail {
 	width: 6.43rem;

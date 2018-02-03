@@ -3,33 +3,12 @@ body{
 	padding-bottom: 2.25rem;
 }
 .top{
-	height: 1rem;
+	height: 1.2rem;
 	text-align: right;
 	background: url(../images/ox.png) no-repeat .5rem center;
 	background-size: 16%;
 	background-color: #000;
 }
-.top .info a{
-	width: 1.5rem;
-	height: 1rem;
-	background: url(../images/chat.png) no-repeat 0 .15rem;
-	background-size: 60%;
-	position: relative;
-}
-.top .info a span{
-	width: .6rem;
-	height: .6rem;
-	text-align: center;
-	line-height: .6rem;
-	border-radius:50% ;
-	position: absolute;
-	top: .08rem;
-	left: .5rem;
-	background: #dd0000;
-	font-size: .2rem;
-	color: #FFFFFF;
-}
-
 /*头部部分开始*/
 .header{
 	height: 5.2rem;
@@ -48,8 +27,8 @@ body{
 	padding: 0 1.5rem;
 }
 .header .bg a{
-	width: 1.5rem;
-	height: .8rem;
+	width: 2rem;
+	height: 1rem;
 }
 .header .bg .bg-middle{
 	width: 2rem;

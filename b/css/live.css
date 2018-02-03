@@ -1,4 +1,4 @@
-﻿body {
+body {
 	background: #ececec;
 	padding-bottom: 1.9rem;
 }
@@ -6,6 +6,7 @@
 
 .top{
 	width: 100%;
+	height: 1.2rem;
 	position: fixed;
 	top: 0;
 	z-index: 10;
@@ -100,19 +101,62 @@
 /*下拉刷新结束*/
 
 /*滚动监听开始*/
-.add-fixed{
-	width: 100%;
-	position: fixed;
-	top: 1.2rem;
-	z-index: 99;
+.nav{
+	height: 1.5rem;
+	background: #FFFFFF;
 }
-
 .nav>li{
 	display: inline-block;
 }
 .navbar{
-	height:2rem;
-	background: #FFFFFF;
+	height: 1.5rem;
+	margin: 0;
+}
+
+.navbar-nav > li > a{
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	line-height: 1.5rem;
+	color: #000000;
+	font-size: .45rem;
+	padding: 0;
+}
+.navbar-nav > li > .first{
+	display: inline;
+	font-size: .45rem;
+	padding: .2rem .3rem;
+	background: #ff0000;
+	border-radius: .5rem;
+	color: #FFFFFF;
+}
+.cd-secondary-nav ul{
+	width: 100%;
+	margin: 0;
+	padding: 0 .36rem;
+}
+.cd-secondary-nav li{
+	width: 18%;
+	text-align: left;
+	padding: 0 .05rem;
+	box-sizing: content-box;
+}
+.cd-secondary-nav .first_{
+	width: 18%;
+	text-align: left;
+}
+.cd-secondary-nav li:last-of-type{
+	padding-right: 0;
+}
+.cd-secondary-nav.fixed{
+	top: 1.2rem;
+}
+.cd-secondary-nav::after{
+	display: none;
+}
+.cd-secondary-nav.slide-up{
+	transform: translateY(-1.2rem);
 }
 /*滚动监听结束*/
 
@@ -120,6 +164,7 @@
 .article {
 	padding: .1rem .36rem 0 .36rem;
 	background: #ffffff;
+	margin-bottom: 0;
 }
 
 .article-group{
@@ -151,6 +196,7 @@
 .article-detail p {
 	font-size: .52rem;
 	color: #373737;
+	margin: 0;
 }
 
 .article-detail span {

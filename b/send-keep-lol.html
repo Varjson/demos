@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商城取货时间选择插件</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" href="css/send-keep-lol.css">
+<script type="text/javascript">
+			!function(a,b){var c=a.documentElement,d="orientationchange"in window?"orientationchange":"resize",e=function(){var a=c.clientWidth;a&&(c.style.fontSize=100*(a/1242)+"px")};a.addEventListener&&(b.addEventListener(d,e,!1),a.addEventListener("DOMContentLoaded",e,!1))}(document,window);
+</script>
+<script src='js/jquery.min.js'></script>
+</head>
+<body>
+	<div class="header"><span id="switch_word">英雄联盟陪练</span>
+		<a href="javascript:window.location.href = 'send.html';" class="left"><font><img src="images/o-cart-.png"/></font></a>
+		<a href="#" class="right" id="switch">切换游戏</a>
+	</div>
+	<div class="section clearfix" id='service'>
+		游戏区服<span id="service-content">请选择您所在的区服</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	
+	<div class="section clearfix" id='pw_type'>
+		排位类型<span id="pw_type-content">请选组排方式</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<div class="section clearfix section-color" id='pl_type'>
+		陪练类型<span id="pl_type-content">段位或场次</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<div class="section clearfix" id='now'>
+		当前段位<span id="now-content">请选择角色现在段位</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<div class="section clearfix section-sum_" id='target'>
+		目标段位<span id="target-content">请选择角色要达到段位</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<div class="section clearfix section-num" id='targets'>
+		当前胜点<input type="text" placeholder="请输入当前胜点" id="targets-content"/><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	<div style="display: none;" class="section clearfix section-sum" id='sum'>
+		场次选择<span id="sum-content">请选择需要陪练的场次</span><font class="fr"><img src="images/o-cart.png"/></font>
+	</div>
+	
+	<!--切换部分开始-->
+		<div id="pickuptime_0" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_0" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="menu_1" class="pickuptime pickuptime-on" onclick="menu(1)">英雄联盟</li>
+			<li id="menu_2" class="pickuptime" onclick="menu(2)">王者荣耀</li>
+		</ul>
+	</div>
+		</div>
+	<!--切换部分结束-->
+	
+	<!--区服开始-->
+<div id="pickuptime_1" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_1" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_1">
+		<ul class="pickuptime-data_1">
+			<li id="riqi_1" class="pickuptime pickuptime-on" onclick="riqi(1)">电信</li>
+			<li id="riqi_2" class="pickuptime"  onclick="riqi(2)">网通</li>
+			<li id="riqi_3" class="pickuptime"  onclick="riqi(3)">全网络</li>
+			<li id="riqi_4" class="pickuptime"  onclick="riqi(4)">其他</li>
+		</ul>
+		<ul id="dx_1">
+			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">艾欧尼亚</li>
+			<li id="shij_2" class="pickuptime" onclick="shij(2)">祖安</li>
+			<li id="shij_3" class="pickuptime" onclick="shij(3)">诺克萨斯</li>
+			<li id="shij_4" class="pickuptime" onclick="shij(4)">班德尔城</li>
+			<li id="shij_5" class="pickuptime" onclick="shij(5)">皮尔特沃夫</li>
+			<li id="shij_6" class="pickuptime" onclick="shij(6)">战争学院</li>
+			<li id="shij_7" class="pickuptime" onclick="shij(7)">巨神峰</li>
+			<li id="shij_8" class="pickuptime" onclick="shij(8)">雷瑟守备</li>
+			<li id="shij_9" class="pickuptime" onclick="shij(9)">裁决之地</li>
+			<li id="shij_10" class="pickuptime" onclick="shij(10)">黑色玫瑰</li>
+			<li id="shij_11" class="pickuptime" onclick="shij(11)">暗影岛</li>
+			<li id="shij_12" class="pickuptime" onclick="shij(12)">钢铁烈阳</li>
+			<li id="shij_13" class="pickuptime" onclick="shij(13)">均衡教派</li>
+			<li id="shij_14" class="pickuptime" onclick="shij(14)">水晶之痕</li>
+			<li id="shij_15" class="pickuptime" onclick="shij(15)">影流</li>
+			<li id="shij_16" class="pickuptime" onclick="shij(16)">守望之海</li>
+			<li id="shij_17" class="pickuptime" onclick="shij(17)">征服之海</li>
+			<li id="shij_18" class="pickuptime" onclick="shij(18)">卡拉曼达</li>
+			<li id="shij_19" class="pickuptime" onclick="shij(19)">皮城守备</li>
+		</ul>
+		<ul id="dx_2" style="display: none;">
+			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">比尔吉沃特</li>
+			<li id="shij_2" class="pickuptime" onclick="shij(2)">德玛西亚</li>
+			<li id="shij_3" class="pickuptime" onclick="shij(3)">费雷尔卓德</li>
+			<li id="shij_4" class="pickuptime" onclick="shij(4)">无畏先锋</li>
+			<li id="shij_5" class="pickuptime" onclick="shij(5)">怒瑞玛</li>
+			<li id="shij_6" class="pickuptime" onclick="shij(6)">扭曲丛林</li>
+			<li id="shij_7" class="pickuptime" onclick="shij(7)">巨龙之巢</li>
+		</ul>
+		<ul id="dx_3" style="display: none;">
+			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">男爵领域</li>
+		</ul>
+		<ul id="dx_4" style="display: none;">
+			<li id="shij_1" class="pickuptime pickuptime-on" onclick="shij(1)">教育网专区</li>
+		</ul>
+	</div>
+</div>
+	<!--区服结束-->
+	<div id="pw_pickuptime_2" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="pw-decide_2" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="pw_duanwei_1" class="pickuptime pickuptime-on" onclick="pw_duanwei(1)">单爽排</li>
+			<li id="pw_duanwei_2" class="pickuptime" onclick="pw_duanwei(2)">灵活排位</li>
+		</ul>
+	</div>
+	</div>	
+	<!--陪练类型开始-->
+<div id="pl_pickuptime_2" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="pl-decide_2" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="pl_duanwei_1" class="pickuptime pickuptime-on" onclick="pl_duanwei(1)">段位</li>
+			<li id="pl_duanwei_2" class="pickuptime" onclick="pl_duanwei(2)">场次</li>
+		</ul>
+	</div>
+</div>	
+	<!--陪练类型结束-->
+	<!--当前段位开始-->
+	<div id="pickuptime_3" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_3" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_3">
+		<ul class="pickuptime-data_3">
+			<li id="now_1" class="pickuptime pickuptime-on" onclick="now(1)">青铜</li>
+			<li id="now_2" class="pickuptime" onclick="now(2)">白银</li>
+			<li id="now_3" class="pickuptime" onclick="now(3)">黄金</li>
+			<li id="now_4" class="pickuptime" onclick="now(4)">白金</li>
+			<li id="now_5" class="pickuptime" onclick="now(5)">钻石</li>
+			<li id="now_6" class="pickuptime" onclick="now(6)">大师</li>
+		</ul>
+		<ul>
+			<li id="star_1" class="pickuptime pickuptime-on" onclick="star(1)">1</li>
+			<li id="star_2" class="pickuptime" onclick="star(2)">2</li>
+			<li id="star_3" class="pickuptime" onclick="star(3)">3</li>
+			<li id="star_4" class="pickuptime" onclick="star(4)">4</li>
+			<li id="star_5" class="pickuptime" onclick="star(5)">5</li>
+		</ul>
+	</div>
+	</div>
+	<!--当前段位结束-->
+	
+	<!--目标段位开始-->
+	<div id="pickuptime_4" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_4" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_3">
+		<ul class="pickuptime-data_3">
+			<li id="target_1" class="pickuptime pickuptime-on" onclick="target(1)">青铜</li>
+			<li id="target_2" class="pickuptime" onclick="target(2)">白银</li>
+			<li id="target_3" class="pickuptime" onclick="target(3)">黄金</li>
+			<li id="target_4" class="pickuptime" onclick="target(4)">白金</li>
+			<li id="target_5" class="pickuptime" onclick="target(5)">钻石</li>
+			<li id="target_6" class="pickuptime" onclick="target(6)">大师</li>
+		</ul>
+		<ul>
+			<li id="nstar_1" class="pickuptime pickuptime-on" onclick="nstar(1)">1</li>
+			<li id="nstar_2" class="pickuptime" onclick="nstar(2)">2</li>
+			<li id="nstar_3" class="pickuptime" onclick="nstar(3)">3</li>
+			<li id="nstar_4" class="pickuptime" onclick="nstar(4)">4</li>
+			<li id="nstar_5" class="pickuptime" onclick="nstar(5)">5</li>
+		</ul>
+	</div>
+	</div>
+	<!--目标段位结束-->
+	
+	<!--场次选择开始-->
+	<div id="sum_pickuptime_5" class="footer" style="display:none;">
+	<div class="pickuptime-title clearfix">
+		<span class="fl close">取消</span><span id="decide_5" class="fr">确定</span>
+	</div>
+	
+	<div class="pickuptime-box diff_2">
+		<ul class="pickuptime-data_2">
+			<li id="sum_duanwei_1" class="pickuptime pickuptime-on" onclick="sum_duanwei(1)">1场</li>
+			<li id="sum_duanwei_2" class="pickuptime" onclick="sum_duanwei(2)">2场</li>
+			<li id="sum_duanwei_3" class="pickuptime" onclick="sum_duanwei(3)">3场</li>
+			<li id="sum_duanwei_4" class="pickuptime" onclick="sum_duanwei(4)">4场</li>
+			<li id="sum_duanwei_5" class="pickuptime" onclick="sum_duanwei(5)">5场</li>
+		</ul>
+	</div>
+	</div>	
+	<!--场次选择结束-->
+	
+	<div class="next" id="submit"  onclick="url()">下一步</div>
+<script type="text/javascript">
+	var lq = 1;
+	var la = 1;
+	var lb = 1;
+	var lc = 1;
+	var ld = 1;
+	var le = 1;
+	var lf = 1;
+	var lg = 1;
+	var lh = 1;
+	var li = 1;
+	
+	// 开启弹层
+	$('#switch').on('click',function(){
+		$("#pickuptime_0").show();
+	});
+	$('#service').on('click',function(){
+		$("#pickuptime_1").show();
+	});
+	$('#pw_type').on('click',function(){
+		$("#pw_pickuptime_2").show();
+	});
+	$('#pl_type').on('click',function(){
+		$("#pl_pickuptime_2").show();
+	});
+	$('#now').on('click',function(){
+		$("#pickuptime_3").show();
+	});
+	$('#target').on('click',function(){
+		$("#pickuptime_4").show();
+	});
+	$('#sum').on('click',function(){
+		$("#sum_pickuptime_5").show();
+	});
+	
+	// 关闭弹层
+	$('#decide_0').on('click',function(){
+		if(('#menu_'+lq)=='#menu_2'){
+			window.location.href='send-keep-wz.html';
+		}
+		var game = $('#menu_'+lq).text();
+		$('#switch_word').text(game+'陪练');
+		$(".footer").hide();
+	});
+	$('#decide_1').on('click',function(){
+			var riqi = $("#riqi_"+la).text();
+			console.log('这个是选择内容的值'+la);
+			var shij = $("#shij_"+lb).text();
+			$("#service-content").text(riqi+'/'+shij);
+			$("#service-content").css('color','#333333');
+			$(".footer").hide();
+			is_state();
+			
+	});
+	$('#pw-decide_2').on('click',function(){
+		var pw_duanwei = $("#pw_duanwei_"+lc).text();
+		$("#pw_type-content").text(pw_duanwei);
+		$("#pw_type-content").css('color','#333333');
+		$(".footer").hide();
+		is_state();
+	});
+	$('#pl-decide_2').on('click',function(){
+		if(("#pl_duanwei_"+lh)=='#pl_duanwei_2'){
+			$('.section-num').hide();
+			$('.section-sum').show();
+			var pl_duanwei = $("#pl_duanwei_"+lh).text();
+			$("#pl_type-content").text(pl_duanwei);
+			$("#pl_type-content").css('color','#333333');
+			$(".footer").hide();
+			is_state_();
+		}else{
+			$('.section-num').show();
+			$('.section-sum').hide();
+			var pl_duanwei = $("#pl_duanwei_"+lh).text();
+			$("#pl_type-content").text(pl_duanwei);
+			$("#pl_type-content").css('color','#333333');
+			$(".footer").hide();
+			is_state();
+		}
+		
+	});
+	$('#decide_3').on('click',function(){
+		var now = $("#now_"+ld).text();
+		var star =$('#star_'+le).text();
+		$("#now-content").text(now+'/'+star);
+		$("#now-content").css('color','#333333');
+		$(".footer").hide();
+		is_state();
+	});
+	$('#decide_4').on('click',function(){
+		var target = $("#target_"+lf).text();
+		var nstar =$('#nstar_'+lg).text();
+		$("#target-content").text(target+'/'+nstar);
+		$("#target-content").css('color','#333333');
+		$(".footer").hide();
+		is_state();
+	});
+	$('#decide_5').on('click',function(){
+		var sum = $('#sum_duanwei_'+li).text();
+		$('#sum-content').text(sum);
+		$('#sum-content').css('color','#333333');
+		$(".footer").hide();
+		is_state_();
+	});
+	$('.close').on('click',function(){
+		$(".footer").hide();
+	});
+	function menu(q){
+		$('#menu_'+q).addClass('pickuptime-on');
+		$("#menu_"+lq).removeClass("pickuptime-on");
+		lq = q;
+	}
+	function riqi(a){
+		$("#riqi_"+a).addClass("pickuptime-on");
+		$("#riqi_"+la).removeClass("pickuptime-on");
+		$('#dx_'+a).show();
+		$('#dx_'+la).hide();
+		console.log(a);
+		la	=	a;
+	}
+	function shij(b){
+		$("#shij_"+b).addClass("pickuptime-on");
+		$("#shij_"+lb).removeClass("pickuptime-on");
+		lb	=	b;
+	}
+	function pw_duanwei(c){
+		$("#pw_duanwei_"+c).addClass("pickuptime-on");
+		$("#pw_duanwei_"+lc).removeClass("pickuptime-on");
+		lc=	c;
+	}
+	function pl_duanwei(h){
+		$("#pl_duanwei_"+h).addClass("pickuptime-on");
+		$("#pl_duanwei_"+lh).removeClass("pickuptime-on");
+		lh=	h;
+	}
+	function now(d){
+		$("#now_"+d).addClass("pickuptime-on");
+		$("#now_"+ld).removeClass("pickuptime-on");
+		ld	=	d;
+	}
+	function star(e){
+		$("#star_"+e).addClass("pickuptime-on");
+		$("#star_"+le).removeClass("pickuptime-on");
+		le	=	e;
+	}
+	function target(f){
+		$("#target_"+f).addClass("pickuptime-on");
+		$("#target_"+lf).removeClass("pickuptime-on");
+		lf	=	f;
+	}
+	function nstar(g){
+		$("#nstar_"+g).addClass("pickuptime-on");
+		$("#nstar_"+lg).removeClass("pickuptime-on");
+		lg	=	g;
+	}
+	function sum_duanwei(i){
+		$("#sum_duanwei_"+i).addClass("pickuptime-on");
+		$("#sum_duanwei_"+li).removeClass("pickuptime-on");
+		li	=	i;
+	}
+	
+		// 监听事件
+	$("#targets-content").bind("input propertychange change",function(event){
+		is_state();
+	});
+	// 判断状态
+	function is_state(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var pw_type_content	=	$("#pw_type-content").text();
+		if(pw_type_content == '请选组排方式'){
+			return false;
+		}
+		var pl_type_content	=	$("#pl_type-content").text();
+		if(pl_type_content == '场次'){
+			return false;
+		}
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var target_content	=	$("#target-content").text();
+		if(target_content == '请选择角色要达到段位'){
+			return false;
+		}
+		var targets_content	=	$("#targets-content").val();
+		if(!targets_content){
+			return false;
+		}
+		
+		
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	function is_state_(){
+		var service_content	=	$("#service-content").text();
+		if(service_content == '请选择您所在的区服'){
+			return false;
+		}
+		var pw_type_content	=	$("#pw_type-content").text();
+		if(pw_type_content == '请选组排方式'){
+			return false;
+		}
+		var pl_type_content	=	$("#pl_type-content").text();
+		if(pl_type_content == '段位'){
+			return false;
+		}
+		
+		var now_content	=	$("#now-content").text();
+		if(now_content == '请选择角色现在段位'){
+			return false;
+		}
+		var target_content	=	$("#target-content").text();
+		if(target_content == '请选择角色要达到段位'){
+			return false;
+		}
+		var sum_content	=	$("#sum-content").text();
+		if(sum_content == '请选择需要陪练的场次'){
+			return false;
+		}
+		$("#submit").css('background-color','lightskyblue');
+
+	}
+	// 下一步
+	function url(){
+		var url_color	=	$("#submit").css('background-color');
+		if(url_color != 'rgb(128, 128, 128)'){
+			window.location.href = "send-info.html";
+		}
+	}
+	
+</script>
+</body>
+</html>
+
