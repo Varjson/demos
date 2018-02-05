@@ -187,7 +187,6 @@ body {
 .star-border a{
 	width: 100%;
 	height: 3rem;
-	position: relative;
 }
 .star-border  a video{
 	width: 100%;
@@ -196,6 +195,7 @@ body {
 .star-border .lol a{
 	width: 5.7rem;
 	height: 3rem;
+	position: relative;
 	border-radius: .2rem;
 }
 .star-border .lol a img{
@@ -233,6 +233,7 @@ body {
 .star-border .king a{
 	width: 5.7rem;
 	height: 3rem;
+	position: relative;
 	border-radius: .2rem;
 }
 .star .king a img{
