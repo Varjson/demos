@@ -1,0 +1,191 @@
+body{
+	background: #ececec;
+	padding-bottom: 2.25rem;
+}
+.top{
+	height: 1.2rem;
+	text-align: right;
+	background: url(../images/ox.png) no-repeat .5rem center;
+	background-size: 16%;
+	background-color: #000;
+}
+/*头部部分开始*/
+.header{
+	height: 5.2rem;
+	background-color: #2e2e2e;
+	background-image: url(../images/user.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: 100% 3.5rem;
+	text-align: center;
+	padding: .2rem 0 .4rem;
+}
+.header .bg{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+.header .bg a{
+	width: 2rem;
+	height: 1rem;
+}
+.header .bg .bg-middle{
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+}
+.header .bg a img{
+	width: 100%;
+	height: 100%;
+}
+.header .word{
+	display: flex;
+	justify-content: space-around;
+}
+.header .word div{
+	display: flex;
+	flex-direction: column;
+	color: #FFFFFF;
+	font-size: .35rem;
+}
+.header .word .left,.right{
+	margin-top: -.25rem;
+}
+/*头部部分结束*/
+
+/*nav部分开始*/
+.nav-out{
+	width: 93%;
+	box-shadow:0 .1rem .1rem #b7b7b7;
+	border-radius: .3rem;
+	background: #FFFFFF;
+	margin: 0 auto;
+	margin-bottom: .6rem;
+	margin-top: -2rem;
+	padding: .3rem 0 .6rem;
+
+}
+.nav-out p{
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .5rem;
+	padding-left: 1.4rem;
+	background: url(../images/user-1.png) no-repeat .4rem center;
+	background-size: .8rem .8rem;
+	margin-bottom: .4rem;
+}
+.nav{
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav .column{
+	width: 2rem;
+	display: flex;
+	flex-direction: column;
+	font-size: .4rem;
+	color: #333131;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+}
+.nav .column img{
+	width:.8rem ;
+	height: .8rem;
+	margin: 0 auto;
+	margin-bottom: .2rem;
+}
+/*nav部分结束*/
+
+/*section部分开始*/
+.section{
+	padding: 0 .5rem;
+	border: .01rem solid #ECECEC;
+}
+
+.section a{
+	width: 100%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	font-size: .4rem;
+	box-sizing: border-box;
+	text-decoration: none;
+	background-size:.6rem .6rem ;
+	background-color: #FFFFFF;
+	border-radius: .25rem;
+	color: #000000;
+	padding-right: .4rem;
+
+}
+
+.section a font{
+	margin-left: 1.3rem;
+}
+.section a span{
+	font-size: .75rem;
+	color: #b9b9b9;
+}
+.section-one{
+	margin: .4rem 0;
+}
+.one{
+	background: url(../images/user-2.png) no-repeat .4rem center ;
+}
+.two{
+	background: url(../images/user-3.png) no-repeat .4rem center ;
+}
+.three{
+	background: url(../images/user-4.png) no-repeat .4rem center ;
+}
+.four{
+	background: url(../images/user-invite.png) no-repeat .4rem center ;
+}
+.five{
+	background: url(../images/user-history.png) no-repeat .4rem center ;
+}
+.six{
+	background: url(../images/user-revise.png) no-repeat .4rem center ;
+}
+/*section部分结束*/
+
+
+
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 1.8rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .2rem .8rem 0 .8rem;
+	border-top: .01rem solid #d2d0d0;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+.footer a {
+	width: 1rem;
+	height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-decoration: none;
+	text-align: center;
+}
+.footer a img{
+	width: .8rem;
+	height: .8rem;
+	margin: 0 auto;
+}
+.footer a span{
+	width: 1rem;
+	font-size: .4rem;
+	color: #000;
+	margin-top: .05rem;
+}
+
+
+/*尾部结束*/

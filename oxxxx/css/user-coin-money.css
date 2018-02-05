@@ -1,0 +1,206 @@
+body{
+	background: #ececec;
+	padding-bottom: 2.25rem;
+}
+
+/*头部部分开始*/
+.header{
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background-color: #010101;
+	text-align: center;
+	font-size: .5rem;
+	color: #FFFFFF;
+}
+.header a{
+	height: 1.2rem;
+    line-height: 1.2rem;
+    text-decoration: none;
+    color: #b1b1b1;
+    position: absolute;
+}
+.header .left{
+	line-height: 1.05rem;
+	left: .3rem;
+    font-size: .90rem;
+    color: #e4e2e2;
+}
+.header .left font img{
+	width: .5rem;
+	height: .5rem;
+}
+/*头部部分结束*/
+
+/*账户id余额开始*/
+.id{
+	padding: .48rem .36rem 0;
+}
+.name{
+	background: #eeeeee;
+	padding-bottom: .2rem;
+	border-bottom: .01rem solid #dfdfdf;
+}
+.name p{
+	font-size: .45rem;
+	line-height: .55rem;
+	color: #000000;	
+	margin-bottom: .2rem;
+}
+.name p img{
+	width: .55rem;
+	height: .55rem;
+	vertical-align: bottom;
+	margin-right: .1rem;
+}
+/*账户id余额结束*/
+
+/*牛币数量开始*/
+.sum{
+	padding:.4rem .36rem ;
+	background: #eeeeee;
+}
+.sum p{
+	font-size: .4rem;
+	color: #999999;
+}
+.sum ul{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-top: .28rem;
+}
+
+/*添加边框的class*/
+
+/*添加边框的class*/
+
+.sum ul li{
+	width: 32%;
+	height: 1.5rem;
+	padding: .2rem 0;
+	background-color: #FFFFFF;
+	border-radius: .2rem;
+}
+.sum ul li span{
+	display: block;
+	font-size: .5rem;
+	color: #000000;
+}
+.sum ul li font{
+	font-size: .4rem;
+	color: #999999;
+}
+.sum .pay{
+	margin:.2rem 0 .28rem;
+}
+.sum .we-pay{
+	margin: 0;
+}
+.sum .we-pay li{
+	line-height: 1.1rem;
+	font-size: .5rem;
+
+}
+.sum .price li:nth-child(1){
+	float: left;
+}
+.sum .price li:nth-child(2){
+	display: inline-block;
+}
+.sum .price li:nth-child(3){
+	float: right;
+}
+.sum .price li:nth-child(4){
+	margin-top: .25rem;
+}
+.sum .we-pay li:nth-child(1){
+	float: left;
+}
+.sum .we-pay li:nth-child(2){
+	display: inline-block;
+}
+.sum .we-pay li:nth-child(3){
+	visibility: hidden;
+	float: right;
+}
+.sum .much{
+	margin: .36rem 0;
+	font-size: .5rem;
+	color: #000000;
+}
+.sum .much font{
+	font-size: .6rem;
+	color: #ff0000;
+}
+.sum-color{
+	background: url(../images/o-times.png) no-repeat right bottom;
+    background-size: .6rem;
+    border: .01rem solid #ff0000;
+}
+/*牛币数量结束*/
+/*充值按钮开始*/
+.recharge{
+	padding: 0 .36rem;	
+}
+.recharge a{
+	width: 100%;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	text-align: center;
+	text-decoration: none;
+	background: #ff0000;
+	border-radius: .5rem;
+	border: .02rem solid #606060;
+	color: #FFFFFF;
+	font-size: .5rem;
+}
+/*充值按钮结束*/
+
+/*服务协议开始*/
+.service{
+	padding: 0 .36rem;
+	margin-top: .7rem;
+}
+.service p{
+	font-size: .35rem;
+	color: #999999;
+	margin-bottom: .1rem;
+	padding-left: .6rem;
+}
+.service p:nth-child(1){
+	background: url(../images/o-info.png) no-repeat left center;
+	background-size: .5rem;
+}
+.service p span{
+	color: #ff0000;
+	text-decoration: underline;
+}
+
+/*模态框部分开始*/
+.modal-header{
+	background: #000000;
+	color: #FFFFFF;
+}
+.modal-body{
+	height: 15rem;
+	line-height: .65rem;
+	overflow: scroll;
+	text-align: left;
+	color: #3f3f3f;
+}
+.modal-header{
+	padding: .2rem .36rem;
+	text-align: center;
+}
+button.close{
+	color: #FFFFFF;	
+}
+.btn-default{
+	color: #FFFFFF;
+	background: #ff0000;
+	border-radius: .2rem;
+}
+/*模态框部分结束*/
+/*服务协议结束*/
+

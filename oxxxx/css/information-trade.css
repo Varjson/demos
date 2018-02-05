@@ -1,0 +1,263 @@
+body {
+	background: #ececec;
+	padding-bottom: 1.4rem;
+}
+/*头部返回部分开始*/
+.header-return {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	height: 1rem;
+	background: url(../images/ox.png) no-repeat .5rem center;
+	background-size: 15%;
+	background-color: #010101;
+	text-align: right;
+}
+.header-return a{
+	width: .6rem;
+	height: .6rem;
+	margin: .15rem .3rem 0 0;
+}
+.header-return a img{
+	width: 100%;
+	height: 100%;
+}
+
+/*头部返回部分结束*/
+
+
+/*头部导航条部分开始*/
+
+.header-nav {
+	height: 1rem;
+	background: #0f0f0f;
+	padding-bottom: .15rem;
+	margin-top: .95rem;
+}
+.header-nav .header-menu{
+	border-bottom: .01rem solid #2c2c2c;
+	line-height: 1rem;
+	display: flex;
+	justify-content: space-around;
+	}
+.header-nav .header-menu a {
+	height: 100%;
+	color: #ebc18c;
+	text-decoration: none;
+	font-size: .48rem;
+}
+.header-nav .nav-active{
+	border-bottom: .01rem solid #EBC18C;
+}
+.header-about {
+	height: 1rem;
+	background: #ffffff;
+	line-height: 1rem;
+	font-size: .48rem;
+	color: #010101;
+}
+
+.header-about ul li {
+	float: left;
+}
+
+.header-about ul li a {
+	text-decoration: none;
+	color: #010101;
+}
+.header-about ul li .about-active{
+	color: #c8a771;
+}
+.header-about ul li:nth-child(1) {
+	margin: 0 .78rem 0 .5rem;
+}
+
+.header-about ul li:nth-child(2) a {
+	margin-right: .96rem;
+}
+
+.header-about ul li:nth-child(3) {
+	margin-right: .98rem;
+}
+
+/*头部导航条部分结束*/
+		#slideDown{margin-top: 0;width: 100%;} 
+         #slideDown1,#slideDown2{width: 100%;height: .7rem;;background: #e9f4f7;display: none;} 
+         #slideDown1{height: .2rem;} 
+         #slideDown1>p,#slideDown2>p{margin: .2rem auto;text-align:center;font-size: .14rem;color: #37bbf5;}
+/*中间section开始*/
+.section{
+	padding:.26rem .36rem 0 .36rem; 
+	margin-top: .2rem;
+	background: #FFFFFF;
+}
+.section-group{
+	height: 3.06rem;
+	margin-top: .2rem;
+	border-bottom: .01rem solid #eae6e6;
+}
+.section-group:last-child{
+	border: none;
+	padding-bottom: .2rem;
+}
+.section-group a{
+	width: 100%;
+	height:100%;
+}
+.section-group img {
+	width:5.04rem;
+	height: 2.85rem;
+}
+.section-detail {
+	width: 6.43rem;
+	height: 2.85rem;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.section-detail p {
+	font-size: .52rem;
+	color: #373737;
+}
+
+.section-detail time {
+	font-size: .42rem;
+	color: #afafaf;
+	bottom: 0;
+	position: absolute;
+}
+/*中间section结束*/
+
+
+/*加载更多部分开始*/
+.more {
+	height: .8rem;
+	text-align: center;
+	line-height: .8rem;
+	font-size: .4rem;
+}
+
+.more a {
+	text-decoration: none;
+	color: #595959;
+}
+
+
+/*加载更多部分结束*/
+
+
+/*广告部分开始*/
+
+.download {
+	height: 2.47rem;
+	box-sizing: border-box;
+	background: #ececec;
+}
+.download a{
+	width: 100%;
+	height: 100%;
+}
+.download img {
+	width: 100%;
+	height: 100%;
+}
+
+/*广告部分结束*/
+
+
+/*推荐部分开始*/
+
+.article {
+	padding: .26rem .36rem 0 .36rem;
+	margin-top: .15rem;
+	margin-bottom: .15rem;
+	background: #ffffff;
+}
+
+.article h2 {
+	font-size: .58rem;
+	color: #101010;
+	padding-left: .22rem;
+	margin-bottom: .16rem;
+}
+
+.article-group{
+	height: 3.06rem;
+	margin-top: .2rem;
+	border-bottom: .01rem solid #eae6e6;
+}
+.article-group:last-child{
+	border: none;
+	padding-bottom: .2rem;
+}
+.article-group a {
+	width: 100%;
+	height: 100%;
+}
+.article-group img {
+	width: 5.04rem;
+	height: 2.85rem;
+}
+.article-detail {
+	width: 6.43rem;
+	height: 2.85rem;
+	padding-left: .36rem;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.article-detail p {
+	font-size: .52rem;
+	color: #373737;
+}
+
+.article-detail time {
+	font-size: .42rem;
+	color: #afafaf;
+	bottom: 0;
+	position: absolute;
+}
+
+
+/*推荐部分结束*/
+
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 1.8rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .2rem .8rem 0 .8rem;
+	border-top: .01rem solid #d2d0d0;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+.footer a {
+	width: 1rem;
+	height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-decoration: none;
+	text-align: center;
+}
+.footer a img{
+	width: .8rem;
+	height: .8rem;
+	margin: 0 auto;
+}
+.footer a span{
+	width: 1rem;
+	font-size: .4rem;
+	color: #000;
+	margin-top: .05rem;
+}
+
+
+/*尾部结束*/
+
