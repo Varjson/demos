@@ -194,7 +194,7 @@ body {
 	height: 100%;
 }
 .star-border .lol a{
-	width: 100%;
+	width: 5.7rem;
 	height: 3rem;
 	border-radius: .2rem;
 }
@@ -216,11 +216,11 @@ body {
 	margin-left: .2rem;
 	font-style: normal;
 }
-.star-border  a font span{
+.star-border a font span{
 	width: 1.6rem;
 	height: 100%;
 	text-align: right;
-	padding-right: .2rem;
+	margin-right: .2rem;
 }
 .star-border  a font span em{
 	margin-right: .1rem;
@@ -231,7 +231,7 @@ body {
 	text-align: left;
 }
 .star-border .king a{
-	width: 100%;
+	width: 5.7rem;
 	height: 3rem;
 	border-radius: .2rem;
 }
