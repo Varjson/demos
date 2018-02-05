@@ -166,7 +166,7 @@
 }
 .star-border{
 	display: flex;
-
+	justify-content: space-between;
 	border-bottom: .01rem solid #ECECEC;
 	padding-bottom: .4rem;
 }
