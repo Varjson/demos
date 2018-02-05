@@ -1,4 +1,4 @@
-body {
+﻿body {
 	background: #ececec;
 	padding-bottom: 1.9rem;
 }
@@ -207,6 +207,7 @@ body {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	height: .4rem;
 	font-size: .25rem;
 	color: #c7c6c6;
