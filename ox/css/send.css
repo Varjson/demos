@@ -1,0 +1,68 @@
+body{
+	background: #FFFFFF;
+}
+.article{
+	padding: 1.8rem 1.5rem 0;
+}
+.article p{
+	text-align: center;
+	font-size: .5rem;
+}
+.section{
+	display: flex;
+	justify-content: space-around ;
+}
+
+.section-word{
+	display: flex;
+	flex-direction: column;
+	margin-top: .8rem;
+}
+.section-word .left {
+	text-align: left;
+}
+.section-word .right {
+	text-align: right;
+}
+.section-word p{
+	font-size: .5rem;
+	color: #867e7e;
+}
+.section-word span{
+	display: inline-block;
+	font-size: .35rem;
+	margin: .08rem 0 .6rem;
+	color:#867e7e;
+}
+.group{
+	padding: 1rem 1.5rem 0;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around ;
+}
+.group a{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.group a img{
+	width: 2rem;
+	height:2rem;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-bottom: .3rem;
+}
+.group a span{
+	font-size: .5rem;
+	color: #333333;
+} 
+.footer-close{
+	width: 100%;
+	height: 2rem;
+	margin-top: 2rem;
+}
+button.close{
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
+}

@@ -1,0 +1,356 @@
+body {
+	background: #ececec;
+	padding-bottom: 1.9rem;
+}
+
+
+.top{
+	width: 100%;
+	height: 1.2rem;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.header-nav {
+	width: 100%;
+	height: 1.2rem;
+	background: url(../images/ox.png) no-repeat .05rem center/2.5rem 1.1rem;
+	background-color: #222126;
+}
+.header-nav ul{
+	float: left;
+	margin-left:2.8rem;
+}
+.header-nav ul li{
+	display: inline-block;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	box-sizing: border-box;
+}
+.header-nav ul li a{
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	font-size: .4rem;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.header-nav ul .nav-active{
+	color:#f95150 ;
+	border-bottom: .04rem solid #db0b0b;
+}
+.header-nav ul li .nav-middle{
+	margin: 0 .25rem;
+}
+.header-nav .game{
+	width: 1.8rem;	
+	height: .8rem;
+	margin-left: .5rem;
+	margin-top: .2rem;
+}
+@media only screen and (max-width:320px ) {
+.header-nav .game{
+	width: 2rem;	
+	height: 1.1rem;
+	margin-left: .2rem;
+}
+.header-nav ul li .nav-middle{
+	margin: 0 .15rem;
+}
+}
+.header-nav .game img{
+	width: 100%;
+	height: 100%;
+}
+.header-nav .search{
+	width: .56rem;
+	height: .65rem;
+	float: right;
+	margin: .26rem .45rem 0  0;
+}
+.header-nav .search img{
+	width: 100%;
+	height: 100%;
+}
+/*头部导航条部分结束*/
+
+/*轮播图开始*/
+#content{
+	margin-top: 1.2rem;
+}
+.swiper-container{
+	margin: 1.2rem 0 0rem;
+	width: 100%;
+	height: 5rem;
+}
+.swiper-container a{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container a img{
+	width: 100%;
+	height: 100%;
+}
+/*轮播图结束*/
+
+/*下拉刷新开始*/
+#slideDown{margin-top: 0;width: 100%;} 
+#slideDown1,#slideDown2{width: 100%;height: .7rem;;background: #e9f4f7;display: none;} 
+#slideDown1{height: .2rem;} 
+#slideDown1>p,#slideDown2>p{margin: .2rem auto;text-align:center;font-size: .2rem;color: #37bbf5;}
+/*下拉刷新结束*/
+
+/*滚动监听开始*/
+.nav{
+	height: 1.5rem;
+	background: #FFFFFF;
+	border: .01rem solid #ECECEC;
+}
+.nav>li{
+	display: inline-block;
+}
+.navbar{
+	height: 1.5rem;
+	margin: 0;
+}
+
+.navbar-nav > li > a{
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	line-height: 1.5rem;
+	color: #000000;
+	font-size: .45rem;
+	padding: 0;
+}
+.navbar-nav > li > .first{
+	display: inline;
+	font-size: .45rem;
+	padding: .2rem .3rem;
+	background: #ff0000;
+	border-radius: .5rem;
+	color: #FFFFFF;
+}
+.cd-secondary-nav ul{
+	width: 100%;
+	margin: 0;
+	padding: 0 .36rem;
+}
+.cd-secondary-nav li{
+	width: 18%;
+	text-align: left;
+	padding: 0 .05rem;
+	box-sizing: content-box;
+}
+.cd-secondary-nav .first_{
+	width: 18%;
+	text-align: left;
+}
+.cd-secondary-nav li:last-of-type{
+	padding-right: 0;
+}
+.cd-secondary-nav.fixed{
+	top: 1.2rem;
+}
+.cd-secondary-nav::after{
+	display: none;
+}
+.cd-secondary-nav.slide-up{
+	transform: translateY(-1.2rem);
+}
+/*滚动监听结束*/
+
+/*牛直播开始*/
+.star{
+	width: 100%;
+	background: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}
+#lol{
+	margin: 0;
+	padding: 0;
+}
+#wz{
+	margin: 0;
+	padding: 0;
+}
+.star h3{
+	margin-bottom: .15rem;
+}
+.star h3 a {
+	font-size: .5rem;
+	line-height: .6rem;
+	display: block;
+	padding: .2rem .5rem .15rem .96rem;
+	background: url(../images/o-video.png) no-repeat .4rem .28rem;
+	background-size: .5rem .5rem;
+	color: #333333;
+
+}
+.star h3 a span{
+	font-size: .3rem;
+	color: #757575;
+}
+.star-section{
+	padding: 0 .36rem;	
+}
+.star-border{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: .01rem solid #ECECEC;
+	padding-bottom: .4rem;
+}
+.star-border p{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: .35rem;
+	color: #757575;
+	margin-bottom: .05rem;
+	margin-top: .08rem;
+}
+.star-border .lol{
+	width: 5.7rem;
+	flex-direction: column;
+	text-align: left;
+}
+.star-border a{
+	width: 100%;
+	height: 3rem;
+	position: relative;
+}
+.star-border  a video{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+.star-border .lol-name{
+	width: 1.8rem;
+	text-align: center;
+	position: absolute;
+	display: inline-block;
+	padding: .05rem 0 ;
+	right: 0;
+	top: 0;
+	background: #000000;
+	font-size: .3rem;
+	color: #ffffff;
+}
+.star-border .lol a{
+	width: 100%;
+	height: 3rem;
+	border-radius: .2rem;
+}
+.star-border .lol a img{
+	width: 100%;
+	height: 100%;
+	border-radius: .2rem;
+}
+.star-border a font{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: .4rem;
+	font-size: .25rem;
+	color: #c7c6c6;
+	padding-bottom: .1rem;
+}
+.star-border a font i{
+	margin-left: .2rem;
+	font-style: normal;
+}
+.star-border  a font span{
+	width: 1.6rem;
+	height: 100%;
+	text-align: right;
+	padding-right: .2rem;
+}
+.star-border  a font span em{
+	margin-right: .1rem;
+}
+.star-border .king{
+	width: 5.7rem;
+	flex-direction: column;
+	text-align: left;
+}
+.star-border .king a{
+	width: 100%;
+	height: 3rem;
+	border-radius: .2rem;
+}
+.star .king a img{
+	width: 100%;
+	height: 100%;
+	border-radius: .2rem;
+}
+.star-border span a{
+	display: inline;
+	font-size: .35rem;
+	text-decoration: none;
+	color: #fbaf4e;
+}
+/*牛直播结束*/
+
+/*尾部开始*/
+
+.footer {
+	width: 100%;
+	height: 1.8rem;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding: .2rem .8rem 0 .8rem;
+	border-top: .01rem solid #d2d0d0;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+.footer a {
+	width: 1rem;
+	height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-decoration: none;
+	text-align: center;
+}
+.footer a img{
+	width: .8rem;
+	height: .8rem;
+	margin: 0 auto;
+}
+.footer a span{
+	width: 1rem;
+	font-size: .4rem;
+	color: #000;
+	margin-top: .05rem;
+}
+.footer-info{
+	position: relative;	
+}
+.footer-info font{
+	position: absolute;
+	width: .3rem;
+	height: .3rem;
+	line-height: .5rem;
+	border-radius: 50%;
+	text-align: center;
+	background: red;
+	font-size: .3rem;
+	color: white;
+	top: -.13rem;
+	right: 0.12rem;
+	-webkit-text-size-adjust:none;
+}
+.gray{
+	 -webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100%) !important;
+    -ms-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+    filter: gray(.5) !important;
+}
