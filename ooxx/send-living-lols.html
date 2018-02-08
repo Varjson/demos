@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>英雄联盟代练</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/send-living-lols.css"/>
+<script type="text/javascript">
+			!function(a,b){var c=a.documentElement,d="orientationchange"in window?"orientationchange":"resize",e=function(){var a=c.clientWidth;a&&(c.style.fontSize=100*(a/1242)+"px")};a.addEventListener&&(b.addEventListener(d,e,!1),a.addEventListener("DOMContentLoaded",e,!1))}(document,window);
+</script>
+<script src='js/jquery.min.js'></script>
+<script src="js/send-keep.js"></script>
+</head>
+<body>
+	<div class="header"><span id="switch_word">英雄联盟代练</span>
+		<a href="javascript:window.history.back();" class="left"><font><img src="images/o-cart-.png"/></font></a>
+		<a href="#" class="right" id="switch">切换游戏</a>
+	</div>
+	<div class="section clearfix">
+		游戏区服
+		<select style="border:0;padding-left:20px;width:35%;appearance:none;-webkit-appearance:none;">
+			<option value="0">请选择区</option>
+			<option value="1">电信</option>
+			<option value="2">网通</option>
+			<option value="3">全网络</option>
+			<option value="4">其他</option>
+		</select>
+		<select style="border:0;padding-left:20px;width:35%;appearance:none;-webkit-appearance:none;">
+			<option value="0">请选择服</option>
+			<option value="1">艾欧尼亚</option>
+			<option value="2">祖安</option>
+			<option value="3">诺克萨斯</option>
+			<option value="4">班德尔城</option>
+			<option value="5">皮尔特沃夫</option>
+			<option value="6">战争学院</option>
+			<option value="7">巨神峰</option>
+			<option value="8">雷瑟守备</option>
+			<option value="9">裁决之地</option>
+			<option value="10">黑色玫瑰</option>
+			<option value="11">暗影岛</option>
+			<option value="12">钢铁烈阳</option>
+			<option value="13">均衡教派</option>
+			<option value="14">水晶之痕</option>
+			<option value="15">影流</option>
+			<option value="16">守望之海</option>
+			<option value="17">征服之海</option>
+			<option value="18">卡拉曼达</option>
+			<option value="19">皮城守备</option>
+			<option value="20">比尔吉沃特</option>
+			<option value="21">德玛西亚</option>
+			<option value="22">费雷尔卓德</option>
+			<option value="23">无畏先锋</option>
+			<option value="24">怒瑞玛</option>
+			<option value="25">扭曲丛林</option>
+			<option value="26">巨龙之巢</option>
+			<option value="27">男爵领域</option>
+			<option value="28">教育网专区</option>
+			
+		</select>
+	</div>
+	<div class="section clearfix">
+		排位类型
+		<select style="border:0;padding-left:20px;width:71%;appearance:none;-webkit-appearance:none;">
+			<option value="0">请选排位类型</option>
+			<option value="1">电信</option>
+			<option value="2">网通</option>
+			<option value="3">全网络</option>
+			<option value="4">其他</option>
+		</select>
+	</div>
+	<div class="section clearfix section-color">
+		代练类型
+		<select id="dailian_type" style="border:0;padding-left:20px;width:71%;appearance:none;-webkit-appearance:none;" onchange="dailian_type(this.value)">
+			<option value="1" selected="selected">排位赛</option>
+			<option value="2">晋级赛</option>
+			<option value="3">定位赛</option>
+		</select>
+	</div>
+	<div class="section clearfix section-num_" id="dangqian">
+		当前段位
+		<select style="border:0;padding-left:20px;width:35%;appearance:none;-webkit-appearance:none;" onchange="dang_duan(this.value)">
+			<option value="0">请选择段位</option>
+			<option value="1">青铜</option>
+			<option value="2">白银</option>
+			<option value="3">黄金</option>
+			<option value="4">铂金</option>
+			<option value="5">钻石</option>
+			<option value="6">大师</option>
+		</select>
+		<select id="dang_xing" style="border:0;padding-left:20px;width:35%;appearance:none;-webkit-appearance:none;" onchange="dang_xing(this.value)">
+			<option value="0">请选择段位阶段</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<div class="section clearfix section-sum_" id="mubiao">
+		目标段位
+		<select style="border:0;padding-left:20px;width:35%;appearance:none;-webkit-appearance:none;" id="mubiaoduan">
+			<option value="0">请选择段位</option>
+			<option value="1">青铜</option>
+			<option value="2">白银</option>
+			<option value="3">黄金</option>
+			<option value="4">铂金</option>
+			<option value="5">钻石</option>
+			<option value="6">大师</option>
+		</select>
+		<select style="border:0;padding-left:20px;width:35%;appearance:none;-webkit-appearance:none;">
+			<option value="0">请选择阶段</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<div class="section clearfix section-num" id="sheng">
+		当前胜点<input type="text" id="targets-content" placeholder="请输入当前胜点" /><span class="fr">点</span>
+	</div>
+	<div style="display: none;" class="section clearfix section-sum" id='sum'>
+		当前胜场
+		<select style="border:0;padding-left:20px;width:71%;appearance:none;-webkit-appearance:none;" id="dang_sheng">
+			<option value="0">请选择当前胜场</option>
+			<option value="1">0场</option>
+			<option value="2">1场</option>
+			<option value="3">2场</option>
+		</select>
+	</div>
+	<div style="display: none;" class="section clearfix n_section-sum" id='n_sum'>
+		当前负场
+		<select style="border:0;padding-left:20px;width:71%;appearance:none;-webkit-appearance:none;" id="dang_fu">
+			<option value="0">请选择当前负场</option>
+			<option value="1">0场</option>
+			<option value="2">1场</option>
+			<option value="3">2场</option>
+		</select>
+	</div>
+	<div style="display: none;" class="section clearfix _section" id='_num'>
+		上赛季段位
+		<select style="border:0;padding-left:20px;width:71%;appearance:none;-webkit-appearance:none;">
+			<option value="0">请选择上赛季段位</option>
+			<option value="1">0场</option>
+			<option value="2">1场</option>
+			<option value="3">2场</option>
+		</select>
+	</div>
+	<div style="display: none;" class="section clearfix n_section" id='o_num'>
+		需打场次
+		<select style="border:0;padding-left:20px;width:71%;appearance:none;-webkit-appearance:none;">
+			<option value="0">请选择需要代练场次</option>
+			<option value="1">0场</option>
+			<option value="2">1场</option>
+			<option value="3">2场</option>
+		</select>
+	</div>
+	<!--切换部分开始-->
+	<div id="pickuptime_0" class="footer" style="display:none;">
+		<div class="pickuptime-title clearfix">
+			<span class="fl close">取消</span><span id="decide_0" class="fr">确定</span>
+		</div>
+		<div class="pickuptime-box diff_2">
+			<ul class="pickuptime-data_2">
+				<li id="menu_1" class="pickuptime pickuptime-on" onclick="menu(1)">英雄联盟</li>
+				<li id="menu_2" class="pickuptime" onclick="menu(2)">王者荣耀</li>
+			</ul>
+		</div>
+	</div>
+	<!--切换部分结束-->
+<div class="next" id="submit" onclick="url()">下一步</div>
+<script type="text/javascript">
+	var lq	=	1;	//切换游戏使用
+	var ls	=	1;	//代练类型使用
+	// 切换游戏
+	$('#switch').on('click',function(){
+		$("#pickuptime_0").show();
+	});
+	// 改变游戏
+	function menu(q){
+		$('#menu_'+q).addClass('pickuptime-on');
+		$("#menu_"+lq).removeClass("pickuptime-on");
+		lq = q;
+	}
+	// 确定切换游戏
+	$('#decide_0').on('click',function(){
+		if(('#menu_'+lq)=='#menu_2'){
+			window.location.href='send-living-wzs.html';
+		}
+		var game = $('#menu_'+lq).text();
+		$('#switch_word').text(game+'陪练');
+		$(".footer").hide();
+	});
+	// 改变代练类型
+	function dailian_type(e=1){
+		ls	=	e;
+		if(e == 1){
+			$("#dangqian").show();	//当前段位
+			$("#mubiao").show();	//目标段位
+			$("#sheng").show();		//当前胜点
+			$("#sum").hide();		//当前胜场
+			$("#n_sum").hide();		//当前负场
+			$("#_num").hide();		//上赛季段位
+			$("#o_num").hide();		//需打场次
+		}else if(e == 2){
+			$("#dangqian").show();
+			$("#mubiao").hide();
+			$("#sheng").hide();
+			$("#sum").show();
+			$("#n_sum").show();
+			$("#_num").hide();
+			$("#o_num").hide();
+		}else if(e == 3){
+			$("#dangqian").hide();
+			$("#mubiao").hide();
+			$("#sheng").hide();
+			$("#sum").hide();
+			$("#n_sum").hide();
+			$("#_num").show();
+			$("#o_num").show();
+		}
+	}
+	// 改变当前段位
+	function dang_duan(e){
+		if(ls == 1){
+			var text_s	=	'';
+			text_s	+=	'<option value="0">请选择段位</option>';
+			if(e <= 1){
+				text_s	+=	'<option value="1">青铜</option>';
+			}
+			if(e <= 2){
+				text_s	+=	'<option value="2">白银</option>';
+			}
+			if(e <= 3){
+				text_s	+=	'<option value="3">黄金</option>';
+			}
+			if(e <= 4){
+				text_s	+=	'<option value="4">铂金</option>';
+			}
+			if(e <= 5){
+				text_s	+=	'<option value="5">钻石</option>';
+			}
+			if(e <= 6){
+				text_s	+=	'<option value="6">大师</option>';
+			}
+			$("#mubiaoduan").html(text_s);
+		}else if(ls == 2){
+			dang_xing();
+		}
+	}
+	function dang_xing(){
+		var dang_xing	=	$("#dang_xing").val();
+		var text_sheng	=	'';
+		text_sheng	+=	'<option value="0">请选择当前胜场</option>';
+		var text_fu	=	'';
+		text_fu	+=	'<option value="0">请选择当前负场</option>';
+		if(dang_xing == 1){
+			text_sheng	+=	'<option value="1">0场</option>';
+			text_sheng	+=	'<option value="2">1场</option>';
+			text_sheng	+=	'<option value="3">2场</option>';
+			text_fu	+=	'<option value="1">0场</option>';
+			text_fu	+=	'<option value="2">1场</option>';
+			text_fu	+=	'<option value="3">2场</option>';
+		}else{
+			text_sheng	+=	'<option value="1">0场</option>';
+			text_sheng	+=	'<option value="2">1场</option>';
+			text_fu	+=	'<option value="1">0场</option>';
+			text_fu	+=	'<option value="2">1场</option>';
+		}
+		$("#dang_sheng").html(text_sheng);
+		$("#dang_fu").html(text_fu);
+	}
+	// 下一步
+	function url(){
+		var url_color	=	$("#submit").css('background-color');
+		if(url_color != 'rgb(128, 128, 128)'){
+			window.location.href = "send-info.html";
+		}
+	}
+</script>
+</body>
+</html>
