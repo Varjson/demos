@@ -1,0 +1,180 @@
+body {
+	background: url(../images/user-register-bg.png) no-repeat;
+	background-size: 100%;
+}
+
+/*中间section部分开始*/
+.section{
+	padding:4.2rem 1.2rem 0 ;
+	box-sizing: border-box;
+	background: transparent;
+}
+.section h2{
+	font-size: .8rem;
+	color: #fcfafa;
+	text-align: center;
+	font-weight: 400;
+	margin: .6rem 0;
+}
+.section ::-webkit-input-placeholder{
+	color: #acacac;
+}
+.section-user{
+	width: 100%;
+	height: 1.2rem;
+	background:#ffffff;
+	box-sizing: border-box;
+	padding-left:.3rem;
+	border-radius: .2rem;
+	border: .02rem solid #e1e1e1;
+	font-size: .4rem;
+	color: #b4b4b4;
+	margin-bottom: .24rem;
+}
+.section-password{
+	width: 100%;
+	height: 1.2rem;
+	background:#ffffff;
+	box-sizing: border-box;
+	padding-left:.3rem;
+	border-radius: .2rem;
+	border: .02rem solid #e1e1e1;
+	font-size: .4rem;
+	color: #b4b4b4;
+	margin-bottom: .24rem;
+}
+.section-password-again{
+	width: 100%;
+	height: 1.2rem;
+	background:#ffffff;
+	box-sizing: border-box;
+	padding-left:.3rem;
+	border: .02rem solid #e1e1e1;
+	border-radius: .2rem;
+	font-size: .4rem;
+	color: #b4b4b4;
+	margin-bottom: .24rem;
+}
+.section-phone{
+	width: 100%;
+	height: 1.2rem;
+	background:#ffffff;
+	box-sizing: border-box;
+	padding-left:.3rem;
+	border: .02rem solid #e1e1e1;
+	border-radius: .2rem;
+	font-size: .4rem;
+	color: #b4b4b4;
+	margin-bottom: .24rem;
+}
+.test{
+	width: 100%;
+}
+.section-test{
+	width: 60%;
+	height: 1.2rem;
+	background:#ffffff;
+	box-sizing: border-box;
+	padding-left:.3rem;
+	border: .02rem solid #e1e1e1;
+	border-radius: .2rem;
+	font-size: .4rem;
+	color: #b4b4b4;
+	margin-bottom: .24rem;
+}
+.test-click{
+	width: 38%;
+	line-height: 1.15rem;
+	display: inline-block;
+	background: #f8f8f8;
+	text-align: center;
+	border: .02rem solid #e1e1e1;
+	border-radius: .2rem;
+}
+.test-click a{
+	font-size: .45rem;
+	text-decoration: none;
+	color: #707070;
+}
+/*服务协议开始*/
+.section .serve{
+	font-size: .4rem;
+}
+.section .serve span{
+	color: #fcfafa;
+}
+.section .serve font{
+	color: #fcfafa;
+}
+.section .serve a{
+	border: none !important;
+	display: inline;
+	text-decoration: none;
+	color: #68f5fa;
+}
+.section .serve p{
+	margin-top: .25rem;
+	text-align: right;
+}
+.section .serve p a{
+	font-size: .5rem;
+	color: #fcfafa;
+	text-decoration: none;
+}
+.section .serve p a img{
+	width: .3rem;
+	height: .5rem;
+	vertical-align: middle;
+	margin-right: .1rem;
+}
+.section .serve p a span{
+	vertical-align: middle;
+}
+.modal-header button span{
+	color: white;
+}
+/*服务协议结束*/
+
+.section-submit{
+	width: 100%;
+	height: 1.1rem;
+	line-height: 1rem;
+	font-size: .52rem;
+	border-radius: .5rem;
+	border: .07rem solid #606060;
+	text-align: center;
+	background: #ff514e;
+	color: #ffe5e5;
+	margin-top: .5rem;
+}
+.section-login{
+	width: 100%;
+	height: 1.1rem;
+	line-height: 1rem;
+	font-size: .52rem;
+	border-radius: .5rem;
+	border: .07rem solid #606060;
+	text-align: center;
+	background: #ffffff;
+	color: #ff6967;
+	margin-top: .2rem;
+}
+/*中间section部分结束*/
+
+/*模态框部分开始*/
+.modal-header{
+	background: #000000;
+	color: #FFFFFF;
+}
+
+/*模态框部分结束*/
+.modal-body{
+	height: 15rem;
+	overflow: scroll;
+	text-align: left;
+}
+.btn-default{
+	background:#ff0000 ;
+	color: #ffffff;
+	border-radius: .2rem;
+}
