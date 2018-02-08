@@ -1,0 +1,265 @@
+body{
+	background: #ECECEC;
+	padding-bottom: 1.6rem;
+}
+/*头部返回部分开始*/
+.header{
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background-color: #010101;
+	text-align: center;
+	font-size: .5rem;
+	color: #FFFFFF;
+}
+.header a{
+	height: 1.2rem;
+    line-height: 1.2rem;
+    text-decoration: none;
+    color: #b1b1b1;
+    position: absolute;
+}
+.header .left{
+	line-height: 1.05rem;
+	left: .3rem;
+    font-size: .90rem;
+    color: #e4e2e2;
+}
+.header .left font img{
+	width: .3rem;
+	height: .5rem;
+}
+/*头部结束*/
+/*http://ask.zol.com.cn/x/5991234.html*/
+/*头部视频开始*/
+
+.header-video{
+	width: 100%;
+	height: 0;
+	position: relative;
+	padding-bottom: 56.25%;
+}
+.header-video video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.header-video img{
+	width: 100%;
+	height: 3rem;
+}
+video::-internal-media-controls-download-button{
+    display:none;
+}
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); 
+}
+.header-video-title{
+	background: #FFFFFF;
+	padding: .25rem .36rem;
+}
+.header-video-title p{
+	font-size: .45rem;
+	color: #333333;
+	margin-bottom: .1rem;
+}
+.header-video-title span{
+	font-size: .35rem;
+	color: #b3b3b3;
+	margin: ;
+}
+.introduce{
+	height: 1.5rem;
+	background: #FFFFFF;
+	margin: .2rem 0;
+	padding-left: .36rem;
+}
+.introduce img{
+	width: .7rem;
+	height: .7rem;
+	border-radius: 50%;
+	margin-right: .2rem;
+}
+.introduce div{
+	height: 1rem;
+	margin-top: .25rem;
+	vertical-align: text-bottom;
+	display: inline-block;
+}
+.introduce div p{
+	font-size: .4rem;
+	color: #333333;
+}
+.introduce div span{
+	font-size: .3rem;
+	color: #c5c5c5;
+}
+/*头部视频结束*/
+
+/*article部分开始*/
+
+.article {
+	padding: .26rem .36rem 0 .36rem;
+	background: #ffffff;
+}
+.article h3{
+	height: .5rem;
+	display: inline-block;
+	font-size: .35rem;
+	color: #000000;
+}
+.article h3:before{
+	content: '';
+	width: .1rem;
+	height: .5rem;
+	display: inline-block;
+	background: cyan;
+	margin-right: .2rem;
+	vertical-align: text-top;
+}
+.article-group{
+	height: 3.06rem;
+	margin-top: .2rem;
+	border-bottom: .01rem solid #eae6e6;
+	position: relative;
+}
+.article-group:last-child{
+	border: none;
+	padding-bottom: .2rem;
+}
+.article-group a {
+	width: 5.04rem;
+	height: 2.85rem;
+	position: relative;
+}
+.article-group a span{
+	position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    font-size: .35rem;
+    color: rgba(255,255,255,1);
+    background: rgba(0,0,0,.3);
+    padding: .05rem .1rem;
+}
+.article-group video{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+.article-group img {
+	width: 100%;
+	height: 100%;
+}
+.article-group .article-video{
+	position: relative;
+	border-radius: .2rem;
+}
+.article-group .article-video span{
+	position: absolute;
+}
+.article-group .article-video img{
+	border-radius: .2rem;
+}
+.article-detail {
+	width: 6.43rem;
+	height: 2.85rem;
+	padding-left: .36rem;
+	box-sizing: border-box;
+
+}
+
+.article-detail p {
+	font-size: .52rem;
+	color: #373737;
+}
+
+.article-detail span {
+	font-size: .42rem;
+	color: #afafaf;
+	position: absolute;
+	bottom: .2rem;
+	right: .1rem;
+}
+.article-detail span font{
+	/*width: .5rem;
+	height: .5rem;*/
+	margin-right: .3rem;
+}
+.article-detail span font img{
+	width: .4rem;
+	height: .4rem;
+	vertical-align: middle;
+	margin-bottom: .08rem;
+}
+/*article部分结束*/
+
+/*用户评论区开始*/
+.comment{
+	padding:.2rem .36rem 0;
+	background: #FFFFFF;
+}
+.comment h3{
+	font-size: .6rem;
+	margin-bottom: .2rem ;
+}
+.comment .person{
+	border-bottom: .01rem solid #ECECEC;
+	padding: .3rem 0;
+}
+.comment .person p{
+	font-size: .5rem;
+	font-weight: bold;
+	margin-bottom: .2rem;
+}
+.comment .person span{
+	font-size: .4rem;
+}
+/*用户评论区结束*/
+
+
+/*尾部开始*/
+.footer{
+	width: 100%;
+	height:1.3rem ;
+	line-height: 1.2rem;
+	padding-bottom: .25rem;
+	background: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	border-top: .01rem solid #c5c5c5;
+}
+.footer-search{
+	width: 80%;
+	padding-left: .4rem;
+}
+.footer-search input{
+	width: 100%;
+	height: .8rem;
+	border-radius: .2rem;
+	border: .01rem solid #ECECEC;
+	box-sizing: border-box;
+	padding-left: .5rem;
+	/*background: #ececec;*/
+	font-size: .4rem;
+}
+.footer-search  input::-webkit-input-placeholder {
+	/*background: #ececec;*/
+    color: #313030;
+}
+.footer span{
+	position: absolute;
+	top: .42rem;
+	right: .4rem;
+	font-size: .55rem;
+}
+.fa-comment-o:before{
+	margin-right: .08rem;
+}
+/*尾部结束*/
