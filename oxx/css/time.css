@@ -1,4 +1,4 @@
-body {
+﻿body {
 	background: #ececec;
 	padding-bottom: 1.9rem;
 }
@@ -37,8 +37,10 @@ body {
 	text-decoration: none;
 }
 .header-nav ul .nav-active{
-	color:#f95150 ;
 	border-bottom: .04rem solid #db0b0b;
+}
+.header-nav ul .nav-active a{
+	color:#f95150 ;	
 }
 .header-nav ul .nav-middle{
 	margin: 0 .45rem;
