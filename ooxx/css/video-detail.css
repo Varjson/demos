@@ -140,6 +140,9 @@ video::-webkit-media-controls-panel {
 	position: relative;
 }
 .article-group a span{
+	height: .5rem;
+	line-height: .6rem;
+	text-align: center;
 	position: absolute;
     display: inline-block;
     top: 0;
@@ -161,10 +164,6 @@ video::-webkit-media-controls-panel {
 .article-group .article-video{
 	position: relative;
 	border-radius: .2rem;
-}
-.article-group .article-video span{
-	position: absolute;
-	border-top-right-radius: .2rem;
 }
 .article-group .article-video img{
 	border-radius: .2rem;
