@@ -1,0 +1,47 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav {
+    margin:0;
+    padding:0;
+    font-family: 'Helvetica',"微软雅黑";
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea {
+    font:12px '\5b8b\4f53',arial,sans-serif;
+}
+
+/* 去掉列表前的标识，li 会继承 */
+ol,ul {
+    list-style:none;
+}
+/* 默认不显示下划线，保持页面简洁 */
+a{
+	display: inline-block;
+    text-decoration:none;
+}
+/* 去除 ie6 & ie7 焦点点状线 */
+a:active{
+	text-decoration: none;
+	color: #ff0000;
+}
+/* 清除浮动 */
+.clearfix:after {       
+    content: ".";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+
+.clearfix { *zoom:1;}
+/* 设置显示和隐藏，通常用来与 js 配合 */
+.block {
+    display:block;
+}
+/* 设置浮动，减少浮动带来的 bug */
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}

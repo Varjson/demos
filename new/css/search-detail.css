@@ -1,0 +1,82 @@
+body{
+	background: #FFFFFF;
+}
+.top{
+	height: 1.3rem;
+	line-height: 1.2rem;
+	background: #010101;
+	position: relative;
+}
+.top a{
+	font-size: .4rem;
+	color: #efa319;
+	position: absolute;
+	text-decoration: none;
+}
+.top .right{
+	top: 0;
+	right: .6rem;
+}
+.top .left{
+	height: 1.3rem;
+	top: 0;
+	left: .4rem;
+	line-height: 1.5rem;
+}
+.top .left img{
+	width: .3rem;
+	height: .5rem;
+}
+.top-search{
+	width: 70%;
+	height: 1.3rem;
+	margin: 0 auto;
+}
+.top-search input{
+	width: 100%;
+	height: 72%;
+	border-radius: .2rem;
+	border: none;
+	box-sizing: border-box;
+	background: #FFFFFF url(../images/search.png) .2rem center no-repeat ;
+	background-size:5%;
+	margin-top: .15rem;
+	padding-left: .8rem;
+	font-size: .4rem;
+}
+.top-search  input::-webkit-input-placeholder {
+	background: #FFFFFF;
+    color: #8c8a8a;
+}
+
+.class{
+	margin-top:.4rem ;
+	padding: 0 .36rem;
+}
+.class a{
+	width: 3rem;
+	height: 1rem;
+	line-height: 1rem;
+	border-radius: .2rem;
+	font-size: .45rem;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	margin-top: .2rem;
+	margin-right: .2rem;
+}
+.class .one{
+	background: salmon;
+}
+.class .two{
+	background: sandybrown;
+}
+.class .three{
+	background: skyblue;
+}
+.class .four {
+	background: skyblue;
+}
+.class .five{
+	background: steelblue;
+}
