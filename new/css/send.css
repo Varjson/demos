@@ -105,7 +105,7 @@ body {
 }
 .info{
 	width: 95%;
-	height: 1.3rem;
+	height: 1.2rem;
 	line-height: 1.2rem;
 	border-radius: .3rem;
 	border: .03rem solid #787878;
@@ -122,6 +122,10 @@ body {
 	height: .8rem;
 	vertical-align: middle;
 	margin-right: 1rem;
+	margin-bottom: .15rem;
+}
+.info span{
+	vertical-align: middle;
 }
 .living{
 	width: 95%;

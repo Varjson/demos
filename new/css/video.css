@@ -160,6 +160,9 @@ body {
 	margin: 0;
 	display: none;
 }
+.item_{
+	display: none;	
+}
 #lol{
 	margin: 0;
 	padding: 0;
