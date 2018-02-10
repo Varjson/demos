@@ -1,0 +1,293 @@
+.freight_bg {
+	background: url(../images/freight_bg.jpg) no-repeat top left;
+	height: :;
+	60px;
+	clear: both;
+}
+
+.freight_bg_md {
+	height: 410px;
+	background: #fff;
+	margin-top: 400px;
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0);
+}
+
+.freight_search {
+	margin-top: 100px;
+}
+
+.freight_search .title {
+	color: #002222;
+	height: 40px;
+	line-height: 40px;
+}
+
+.freight_search input#search {
+	width: 100%;
+	border: 1px solid #ddd;
+	height: 40px;
+}
+
+.freight_search .desc {
+	height: 60px;
+	line-height: 60px;
+	color: #999
+}
+
+.freight_search .search_button {
+	width: 400px;
+	margin: 0 auto;
+	display: block;
+	height: 40px;
+	border: none;
+	background: #d40a1d;
+	color: #fff;
+	margin-top: 50px;
+}
+
+.freight_info .title,
+.freight_company .title {
+	font-size: 24px;
+}
+
+.freight_info .nav,
+.freight_info .nav div {
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+}
+
+.freight_info .nav {
+	border-bottom: 1px dashed #999
+}
+
+.freight_info .nav .green {
+	color: #14c9a5
+}
+
+.freight_info .desc ul li {
+	height: 60px;
+	line-height: 60px;
+}
+
+.freight_info .desc ul li img {
+	margin-right: 15px;
+}
+
+.freight_info .desc ul li .pull-right {
+	color: #999
+}
+
+.freight_company .title {
+	margin-top: 50px;
+}
+
+.freight_company .desc {
+	margin-top: 50px;
+	padding: 0;
+}
+
+.freight_company .desc ul li {
+	width: 24%;
+	display: block;
+	float: left;
+	margin-right: 1%;
+}
+
+.freight_company .desc ul li img {
+	width: 100%;
+}
+
+.freight_info img {
+	margin: 0 auto;
+	display: block;
+}
+
+.freight_info .freight_wz {
+	text-align: center;
+	font-size: 16px;
+}
+
+.freight_info .freight_wz .red {
+	color: #d40a1d
+}
+
+.freight_search i {
+	color: #ff1a40
+}
+
+.freight_search form input[type=text] {
+	width: 100%;
+	border: 1px solid #ddd;
+	height: 40px;
+	padding-left: 15px;
+	outline: none;
+}
+
+.freight_search form input:focus {
+	border: 1px solid #d02535
+}
+
+.input_freight {
+	background: url(../images/left.jpg) no-repeat center right;
+}
+
+.freight_search form em {
+	position: absolute;
+	right: 25px;
+	bottom: 10px;
+	font-size: 16px;
+}
+
+.freight_search div p span {
+	padding-left: 15px;
+}
+
+.freight_search div p {
+	height: 36px;
+	line-height: 36px;
+}
+
+.freight_info .title2 ul li {
+	font-size: 14px;
+	background: #f5f5f5;
+	height: 60px;
+	line-height: 60px;
+}
+
+.freight_company ul {
+	height: 120px;
+	line-height: 120px;
+}
+
+.freight_company ul.on {
+	background: #f5f5f5;
+}
+
+.freight_company ul li img {
+	display: block;
+	float: left;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+.freight_company ul li img.freight_bottom {
+	float: right;
+	display: block;
+	margin-top: 50px;
+}
+
+.freight_table tr td {
+	border: 1px solid #ddd;
+	width: 20%;
+	height: 50px;
+}
+
+.freight_info .col-md-8 {
+	text-align: center;
+	padding: 0;
+}
+
+.freight_r tr td {
+	border: 1px solid #ddd;
+	width: 33%;
+	height: 75px;
+	text-align: center;
+}
+
+.freight_r table {
+	width: 100%;
+	background: #f6f4f7;
+}
+
+.freight_company .col-md-8 {
+	padding: 0;
+}
+
+.freight_r {
+	margin-right: 15px;
+}
+
+.freight_info table {
+	margin-left: 15px;
+}
+
+.freight_r table {
+	margin-right: 15px;
+}
+
+.freight_info {
+	border: 1px solid #ddd;
+	border-bottom: none;
+	text-align: center;
+}
+
+.freight_info p {
+	text-align: left;
+	padding-left: 15px;
+	font-weight: bold;
+}
+
+.freight_info .feight_limit .content {
+	font-weight: normal;
+}
+
+.freight_info .feight_limit {
+	border-top: 1px dashed #ddd;
+	margin-top: 30px;
+	padding: 15px;
+}
+
+.freight_info a span img {
+	display: inline;
+}
+
+.freight_info a {
+	text-decoration: none;
+	color: #2c3a46
+}
+
+.area_info {
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0);
+	min-height: 200px;
+	z-index: 999;
+	position: absolute;
+	background: #fff;
+	top: 85px;
+	left:30px
+}
+
+.area_title {
+	border-bottom: 3px solid #9c9c9c;
+}
+
+.area_title span {
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	cursor: pointer;
+}
+
+.area_title span.on {
+	color: #d40a1d;
+	border-bottom: 3px solid #d40a1d;
+	position: relative;
+	top: 3px;
+	font-weight: bold;
+}
+
+.area_list span {
+	height: 48px;
+	line-height: 48px;
+	cursor: pointer;
+}
+
+.area_list span.on {
+	color: #d40a1d;
+}

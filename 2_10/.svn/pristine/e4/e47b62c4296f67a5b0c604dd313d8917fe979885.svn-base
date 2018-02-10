@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<!--meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"-->
+		<title>首页--贝比代购</title>
+
+		<!-- Bootstrap -->
+		<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/common.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/dropload.css" />
+		<link href="css/zhuanyun.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//static/layer/layer.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<!--头部start-->
+			<div class="col-md-12 header">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="logo">
+						<a href="/index.php?c=Index&a=index"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/logo.jpg" /></a>
+					</div>
+				</div>
+				<div class="col-md-4 header-nav">
+					<ul>
+						<li>
+							<a href="/index.php?c=Index&a=index">首页</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Purchase&a=index">代购</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Shop&a=zhuanyun">转运</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Life&a=index">生活</a>
+						</li>
+						<li>
+							<a target="_blank" href="javascript:void(0)" title="正在开发中.....">商城</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<div class="nav-right">
+						<div class="nav_li" id="more_main">
+							<p id="more_tools">
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/tools.png" /> &nbsp;&nbsp;
+								<a href="#">更多工具</a>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/bottom.png" />
+								<div class="tools_list hide">
+									<ul>
+										<!--li><a href="/index.php?c=Shop&a=zhuanyun">转运首页</a></li-->
+										<li>
+											<a href="/index.php?c=About&a=plug_in">购物助手</a>
+										</li>
+										<li>
+											<a href="/index.php?c=Shop&a=cost_charge">费用估算</a>
+										</li>
+										<li>
+											<a href="/index.php?c=Shop&a=logistics">物流查询</a>
+										</li>
+									</ul>
+								</div>
+							</p>
+						</div>
+
+						<div class="nav_li">
+							<p>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/gouwuche.png" /> &nbsp;
+								<a href="/index.php?c=My&a=shopping_car">购物车</a>
+							</p>
+						</div>
+
+						<div class="nav_li">
+							<p>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/login.png" />&nbsp;
+								<a href="/index.php?c=Login&a=index">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+								<a href="/index.php?c=Login&a=reg">注册</a>
+							</p>
+						</div>
+
+					</div>
+				</div>
+				<!--				<div class="col-md-2"></div>-->
+			</div>
+
+			<!--头部end-->
+
+			<div class="col-md-12 zhuanyun_title">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<img src="images/feiji.png" />转运流程
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			
+			
+			
+			<div class="col-md-12 gc" style="padding-bottom:50px;">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<img src="http://daigou.ahzhenshan.com//upload/baby/adver/29/000/000/001/58fd62fcc9e27.jpg"> </div>
+				<div class="col-md-1"></div>
+			</div>
+			
+			
+			
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<span>填写需转运的商品信息</span>
+					<span>查看贝比仓库地址</span>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--footer start-->
+			<div class="col-md-12 footer">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="col-md-3 footer_time">
+						<p class="now_time">18:02</p>
+						<p class="time_desc">当前北京时间： 2017-08-13</p>
+					</div>
+					<div class="col-md-6 foot-menu">
+
+						<div class="col-md-4">
+							<ul>
+								<li class="foot-first">
+									<a href="javascript:void(0)">业务类型</a>
+								</li>
+
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=2">代购</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=3">国际转运</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=4">商城</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=22">APP</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li class="foot-first">
+									<a href="javascript:void(0)">账户资产</a>
+								</li>
+
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=6">代拍说明</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=7">售后服务</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=8">会员等级及积分规则</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=9">常见问题</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li class="foot-first">
+									<a href="javascript:void(0)">配送方式</a>
+								</li>
+
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=13">售后常见问题</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=14">充值和退款常见问题</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=15">会员等级和积分规则</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&amp;a=problem_list&amp;cat_id=16">拼单购中的常见问题</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 foot-right">
+						<p>联系我们</p>
+						<p>客服电话：4006060799</p>
+						<p>客服邮箱：service@babydaigou.com</p>
+						<p>社交媒体</p>
+						<p>
+							<a href="https://m.facebook.com" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_1.jpg"></a>
+							<a href="https://www.twitter.com" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_3.jpg"></a>
+							<a href="http://www.sina.com.cn" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_2.jpg"></a>
+							<!--					<a href="#" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_4.jpg" /></a>-->
+							<!--					<a href="#" id="weixin" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_4.jpg" /></a>-->
+							<a href="#" id="erweima" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/erweima.jpg"></a>
+							<a href="#" class="huojian"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_5.jpg"></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="col-md-12 foot2">
+				<div class="col-md-1"></div>
+				<div class=" col-md-10 footer-desc">
+					<p>Copyright 2007-2017 babydaigou.com All Rights Reserved 京ICP备16060963号-2&nbsp;&nbsp;
+						<img src="http://daigou.ahzhenshan.com//upload/baby/adver/63/000/000/001/5870b32b330f7.png"><img src="http://daigou.ahzhenshan.com//upload/baby/adver/35/000/000/001/5870b336ed810.png"><img src="http://daigou.ahzhenshan.com//upload/baby/adver/40/000/000/001/5870b342c562d.png"><img src="http://daigou.ahzhenshan.com//upload/baby/adver/15/000/000/001/5870b3582f4b4.png"><img src="http://daigou.ahzhenshan.com//upload/baby/adver/12/000/000/001/5870b362ade7e.png"><img src="http://daigou.ahzhenshan.com//upload/baby/adver/52/000/000/001/5870b370386b3.png"> </p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<!--footer end-->
+		</div>
+	</body>
+
+</html>

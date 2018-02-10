@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<!--meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"-->
+		<title>转运首页 --贝比代购</title>
+
+		<!-- Bootstrap -->
+		<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/common.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/dropload.css" />
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//static/layer/layer.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<!--头部start-->
+			<div class="col-md-12 header">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="logo">
+						<a href="/index.php?c=Index&a=index"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/logo.jpg" /></a>
+					</div>
+				</div>
+				<div class="col-md-4 header-nav">
+					<ul>
+						<li>
+							<a href="/index.php?c=Index&a=index">首页</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Purchase&a=index">代购</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Shop&a=zhuanyun">转运</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Life&a=index">生活</a>
+						</li>
+						<li>
+							<a target="_blank" href="javascript:void(0)" title="正在开发中.....">商城</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.babydaigou.cn">老网站</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<div class="nav-right">
+						<div class="nav_li" id="more_main">
+							<p id="more_tools">
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/tools.png" /> &nbsp;&nbsp;
+								<a href="#">更多工具</a>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/bottom.png" />
+								<div class="tools_list hide">
+									<ul>
+										<!--li><a href="/index.php?c=Shop&a=zhuanyun">转运首页</a></li-->
+										<li>
+											<a href="/index.php?c=About&a=plug_in">购物助手</a>
+										</li>
+										<li>
+											<a href="/index.php?c=Shop&a=cost_charge">费用估算</a>
+										</li>
+										<li>
+											<a href="/index.php?c=Shop&a=logistics">物流查询</a>
+										</li>
+									</ul>
+								</div>
+							</p>
+						</div>
+
+						<div class="nav_li">
+							<p>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/gouwuche.png" /> &nbsp;
+								<a href="/index.php?c=My&a=shopping_car">购物车(3)</a>
+							</p>
+						</div>
+
+						<div class="nav_li">
+							<p>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/login.png" />&nbsp;
+								<a href="/index.php?c=My&a=index">个人中心</a>&nbsp;&nbsp; </p>
+						</div>
+
+						<div class="nav_li">
+							<p><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/logout.png" class="logout" />&nbsp;
+								<a href="/index.php?c=Login&a=logout">退出</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--				<div class="col-md-2"></div>-->
+			</div>
+
+			<!--头部end-->
+			<link href="css/zhuanyun.css" rel="stylesheet">
+			<!--step2 start-->
+			<div class="col-md-12 zhuan_yun_content_1">
+				<div class="col-md-1"></div>
+				<div class="col-md-11 zhuanyun_gc">
+					<div class="gc_p">
+						<img src="images/zhuanyun_gc.png" /> 转运流程
+					</div>
+				</div>
+			</div>
+			<!--step2 end-->
+
+			<!--step3 start-->
+			<div class="col-md-12 gc" style="padding-bottom:50px;">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<img src="images/zhuanyun_progress.jpg" /> </div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 zhuanyun_title_2">
+					<p><span class="pull-left zhuanyun_title_l"><img src="images/r-rmax.png" />&nbsp;&nbsp;填写需转运的商品信息</span><span class="pull-right zhuanyun_title_r">查看贝比仓库地址<img src="images/p_bottom.png" /></span></p>
+					<div class="zhuanyun_address hide">
+						<ul class="title">
+							<li>收货地址</li>
+							<li>收货人</li>
+							<li>联系电话</li>
+						</ul>
+
+						<ul>
+							<li>北京市海淀区上地十街10号 </li>
+							<li>廖小姐</li>
+							<li>158192999989</li>
+						</ul>
+						<ul>
+							<li>北京市海淀区上地十街10号 </li>
+							<li>廖小姐</li>
+							<li>158192999989</li>
+						</ul>
+						<ul>
+							<li>北京市海淀区上地十街10号 </li>
+							<li>廖小姐</li>
+							<li>158192999989</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="col-md-6">
+						<div class="col-md-12 zhuan_yun_content_11">
+							<span class="red">*&nbsp;&nbsp;</span><input type="text" placeholder="请粘贴商品链接或输入商品名称" />
+						</div>
+						<div class="col-md-12 zhuan_yun_content_22 muti">
+							<i class="red">*&nbsp;&nbsp;</i><input class="goods_type" type="text" placeholder="请选择商品类别" id="declare_type0"  /><img src="images/left.jpg" />
+							<span class="less">-</span><input type="text" class="num" value="1" /><span class="plus">+</span>
+
+							<div class="goods_list hide">
+								<p class="title">
+									<i>请选择转运商品的类别</i>
+									<span class="zhuanyun_close">X</span>
+								</p>
+								<p class="warn">&nbsp;&nbsp;&nbsp;&nbsp;*请您务必如实选择商品类别，若由于商品类别与实际类别不同而导致的一切后果，将由您自行承担</p>
+								<ul id="one">
+									<li onclick="choice(1,'衣服')">
+										衣服>
+									</li>
+									<li  onclick="choice(2,'包包')">
+										包包>
+									</li>
+								</ul>
+								<ul id="two"></ul>
+							</div>
+							<input style="display:none;" id="declare_type_id0" name="declare_types" readOnly="true" />
+						</div>
+					</div>
+					<div class="col-md-3">
+						<textarea placeholder="输入商品备注" class="goods_memo"></textarea>
+					</div>
+					<div class="col-md-3">
+						<div class="add_plus">
+							<p class="plus_icon">+</p>
+							<p>添加到转运清单</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 zhuanyun_title_33">
+					<ul>
+						<li>商品名称</li>
+						<li>商品类别</li>
+						<li>数量</li>
+						<li>商品备注（选填）</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 zhuanyun_list">
+					<ul class="transpro clearfix">
+						<li>
+							<img class="pull-left" src="http://img.alicdn.com/imgextra/i1/2183380830/TB1GQ4XSVXXXXX_aXXXXXXXXXXX_!!0-item_pic.jpg" alt="">
+							<ol class="pull-left">
+								<li class="li-el">
+									<a href="https://detail.tmall.com/item.htm?id=557142907745&amp;ali_refid=a3_420432_1006:1109806602:N:%E8%BF%9E%E8%A1%A3%E8%A3%99:66072d92358673459383dd18e8599f9b&amp;ali_trackid=1_66072d92358673459383dd18e8599f9b&amp;spm=a230r.1.14.1.76bf523sgSmV9" target="_blank">Massimo Dutti 女装 蝴蝶结饰交叉连衣裙 06682684251</a>
+								</li>
+								<li class="li-el">
+									<span class="jd">小米京东旗舰店</span>
+								</li>
+							</ol>
+						</li>
+						<li class="text-center">自助购物</li>
+						<li class="text-center zhuan_yun_content_22 muti">
+							<span class="less">-</span>
+							<input type="text" class="num" value="99">
+							<span class="plus">+</span>
+						</li>
+						<li class="text-center">测试</li>
+						<li class="text-center"><a href="javascript:void(0)" onclick="$(this).parents('.transpro').remove()">删除</a></li>
+					</ul>
+					
+					<ul class="transpro clearfix">
+						<li>
+							<img class="pull-left" src="http://img.alicdn.com/imgextra/i1/2183380830/TB1GQ4XSVXXXXX_aXXXXXXXXXXX_!!0-item_pic.jpg" alt="">
+							<ol class="pull-left">
+								<li class="li-el">
+									<a href="https://detail.tmall.com/item.htm?id=557142907745&amp;ali_refid=a3_420432_1006:1109806602:N:%E8%BF%9E%E8%A1%A3%E8%A3%99:66072d92358673459383dd18e8599f9b&amp;ali_trackid=1_66072d92358673459383dd18e8599f9b&amp;spm=a230r.1.14.1.76bf523sgSmV9" target="_blank">Massimo Dutti 女装 蝴蝶结饰交叉连衣裙 06682684251</a>
+								</li>
+								<li class="li-el">
+									<span class="jd">小米京东旗舰店</span>
+								</li>
+							</ol>
+						</li>
+						<li class="text-center">自助购物</li>
+						<li class="text-center zhuan_yun_content_22 muti">
+							<span class="less">-</span>
+							<input type="text" class="num" value="99">
+							<span class="plus">+</span>
+						</li>
+						<li class="text-center">测试</li>
+						<li class="text-center"><a href="javascript:void(0)" onclick="$(this).parents('.transpro').remove()">删除</a></li>
+					</ul>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 zhuanyun_foot">
+					<span>增值服务</span>
+					<label>&nbsp;&nbsp;<input type="checkbox" /><span>开箱验货</span></label>
+					<a href="#">&nbsp;&nbsp;查看详情</a>
+					<label>&nbsp;&nbsp;<input type="checkbox" /><span>取出发票</span></label>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 zhuanyun_warn">
+					<p class="title">温馨提示</p>
+					<p>1、请在提交完订单后，及时前往转运订单列表中补全物流信息（需要人工审核的订单，需待人工审核通过后补全）。</p>
+					<p>2、转运业务不支持平邮件、到付件及全峰快递，建议您选择时效较好的快递公司寄送包裹到仓库。</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 zhuanyun_tj">
+					<input type="button" value="提交" class="button_tj" />
+					<p><label><input type="checkbox" />已查看并同意《包裹转运验货规则和服务协议》</label></p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<script type="text/javascript">
+				$(".muti").on("click", ".plus", function() {
+					var v = ($(this).prev().val() == '' ? 0 : Number($(this).prev().val()) + 1)
+					$(this).prev().val(v);
+				})
+				$(".muti").on("click", ".less", function() {
+					var v = ($(this).next().val() <= 1 ? 1 : Number($(this).next().val()) - 1)
+					$(this).next().val(v);
+				})
+				
+				function calc_num(obj , type){
+					if(type =='plus'){
+						var v = (obj.prev().val() == '' ? 0 : Number(obj.prev().val()) + 1)
+						obj.prev().val(v);
+					}else if(type == 'less'){
+						var v = (obj.next().val() <= 1 ? 1 : Number(obj.next().val()) - 1)
+						obj.next().val(v);
+					}
+				}
+
+				$('.zhuanyun_title_r').click(function() {
+					$('.zhuanyun_address').toggleClass('hide');
+				});
+
+				$('.goods_type').click(function() {
+					$('.goods_list').toggleClass('hide');
+				})
+				
+				$('.zhuanyun_close').click(function(){
+					$('.goods_list').addClass('hide')
+				});
+				
+				var declare_types = 0;
+				//选择申报类别
+		function choice(declare_id,declare_name){
+			/*$.ajax({
+				type : "post",
+				url : "http://daigou.ahzhenshan.com//index.php?c=Shop&a=declare_category_son",
+				dataType : "json",
+				data:{
+					declare_id	:	declare_id,
+				},
+				async:false,
+				success : function(result){
+					var data	=	result.result;
+					var data_length	=	data.length;
+					if(data_length > 0){
+						var two	=	'';
+						for(i=0;i<data_length;i++){
+							two	+=	'<div style="width:33%;float:left;text-align:center" onclick="choice_two('+data[i].declare_id+',\''+data[i].declare_name+'\')">'+data[i].declare_name+'</div>';
+						}
+						$("#two").html(two);
+						$("#two").show();
+						$("#one").hide();
+					}else{
+						$("#declare_type"+declare_types).val(declare_name);
+						$("#declare_type_id"+declare_types).val(declare_id);
+						declare_types	=	0;
+						$(".p-modal").hide();
+					}
+				},
+				error:function(){
+					sumbit_status	=	true;
+					alert('网络错误，请稍后重试！');
+					return false;
+				}
+			})*/
+			
+			
+			var arr = '{"errorCode":0,"errorMsg":"success","result":[{"declare_id":"54","declare_fid":"2","declare_name":"\u62ce\u5305\/\u624b\u63d0\u5305","level":"2","is_artificial":"0","sort":"0","status":"1"},{"declare_id":"55","declare_fid":"2","declare_name":"\u80cc\u5305","level":"2","is_artificial":"0","sort":"0","status":"1"},{"declare_id":"56","declare_fid":"2","declare_name":"\u7bb1\u5305","level":"2","is_artificial":"0","sort":"0","status":"1"},{"declare_id":"57","declare_fid":"2","declare_name":"\u5546\u52a1\u5305","level":"2","is_artificial":"0","sort":"0","status":"1"},{"declare_id":"58","declare_fid":"2","declare_name":"\u94b1\u5305","level":"2","is_artificial":"0","sort":"0","status":"1"},{"declare_id":"59","declare_fid":"2","declare_name":"\u8170\u5305","level":"2","is_artificial":"0","sort":"0","status":"1"},{"declare_id":"60","declare_fid":"2","declare_name":"\u659c\u630e\u5305","level":"2","is_artificial":"0","sort":"0","status":"1"}]}';
+			
+			if(true){			//有二级分类
+				arr = JSON.parse(arr);
+				var data	=	arr.result;
+				var shtml = '';
+				for(var i in data){
+					shtml += '<li onclick="choice_two(\''+data[i]['declare_id']+'\',\''+data[i]['declare_name']+'\')">'+data[i]['declare_name']+'</li>';
+				}
+				
+				$("#two").html(shtml);
+				$("#two").show();
+				$("#one").hide();
+			}else{				//无二级分类 
+				$("#declare_type"+declare_types).val(declare_name);
+				$("#declare_type_id"+declare_types).val(declare_id);
+				declare_types	=	0;
+				$('.goods_list').addClass('hide');
+			}
+		}
+		//选择二级分类
+		function choice_two(declare_id,declare_name){
+			$("#declare_type"+declare_types).val(declare_name);
+			$("#declare_type_id"+declare_types).val(declare_id);
+			declare_types	=	0;
+			$(".p-modal").hide();
+			$("#two").hide();
+			$("#one").show();
+			$('.goods_list').addClass('hide');
+		}
+		
+		
+		$('.add_plus').click(function(){
+				var shtml = '<ul class="transpro clearfix">';
+					shtml += '	<li>';
+					shtml += '		<img class="pull-left" src="http://img.alicdn.com/imgextra/i1/2183380830/TB1GQ4XSVXXXXX_aXXXXXXXXXXX_!!0-item_pic.jpg" alt="">';
+					shtml += '		<ol class="pull-left">';
+					shtml += '			<li class="li-el">';
+					shtml += '				<a href="https://detail.tmall.com/item.htm?id=557142907745&amp;ali_refid=a3_420432_1006:1109806602:N:%E8%BF%9E%E8%A1%A3%E8%A3%99:66072d92358673459383dd18e8599f9b&amp;ali_trackid=1_66072d92358673459383dd18e8599f9b&amp;spm=a230r.1.14.1.76bf523sgSmV9" target="_blank">Massimo Dutti 女装 蝴蝶结饰交叉连衣裙 06682684251</a>';
+					shtml += '			</li>';
+					shtml += '			<li class="li-el">';
+					shtml += '				<span class="jd">小米京东旗舰店</span>';
+					shtml += '			</li>';
+					shtml += '		</ol>';
+					shtml += '	</li>';
+					shtml += '	<li class="text-center">自助购物</li>';
+					shtml += '	<li class="text-center zhuan_yun_content_22 muti">';
+					shtml += '		<span class="less" onclick="calc_num($(this) , \'less\')">-</span>';
+					shtml += '		<input type="text" class="num" value="99">';
+					shtml += '		<span class="plus" onclick="calc_num($(this) , \'plus\')">+</span>';
+					shtml += '	</li>';
+					shtml += '	<li class="text-center">测试</li>';
+					shtml += '	<li class="text-center"><a href="javascript:void(0)" onclick="$(this).parents(\'.transpro\').remove()">删除</a></li>';
+					shtml += '</ul>';
+				
+				$('.zhuanyun_list').append(shtml)
+		})
+
+		</script>
+
+			<!--step3 end-->
+			<div class="col-md-12 footer">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="col-md-3 footer_time">
+						<p class="now_time">17:28</p>
+						<p class="time_desc">当前北京时间： 2017-09-04</p>
+					</div>
+					<div class="col-md-6 foot-menu">
+
+						<div class="col-md-4">
+							<ul>
+								<li class="foot-first">
+									<a href="javascript:void(0)">业务类型</a>
+								</li>
+
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=2">代购</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=3">国际转运</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=4">商城</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=22">APP</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li class="foot-first">
+									<a href="javascript:void(0)">账户资产</a>
+								</li>
+
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=6">代拍说明</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=7">售后服务</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=8">会员等级及积分规则</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=9">常见问题</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li class="foot-first">
+									<a href="javascript:void(0)">配送方式</a>
+								</li>
+
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=13">售后常见问题</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=14">充值和退款常见问题</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=15">会员等级和积分规则</a>
+								</li>
+								<li>
+									<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=16">拼单购中的常见问题</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 foot-right">
+						<p>联系我们</p>
+						<p>客服电话：4006060799</p>
+						<p>客服邮箱：service@babydaigou.com</p>
+						<p>社交媒体</p>
+						<p>
+							<a href="https://m.facebook.com" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_1.jpg" /></a>
+							<a href="https://www.twitter.com" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_3.jpg" /></a>
+							<a href="http://www.sina.com.cn" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_2.jpg" /></a>
+							<!--					<a href="#" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_4.jpg" /></a>-->
+							<!--					<a href="#" id="weixin" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_4.jpg" /></a>-->
+							<a href="#" id="erweima" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/erweima.jpg" /></a>
+							<a href="#" class="huojian"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_5.jpg" /></a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="col-md-12 foot2">
+				<div class="col-md-1"></div>
+				<div class=" col-md-10 footer-desc">
+					<p>Copyright 2007-2017 babydaigou.com All Rights Reserved 京ICP备16060963号-2&nbsp;&nbsp;
+						<img src="http://daigou.ahzhenshan.com//upload/baby/adver/63/000/000/001/5870b32b330f7.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/35/000/000/001/5870b336ed810.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/40/000/000/001/5870b342c562d.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/15/000/000/001/5870b3582f4b4.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/12/000/000/001/5870b362ade7e.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/52/000/000/001/5870b370386b3.png" /> </p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<!--footer end-->
+		</div>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/dropload.min.js"></script>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/common.js"></script>
+		<!-- Live800在线客服图标:默认图标[浮动图标]开始-->
+		<div style='display:none;'>
+			<a href='http://www.live800.com'>客服软件</a>
+		</div>
+		<script language="javascript" src="http://chat32.live800.com/live800/chatClient/floatButton.js?jid=5844011854&companyID=814964&configID=105311&codeType=custom"></script>
+		<div style='display:none;'>
+			<a href='http://en.live800.com'>live chat</a>
+		</div>
+		<!-- 在线客服图标:默认图标结束-->
+	</body>
+
+</html>

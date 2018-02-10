@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!--meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"-->
+		<meta charset="UTF-8">
+		<title>常见问题列表--贝比代购 - 贝比代购</title>
+		<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/common.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="http://www.babydaigou.com/tpl/Static/index/css/common.css">
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.0/jquery.min.js"></script>
+		<script src="http://www.babydaigou.com/tpl/Static/index/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="http://www.babydaigou.com/tpl/Static/index/js/common.js"></script>
+		<!--script type="text/javascript" src="http://www.babydaigou.com/tpl/Static/index/js/layer/layer.m.js" charset="utf-8"></script-->
+		<script src="http://www.babydaigou.com/static/js/layer/layer.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.s-menu li').each(function() {
+					$(this).click(function() {
+						$('.search-name').html($(this).html());
+						var type = $(this).data('type');
+						$('input[name="type"]').val(type)
+
+						if(type == 'self_sale') {
+							$('input[name="keyword"]').attr('placeholder', '请准确输入关键词');
+							$('input[name="c"]').val('Index');
+							$('input[name="a"]').val('search_goods');
+						} else if(type == 'purchase') {
+							$('input[name="keyword"]').attr('placeholder', '请准确输入您已相中的宝贝详情地址');
+							$('input[name="c"]').val('Purchase');
+							$('input[name="a"]').val('get_goods');
+							$('input[name="type"]').val('taobao');
+						} else if(type == 'transport') {
+							$('input[name="keyword"]').attr('placeholder', '请准确输入您已相中的宝贝详情地址');
+							$('input[name="c"]').val('Shop');
+							$('input[name="a"]').val('zhuanyun_step1');
+						}
+					});
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		
+
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+<div class="col-md-12 header">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="logo">
+						<a href="/index.php?c=Index&amp;a=index"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/logo.jpg"></a>
+					</div>
+				</div>
+				<div class="col-md-4 header-nav">
+					<ul>
+						<li>
+							<a href="/index.php?c=Index&amp;a=index">首页</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Purchase&amp;a=index">代购</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Shop&amp;a=zhuanyun">转运</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Life&amp;a=index">生活</a>
+						</li>
+						<li>
+							<a target="_blank" href="javascript:void(0)" title="正在开发中.....">商城</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<div class="nav-right">
+						<div class="nav_li" id="more_main">
+							<p id="more_tools">
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/tools.png"> &nbsp;&nbsp;
+								<a href="#">更多工具</a>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/bottom.png">
+								</p><div class="tools_list hide">
+									<ul>
+										<!--li><a href="/index.php?c=Shop&a=zhuanyun">转运首页</a></li-->
+										<li>
+											<a href="/index.php?c=About&amp;a=plug_in">购物助手</a>
+										</li>
+										<li>
+											<a href="/index.php?c=Shop&amp;a=cost_charge">费用估算</a>
+										</li>
+										<li>
+											<a href="/index.php?c=Shop&amp;a=logistics">物流查询</a>
+										</li>
+									</ul>
+								</div>
+							<p></p>
+						</div>
+
+						<div class="nav_li">
+							<p>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/gouwuche.png"> &nbsp;
+								<a href="/index.php?c=My&amp;a=shopping_car">购物车</a>
+							</p>
+						</div>
+
+						<div class="nav_li">
+							<p>
+								<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/login.png">&nbsp;
+								<a href="/index.php?c=Login&amp;a=index">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+								<a href="/index.php?c=Login&amp;a=reg">注册</a>
+							</p>
+						</div>
+
+					</div>
+				</div>
+				<!--				<div class="col-md-2"></div>-->
+			</div>
+		<div class="news-content clear">
+			<div class="news-menu fl">
+				<ul class="news-menu-list">
+					<li>
+						<p>业务类型<img src="images/l_bottom.png" alt=""></p>
+						<ul class="news-sub-list" style="overflow: hidden; height: 215px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=2"><span>代购</span></a>
+							</li>
+							<li class="on">
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=3"><span>国际转运</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=4"><span>商城</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=22"><span>APP</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=23"><span>论坛</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=24"><span>旅游</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>账户资产<img src="images/l_bottom.png" alt=""></p>
+						<ul class="news-sub-list" style="overflow: hidden; display: none;">
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=6"><span>代拍说明</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=7"><span>售后服务</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=8"><span>会员等级及积分规则</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=9"><span>常见问题</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=10"><span>拼单规则</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=11"><span>新手常见问题</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>配送方式<img src="images/l_bottom.png" alt=""></p>
+						<ul class="news-sub-list" style="overflow: hidden; display: none;">
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=13"><span>售后常见问题</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=14"><span>充值和退款常见问题</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=15"><span>会员等级和积分规则</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=16"><span>拼单购中的常见问题</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=17"><span>团购中的常见问题</span></a>
+							</li>
+							<li>
+								<a href="/index.php?c=About&amp;a=problem_list&amp;cat_id=18"><span>用户须知</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>会员特权<img src="images/l_bottom.png" alt=""></p>
+						<ul class="news-sub-list" style="overflow: hidden; display: none;">
+						</ul>
+					</li>
+					<li>
+						<p>售后服务<img src="images/l_bottom.png" alt=""></p>
+						<ul class="news-sub-list" style="overflow: hidden; display: none;">
+						</ul>
+					</li>
+					<li>
+						<p>用户须知<img src="images/l_bottom.png" alt=""></p>
+						<ul class="news-sub-list" style="overflow: hidden; display: none;">
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="news-con fr">
+				<p class="title">常见问题列表--贝比代购</p>
+				<ul class="news-list">
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=1">购物助手--一键转运流程</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=2">国际转运流程</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=3">转运包裹已经寄到你们仓库了但没提交订单，怎么补救能快速入库?</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=4">国际转运如何收费?</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=5">包裹转运验货规则</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=6">包裹转运的商品可以和代购的订单一起寄送吗？</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=7">包裹转运验货规则及服务相关协议</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=8">转运的包裹转运地址如何填写？</a>
+						</p>
+					</li>
+					<li>
+						<p class="p1">
+							<a href="/index.php?c=About&amp;a=problem_details&amp;cat_id=3&amp;key=9">为什么转运订单要补齐物流单号？</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".news-menu-list li").click(function() {
+				$(".news-sub-list").stop().slideUp();
+				$(this).find(".news-sub-list").stop().slideDown();
+				$(".news-menu-list li p").removeClass('on');
+				$(".news-menu-list li p img").attr('src','images/l_bottom.png')
+				$(this).find('p').addClass('on');
+				$(this).find('p img').attr('src','images/p_bottom.png')
+			})
+			$(".news-menu-list").children('li').eq(0).click()
+		</script>
+	</body>
+
+</html>

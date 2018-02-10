@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/user-advice.css"/>
+		<title>我的建议</title>
+		<script>!function(a,b){var c=a.documentElement,d="orientationchange"in window?"orientationchange":"resize",e=function(){var a=c.clientWidth;a&&(c.style.fontSize=100*(a/1242)+"px")};a.addEventListener&&(b.addEventListener(d,e,!1),a.addEventListener("DOMContentLoaded",e,!1))}(document,window);</script>
+	</head>
+	<body>
+		<div class="header"><span id="switch_word">我的建议</span>
+			<a href="javascript:window.location.href = 'user.html';" class="left"><font><img src="images/o-cart-.png"/></font></a>
+		</div>
+		<div class="section-info">
+			<div class="section-info-base">
+				<p>建议标题</p>
+			</div>
+			<div class="section-info-phone">
+				<p>建议时间:<span>2018-1-31 14:12:36</span></p>
+			</div>
+			<div class="section-info-email">
+				<p>建议类型: <select value="充值相关">
+								<option value="充值相关">充值相关</option>
+								<option value="代练相关">代练相关</option>
+								<option value="直播相关">直播相关</option>
+						</select>
+				</p>
+			</div>
+			<div class="section-info-content">
+				<p>建议内容:</p>
+			</div>
+			<div class="section-advice">
+				<textarea maxlength="200" onchange="this.value=this.value.substring(0, 200)" onkeydown="this.value=this.value.substring(0, 200)" onkeyup="this.value=this.value.substring(0, 200)"></textarea>
+			</div>
+	</div>
+
+		<div class="exit">确认提交</div>
+	</body>
+</html>

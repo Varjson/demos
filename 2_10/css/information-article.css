@@ -1,0 +1,424 @@
+body {
+	background: #ececec;
+	padding-bottom: 1.6rem;
+}
+/*头部部分开始*/
+.header{
+	width: 100%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background-color: #010101;
+	text-align: center;
+	font-size: .5rem;
+	color: #FFFFFF;
+}
+.header a{
+	height: 1.2rem;
+    line-height: 1.2rem;
+    text-decoration: none;
+    color: #b1b1b1;
+    position: absolute;
+}
+.header .left{
+	line-height: 1.05rem;
+	left: .3rem;
+    font-size: .90rem;
+    color: #e4e2e2;
+}
+.header .left font img{
+	width: .3rem;
+	height: .5rem;
+}
+/*头部部分结束*/
+
+/*文章标题开始*/
+.title{
+	padding: .35rem .36rem;
+	background: #FFFFFF;
+	border-bottom: .01rem solid #ECECEC;
+}
+.title h2{
+	font-size: .55rem;
+	color:#333131 ;
+}
+.title p{
+	width: 100%;
+	height: .6rem;
+	font-size: .4rem;
+	color: #A3A3A3;
+	margin-top: .35rem;
+} 
+/*文章标题结束*/
+
+/*文章部分开始*/
+.article{
+	padding: 0 .36rem .2rem;
+	background: #FFFFFF;
+	font-size: .5rem;
+	line-height: .8rem;
+	color:#292727 ;
+}
+.article h4{
+	display: block;
+	font-weight: normal;
+	font-size: .5rem;
+	margin: .3rem 0;
+}
+.article img{
+	width: 100%;
+	height: 6rem;
+	margin:.5rem 0 .3rem ;
+}
+/*文章部分结束*/
+
+/*分享的链接开始*/
+.share{
+	margin:.2rem 0 .2rem;
+	padding: .3rem .36rem .4rem;
+	background: #ffffff;
+}
+.share p{
+	font-size: .45rem;
+	color: #292727;
+	text-align: center;
+	margin-bottom: .4rem;
+	position: relative;
+}
+.share p span{
+	width: 2rem;
+	display: inline-block;
+	background: #ffffff;
+	position: relative;
+	z-index: 10;
+}
+.share p font{
+	width: 8rem;
+	height: .06rem;
+	background: #ECECEC;
+	position: absolute;
+	display: inline-block;
+	top: .3rem;
+	left: calc(50% - 4rem);	
+}
+.share .share-way{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}	
+.share .share-way a{
+	width: 2rem;
+	display: flex;
+	flex-direction: column;
+	/*height: 1rem;*/
+	text-align: center;
+	color: #333333;
+	font-size: .4rem;
+} 
+.share .share-way a img{
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0 auto;
+}
+.share .share-way a span{
+	display: inline-block;
+	margin-top: .15rem;
+}
+/*分享的链接结束*/
+/*广告部分开始*/
+
+.download {
+	height: 4.2rem;
+	box-sizing: border-box;
+	padding: .4rem .36rem;
+	border-bottom: .01rem solid #ECECEC;
+	background: #ffffff;
+}
+.download a{
+	width: 100%;
+	height: 100%;
+} 
+.download img {
+	width: 100%;
+	height: 100%;
+}
+
+/*广告部分结束*/
+
+/*相关内容开始*/
+.groom{
+	width: 100%;
+	background: #FFFFFF;
+	padding:.2rem 0;
+	box-sizing: border-box;
+}
+.groom h3{
+	font-size: .6rem;
+	margin: .3rem 0;
+	font-weight: normal;
+	color: #000000;
+	padding-left: .36rem;
+	box-sizing: border-box;
+}
+.groom h3:before{
+	content: '';
+	width: .1rem;
+	height: .7rem;
+	display: inline-block;
+	background: #ff000a;
+	margin-right: .2rem;
+	vertical-align: text-top;
+}
+.groom-section{
+	width: 100%;
+	padding-bottom: .3rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 .36rem .3rem;
+	box-sizing: border-box;
+}
+.groom-section div{
+	width: 5.7rem;
+	display: inline-block;
+}
+.groom-section p{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: .35rem;
+	color: #333333;
+	margin-bottom: .05rem;
+	margin-top: .08rem;
+}
+.groom-section a{
+	width: 5.7rem;
+	height: 3rem;
+	border-radius: .2rem;
+}
+.groom-section a img{
+	width: 100%;
+	height: 100%;
+	border-radius: .2rem;
+}
+/*相关内容结束*/
+
+.group{
+	width: 100%;
+	background: #FFFFFF;
+	padding: .2rem .36rem;
+	box-sizing: border-box;
+	margin-top: .2rem;
+}
+.group h3{
+	font-size: .6rem;
+	margin: .3rem 0;
+	font-weight: normal;
+	color: #000000;
+	box-sizing: border-box;
+}
+.group h3:before{
+	content: '';
+	width: .1rem;
+	height: .7rem;
+	display: inline-block;
+	background: #ff000a;
+	margin-right: .2rem;
+	vertical-align: text-top;
+}
+.article-group{
+	height: 3.06rem;
+	margin-top: .2rem;
+	border-bottom: .01rem solid #eae6e6;
+	position: relative;
+}
+.article-group a {
+	width: 5.04rem;
+	height: 2.85rem;
+	position: relative;
+}
+.article-group img {
+	width: 100%;
+	height: 100%;
+}
+.article-detail {
+	width: 6.43rem;
+	height: 2.85rem;
+	padding-left: .36rem;
+	box-sizing: border-box;
+
+}
+
+.article-detail p {
+	font-size: .52rem;
+	color: #373737;
+}
+
+.article-detail span {
+	font-size: .42rem;
+	color: #afafaf;
+	position: absolute;
+	bottom: .2rem;
+	right: .1rem;
+}
+.article-detail span font{
+	margin-right: .3rem;
+}
+.article-detail span font img{
+	width: .4rem;
+	height: .4rem;
+	vertical-align: middle;
+	margin-bottom: .08rem;
+}
+
+/*游戏广告下载开始*/
+.download-two{
+	padding: .2rem .36rem .2rem .36rem;
+	background: #FFFFFF;
+}
+.download-two h3{
+	height: .6rem;
+	font-size: .6rem;
+	margin: .3rem 0;
+	font-weight: normal;
+	color: #000000;
+	box-sizing: border-box;
+}
+.download-two h3:before{
+	content: '';
+	width: .1rem;
+	height: .7rem;
+	display: inline-block;
+	background: #ff000a;
+	margin-right: .2rem;
+	vertical-align: text-top;
+}
+.download-two h3 a {
+	font-size: .45rem;
+	font-weight: normal;
+	display: block;
+	box-sizing: border-box;
+	color: #A3A3A3;
+
+}
+.download-two-bg{
+	display: flex;
+	justify-content: space-between;
+	padding: .2rem 0 .4rem 0;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	border-bottom: .01rem solid #ECECEC;
+}
+.download-two-bg a{
+	flex-basis: 20%;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	border-radius: .2rem;
+	text-align: center;
+	text-decoration: none;
+}
+.download-two-bg a img{
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: .2rem;
+	margin: 0 auto;
+}
+.download-two-bg a p{
+	font-size: .4rem;
+	color: #000;
+	margin-top: .15rem;
+	color: #646464;
+}
+/*游戏广告下载结束*/
+
+/*用户评论区开始*/
+.comment{
+	padding:.2rem .36rem 0;
+	margin-top: .2rem;
+	background: #FFFFFF;
+}
+.comment h3{
+	height: .6rem;
+	font-size: .6rem;
+	margin: .3rem 0;
+	font-weight: normal;
+	color: #000000;
+	box-sizing: border-box;
+}
+.comment h3:before{
+	content: '';
+	width: .1rem;
+	height: .7rem;
+	display: inline-block;
+	background: #ff000a;
+	margin-right: .2rem;
+	vertical-align: text-top;
+}
+
+.comment .person{
+	border-bottom: .01rem solid #ECECEC;
+	padding: .3rem 0;
+}
+.comment .person img{
+	width: 10%;
+	height: 1rem;
+	vertical-align: middle;
+}
+.comment .person div{
+	width: 87%;
+	margin-left: .3rem;
+}
+.comment .person p{
+	font-size: .5rem;
+	font-weight: bold;
+	margin-bottom: .2rem;
+}
+.comment .person span{
+	font-size: .4rem;
+}
+/*用户评论区结束*/
+
+
+/*尾部开始*/
+.footer{
+	width: 100%;
+	height:1.3rem ;
+	line-height: 1.2rem;
+	background: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	border-top: .01rem solid #ECECEC;
+}
+.footer-search{
+	width: 80%;
+	height: 1.3rem;
+	display: inline-block;
+	line-height: 1.35rem;
+	padding-left: .4rem;
+}
+.footer-search input{
+	width: 100%;
+	height: 72%;
+	border-radius: .2rem;
+	border: .01rem solid #ECECEC;
+	box-sizing: border-box;
+	padding-left: .5rem;
+	background: #f3f3f3;
+	font-size: .4rem;
+}
+.footer-search  input::-webkit-input-placeholder {
+	/*background: #f3f3f3;*/
+    color: #313030;
+}
+.footer a{
+	width: 15%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	border-radius: .3rem;
+	color: #ffffff;
+	background: rgba(255,0,0,.7);
+	display: inline-block;
+	font-size: .5rem;
+}
+/*尾部结束*

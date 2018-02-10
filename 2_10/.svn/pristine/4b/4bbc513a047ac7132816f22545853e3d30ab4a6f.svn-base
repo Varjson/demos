@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<!--meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"-->
+		<title>我的收货地址--贝比代购</title>
+
+		<!-- Bootstrap -->
+		<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/common.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/dropload.css" />
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript" src="http://daigou.ahzhenshan.com//static/layer/layer.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<!--头部start-->
+			<div class="col-md-12 header">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="logo"><a href="/index.php?c=Index&a=index"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/logo.jpg" /></a></div>
+				</div>
+				<div class="col-md-4 header-nav">
+					<ul>
+						<li>
+							<a href="/index.php?c=Index&a=index">首页</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Purchase&a=index">代购</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Shop&a=zhuanyun">转运</a>
+						</li>
+						<li>
+							<a href="/index.php?c=Life&a=index">生活</a>
+						</li>
+						<li>
+							<a target="_blank" href="javascript:void(0)" title="正在开发中.....">商城</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.babydaigou.cn">老网站</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+				<div class="nav-right">
+					<div class="nav_li" id="more_main">
+					<p id="more_tools">
+						<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/tools.png" /> &nbsp;&nbsp;
+						<a href="#">更多工具</a>
+						<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/bottom.png" />
+						<div class="tools_list hide">
+							<ul>
+								<!--li><a href="/index.php?c=Shop&a=zhuanyun">转运首页</a></li-->
+								<li><a href="/index.php?c=About&a=plug_in">购物助手</a></li>
+								<li><a href="/index.php?c=Shop&a=cost_charge">费用估算</a></li>
+								<li><a href="/index.php?c=Shop&a=logistics">物流查询</a></li>
+							</ul>
+						</div>
+					</p>
+					</div>
+
+					<div class="nav_li">
+						<p>
+							<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/gouwuche.png" /> &nbsp;
+							<a href="/index.php?c=My&a=shopping_car">购物车(3)</a>						</p>
+					</div>
+
+					<div class="nav_li">
+						<p>
+															<img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/login.png" />&nbsp;
+								<a href="/index.php?c=My&a=index">个人中心</a>&nbsp;&nbsp;						</p>
+					</div>
+
+					<div class="nav_li">
+						<p><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/logout.png" class="logout" />&nbsp;
+						<a href="/index.php?c=Login&a=logout">退出</a></p>
+					</div>				</div>
+				</div>
+<!--				<div class="col-md-2"></div>-->
+			</div>
+
+			<!--头部end-->
+<link href="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/css/center.css" rel="stylesheet">
+<script type="text/javascript" src="http://daigou.ahzhenshan.com//static/js/webuploader.min.js"></script>
+<div class="col-md-12 main">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<div class="col-md-2 left_menu">
+	<ul>
+		<li class="first"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/order.png" />我的订单</li>
+		<li >
+			<a href="/index.php?c=My&a=buy_order">代购订单<i>8</i></a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=transport_order">转运订单<i>0</i></a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=mall_order">商城订单<i>1</i></a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=life_order">生活订单<i>5</i></a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=haitao_order">海淘订单<i>0</i></a>
+		</li>
+	</ul>
+
+	<ul>
+		<li class="first"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/cangku.png" />仓库／包裹</li>
+		<li >
+			<a href="/index.php?c=My&a=warehouse">我的仓库</a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=package">我的包裹</a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=transport_address">贝比仓库</a>
+		</li>
+	</ul>
+
+	<ul>
+		<li class="first"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/record.png" />交易记录</li>
+		<li >
+			<a href="/index.php?c=My&a=balance">我的余额（充值）</a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=consumption">消费记录</a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=refund">提现申请</a>
+		</li>
+	</ul>
+
+	<ul>
+		<li class="first"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/setting.png" />账户设置</li>
+		<li >
+			<a href="/index.php?c=My&a=my_info">基本资料</a>
+		</li>
+		<li >
+			<a href="/index.php?c=My&a=security">安全设置</a>
+		</li>
+		<li class="on">
+			<a href="/index.php?c=My&a=address">收货地址</a>
+		</li>
+		<!--<li >
+			<a href="/index.php?c=My&a=message">我的信箱</a>
+		</li>-->
+	</ul>
+</div>
+		<div class="col-md-10 main_contet_list">
+			<div class="main_contet">
+				<div class="col-md-12 daigou_nav">
+					<div class="col-md-6 daigou_nav2">
+						<ul>
+							<li class="on">
+								<a href="/index.php?c=My&a=address">收货地址</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-12 order_address_nav">
+					<p>
+						<a href="/index.php?c=My&a=add_address_2">新增地址</a>
+					</p>
+				</div>
+
+				<div class="col-md-12 order_address">
+					<ul>
+						<li class="address_info on">
+								<p class="adress_ren">测试 收<span>默认地址</span></p>
+								<p class="address_link" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">澳大利亚测试测试测试</p>
+								<p class="address_link">(+86) 13761415048</p>
+								<p>
+									<a href="/index.php?c=My&a=edit_address&address_id=22">修改</a>
+									<a onclick="del_address(22)" href="javascript:void(0)">删除</a>
+								</p>
+							</li><li class="address_info ">
+								<p class="adress_ren">李标 收 <span class="hide">默认地址</span></p>
+								<p class="address_link" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">澳大利亚悉尼唐人街111号</p>
+								<p class="address_link">(+86) 13761415048</p>
+								<p>
+									<a href="/index.php?c=My&a=edit_address&address_id=20">修改</a>
+									<a onclick="del_address(20)" href="javascript:void(0)">删除</a>
+								</p>
+							</li>					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="gray"></div>
+
+	<div class="popup_edit" id="popup_edit">
+		<div class="top_nav" id='top_nav'>
+			<div align="center">
+				<span>修改地址</span>
+				<a class="guanbi edit_guanbi"></a>
+			</div>
+		</div>
+		<div class="min">
+			<div class="tc_login">
+				<div class="col-md-12 select_address">
+					<div class="col-md-12 conutry">
+						<span><i>*</i>所在国家</span>
+						<select id="country_s" style="margin-left:35px;" onchange="edit_global(this.value,2)"></select>
+						<select id="province_s" onchange="edit_province(this.value,2)"></select>
+						<select id="city_s"></select>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="col-md-12 address" style="height:45px;">
+						<span><i>*</i>详细地址</span>
+						<input type="text" id="address_s" placeholder="请输入详细地址" />
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="col-md-12 address" style="height:45px;">
+						<span><i>*</i>收货人姓名</span>
+						<input id="name_s" type="text" placeholder="请输入"/>
+					</div>
+				</div>
+				<div class="col-md-12 select_address" style="margin-top:0px;">
+					<div class="col-md-12 conutry" style="height:45px;">
+						<span><i>*</i>国家前缀</span>
+						<select id="phone_area_s" style="margin-left:35px;">
+							<!--<option value="48">+86 中国</option><option value="14">+61 澳大利亚</option>-->
+						</select>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-12 address" style="height:45px;">
+						<span><i>*</i>联系电话</span>
+						<input type="text" id="phone_s" placeholder="请输入联系电话" />
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="col-md-12 address" style="height:45px;">
+						<span>&nbsp;&nbsp;邮政编码</span>
+						<input type="text" id="zipcode_s" placeholder="请输入"/>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="col-md-12 address" style="height:22px;">
+						<span class="address_radio">&nbsp;&nbsp;是否默认</span>
+						<label class="pull-left"><input type="radio" id="yes_s" value="1" name="is_default" />是</label>
+						<label class="pull-left"><input type="radio" id="no_s" value="0" name="is_default" />否</label>
+					</div>
+				</div>
+
+				<div class="col-md-12 address_btn">
+					<input id="edit_address_submit" type="button" value="保存" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-md-1"></div>
+</div>
+	<div class="col-md-12 footer">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-3 footer_time">
+				<p class="now_time">17:11</p>
+				<p class="time_desc">当前北京时间： 2017-09-04</p>
+			</div>
+			<div class="col-md-6 foot-menu">
+
+
+				<div class="col-md-4">
+					<ul>
+						<li class="foot-first">
+							<a href="javascript:void(0)">业务类型</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=2">代购</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=3">国际转运</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=4">商城</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=22">APP</a>
+						</li>					</ul>
+				</div><div class="col-md-4">
+					<ul>
+						<li class="foot-first">
+							<a href="javascript:void(0)">账户资产</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=6">代拍说明</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=7">售后服务</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=8">会员等级及积分规则</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=9">常见问题</a>
+						</li>					</ul>
+				</div><div class="col-md-4">
+					<ul>
+						<li class="foot-first">
+							<a href="javascript:void(0)">配送方式</a>
+						</li>
+
+						<li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=13">售后常见问题</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=14">充值和退款常见问题</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=15">会员等级和积分规则</a>
+						</li><li>
+							<a target="_blank" href="/index.php?c=About&a=problem_list&cat_id=16">拼单购中的常见问题</a>
+						</li>					</ul>
+				</div>			</div>
+			<div class="col-md-3 foot-right">
+				<p>联系我们</p>
+				<p>客服电话：4006060799</p>
+				<p>客服邮箱：service@babydaigou.com</p>
+				<p>社交媒体</p>
+				<p>
+					<a href="https://m.facebook.com" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_1.jpg" /></a>
+					<a href="https://www.twitter.com" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_3.jpg" /></a>
+					<a href="http://www.sina.com.cn" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_2.jpg" /></a>
+<!--					<a href="#" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_4.jpg" /></a>-->
+<!--					<a href="#" id="weixin" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_4.jpg" /></a>-->
+					<a href="#" id="erweima" target="_blank"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/erweima.jpg" /></a>
+					<a href="#" class="huojian"><img src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/images/foot_pic_5.jpg" /></a>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="col-md-12 foot2">
+		<div class="col-md-1"></div>
+		<div class=" col-md-10 footer-desc">
+			<p>Copyright 2007-2017 babydaigou.com All Rights Reserved 京ICP备16060963号-2&nbsp;&nbsp;
+				<img src="http://daigou.ahzhenshan.com//upload/baby/adver/63/000/000/001/5870b32b330f7.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/35/000/000/001/5870b336ed810.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/40/000/000/001/5870b342c562d.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/15/000/000/001/5870b3582f4b4.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/12/000/000/001/5870b362ade7e.png" /><img src="http://daigou.ahzhenshan.com//upload/baby/adver/52/000/000/001/5870b370386b3.png" />			</p>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<!--footer end-->
+</div>
+<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/dropload.min.js" ></script>
+<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/common.js"></script>
+	<!-- Live800在线客服图标:默认图标[浮动图标]开始-->
+	<div style='display:none;'><a href='http://www.live800.com'>客服软件</a></div><script language="javascript" src="http://chat32.live800.com/live800/chatClient/floatButton.js?jid=5844011854&companyID=814964&configID=105311&codeType=custom"></script><div style='display:none;'><a href='http://en.live800.com'>live chat</a></div>
+	<!-- 在线客服图标:默认图标结束-->
+</body>
+</html>
+<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/dropload.min.js"></script>
+<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/common.js"></script>
+<script type="text/javascript" src="http://daigou.ahzhenshan.com//tpl/Static/index/default_2/js/warehoues.js"></script>
+<script type="text/javascript">
+	var address_id	=	'';
+	function edit_address(v){
+		address_id	=	v;
+		var global_phone_d	=	'';
+		var global_area_d	=	'';
+		var province_d	=	'';
+		var city_d	=	'';
+		$.ajax({
+			type: 'post',
+			url: "/index.php?c=My&a=get_address",
+			dataType: 'json',
+			data:{
+				address_id	:	v,
+			},
+			async:false,
+			success: function(data){
+				if(data.errorCode == 0){
+					var data_s	=	data.result.user_address;
+					var global_phone_s	=	data.result.global_phone;
+					var global_phone_l	=	global_phone_s.length;
+					for(var g=0; g<global_phone_l;g++){
+						global_phone_d	+=	'<option ';
+						if(global_phone_s[g].phone_id == data_s.phone_area){
+							global_phone_d	+=	'selected="selected" ';
+						}
+						global_phone_d	+=	'value="'+global_phone_s[g].phone_id+'">+'+global_phone_s[g].phone_prefix+' '+global_phone_s[g].global_name+'</option>';
+					}
+					$("#phone_area_s").html(global_phone_d);
+					var global_area_s	=	data.result.global_area;
+					var global_area_l	=	global_area_s.length;
+					for(var q=0; q<global_area_l;q++){
+						global_area_d	+=	'<option ';
+						if(global_area_s[q].area_id == data_s.country){
+							global_area_d	+=	'selected="selected" ';
+						}
+						global_area_d	+=	'value="'+global_area_s[q].area_id+'">'+global_area_s[q].area_name+'</option>';
+					}
+					$("#country_s").html(global_area_d);
+					if(data.result.province){
+						var province_s	=	data.result.province;
+						var province_l	=	province_s.length;
+						for(var q=0; q<province_l;q++){
+							province_d	+=	'<option ';
+							if(province_s[q].area_id == data_s.province){
+								province_d	+=	'selected="selected" ';
+							}
+							province_d	+=	'value="'+province_s[q].area_id+'">'+province_s[q].area_name+'</option>';
+						}
+						$("#province_s").html(province_d);
+						$("#province_s").show();
+
+						var city_s	=	data.result.city;
+						var city_l	=	city_s.length;
+						for(var q=0; q<city_l;q++){
+							city_d	+=	'<option ';
+							if(city_s[q].area_id == data_s.country){
+								city_d	+=	'selected="selected" ';
+							}
+							city_d	+=	'value="'+city_s[q].area_id+'">'+city_s[q].area_name+'</option>';
+						}
+						$("#city_s").html(city_d);
+						$("#city_s").show();
+					}else{
+						$("#province_s").hide();
+						$("#city_s").hide();
+					}
+					$("#address_s").val(data_s.address);
+					$("#name_s").val(data_s.name);
+					$("#phone_s").val(data_s.phone);
+					$("#zipcode_s").val(data_s.zipcode);
+					if(data_s.is_default == 1){
+						$("#yes_s").attr("checked",'checked');
+					}else{
+						$("#no_s").attr("checked",'checked');
+					}
+					$('#popup_edit').show();
+				}else{
+					alert(data.errorMsg);
+					return false;
+				}
+			},
+			error: function(xhr, type) {
+				alert('Ajax error!');
+				// 即使加载出错，也得重置
+				me.resetload();
+			}
+		});
+	}
+	$('.order_address ul li').click(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+		$('.order_address ul li span').addClass('hide');
+		$(this).find('span').removeClass('hide');
+	});
+	$('#add_address').click(function(){
+		$('#popup').show();
+	});
+	// 修改省
+	function edit_global(v,vv){
+		if(v == 1){
+			var province_data	=	'';
+			var city_data	=	'';
+			$.ajax({
+				type: 'post',
+				url: "/index.php?c=Area&a=post_province_json",
+				dataType: 'json',
+				data:{
+					area_id	:	v,
+				},
+				success: function(data){
+					if(data.errorCode == 0){
+						var province	=	data.result.province;
+						var city	=	data.result.city;
+						if(province){
+							var province_l	=	province.length;
+							for(var i=0; i<province_l; i++){
+								province_data	+=	'<option value="'+province[i].area_id+'">'+province[i].area_name+'</option>';
+							}
+							if(vv == 1){
+								$("#province").html(province_data);
+							}else{
+								$("#province_s").html(province_data);
+							}
+						}
+						if(city){
+							var city_l	=	city.length;
+							for(var u=0; u<city_l; u++){
+								city_data	+=	'<option value="'+city[u].area_id+'">'+city[u].area_name+'</option>';
+							}
+							if(vv == 1){
+								$("#city").html(city_data);
+								$("#province").show();
+								$("#city").show();
+							}else{
+								$("#city_s").html(city_data);
+								$("#province_s").show();
+								$("#city_s").show();
+							}
+						}
+					}
+				},
+				error: function(xhr, type) {
+					alert('Ajax error!');
+					// 即使加载出错，也得重置
+					me.resetload();
+				}
+			});
+		}else{
+			if(vv == 1){
+				$("#province").hide();
+				$("#city").hide();
+			}else{
+				$("#province_s").hide();
+				$("#city_s").hide();
+			}
+		}
+	}
+	// 修改市
+	function edit_province(v,vv){
+		var city_data	=	'';
+		$.ajax({
+			type: 'post',
+			url: "/index.php?c=Area&a=post_city_json",
+			dataType: 'json',
+			data:{
+				area_id	:	v,
+			},
+			success: function(data){
+				if(data.errorCode == 0){
+					var city	=	data.result;
+					if(city){
+						var city_l	=	city.length;
+						for(var u=0; u<city_l; u++){
+							city_data	+=	'<option value="'+city[u].area_id+'">'+city[u].area_name+'</option>';
+						}
+						if(vv == 1){
+							$("#city").html(city_data);
+						}else{
+							$("#city_s").html(city_data);
+						}
+					}
+				}
+			},
+			error: function(xhr, type) {
+				alert('Ajax error!');
+				// 即使加载出错，也得重置
+				me.resetload();
+			}
+		});
+	}
+	//	添加地址
+	$("#add_address_submit").click(function(){
+		var country	=	$("#country").val();
+		if(country == 1){
+			var province=	$("#province").val();
+			var city	=	$("#city").val();
+		}else{
+			var province=	0;
+			var city	=	0;
+		}
+		var address	=	$("#address").val();
+		var name	=	$("#name").val();
+		var phone_area	=	$("#phone_area").val();
+		var phone	=	$("#phone").val();
+		var zipcode	=	$("#zipcode").val();
+		$.ajax({
+			type: 'post',
+			url: "/index.php?c=My&a=add_address",
+			dataType: 'json',
+			data:{
+				country	:	country,
+				province	:	province,
+				city	:	city,
+				address	:	address,
+				name	:	name,
+				phone_area	:	phone_area,
+				phone	:	phone,
+				zipcode	:	zipcode,
+			},
+			success: function(data){
+				if(data.errorCode == 0){
+					alert('添加成功！');
+					history.go(0);
+				}else{
+					alert(data.errorMsg);
+					return false;
+				}
+			},
+			error: function(xhr, type) {
+				alert('Ajax error!');
+				// 即使加载出错，也得重置
+				me.resetload();
+			}
+		});
+	});
+	//	修改地址
+	$("#edit_address_submit").click(function(){
+		var country	=	$("#country_s").val();
+		if(country == 1){
+			var province=	$("#province_s").val();
+			var city	=	$("#city_s").val();
+		}else{
+			var province=	0;
+			var city	=	0;
+		}
+		var address	=	$("#address_s").val();
+		var name	=	$("#name_s").val();
+		var phone_area	=	$("#phone_area_s").val();
+		var phone	=	$("#phone_s").val();
+		var zipcode	=	$("#zipcode_s").val();
+		if($('#yes_s').is(':checked')) {
+			var is_default	=	1;
+		}else{
+			var is_default	=	0;
+		}
+		$.ajax({
+			type: 'post',
+			url: "/index.php?c=My&a=add_address",
+			dataType: 'json',
+			data:{
+				address_id	:	address_id,
+				country	:	country,
+				province	:	province,
+				city	:	city,
+				address	:	address,
+				name	:	name,
+				phone_area	:	phone_area,
+				phone	:	phone,
+				zipcode	:	zipcode,
+				is_default	:	is_default,
+			},
+			success: function(data){
+				if(data.errorCode == 0){
+					alert('修改成功！');
+					history.go(0);
+				}else{
+					alert(data.errorMsg);
+					return false;
+				}
+			},
+			error: function(xhr, type) {
+				alert('Ajax error!');
+				// 即使加载出错，也得重置
+				me.resetload();
+			}
+		});
+	});
+	function del_address(v){
+		if(confirm("你确定删除收货地址吗？")){
+			$.ajax({
+				type: 'post',
+				url: "/index.php?c=My&a=delete_address",
+				dataType: 'json',
+				data:{
+					address_id	:	v
+				},
+				success: function(data){
+					if(data.errorCode == 0){
+						alert('删除成功！');
+						history.go(0);
+					}else{
+						alert(data.errorMsg);
+						return false;
+					}
+				},
+				error: function(xhr, type) {
+					alert('Ajax error!');
+					// 即使加载出错，也得重置
+					me.resetload();
+				}
+			});
+		}
+	}
+
+
+	//	上传图片
+			var  uploader = WebUploader.create({
+				auto: true,
+				swf: 'http://www.group.com/static/js/Uploader.swf',
+				server: "/index.php?c=My&a=ajaxWebUpload",
+				pick: {
+					id:'#upload_list1',
+					multiple:true
+				},
+				accept: {
+					title: 'Images',
+					extensions: 'gif,jpg,jpeg,png',
+					mimeTypes: 'image/*'
+				}
+			});
+			uploader.on('uploadSuccess',function(file,response){
+				if(response.error == 0){
+					$('#upload_list1 li img').attr('src',response.url);
+					$('#image1').val(response.title);
+				}else{
+					alert(response.info);
+				}
+			});
+			uploader.on('uploadError', function(file,reason){
+				alert('上传失败！请重试。');
+			});
+
+			var uploader1 = WebUploader.create({
+				auto: true,
+				swf: 'http://www.group.com/static/js/Uploader.swf',
+				server: "/index.php?c=My&a=ajaxWebUpload",
+				pick: {
+					id:'#upload_list2',
+					multiple:false
+				},
+				accept: {
+					title: 'Images',
+					extensions: 'gif,jpg,jpeg,png',
+					mimeTypes: 'image/*'
+				}
+			});
+			uploader1.on('uploadSuccess',function(file,response){
+				if(response.error == 0){
+					$('#upload_list2 li img').attr('src',response.url);
+					$('#image2').val(response.title);
+				}else{
+					alert(response.info);
+				}
+			});
+			uploader1.on('uploadError', function(file,reason){
+				alert('上传失败！请重试。');
+			});
+
+			var uploader2 = WebUploader.create({
+				auto: true,
+				swf: 'http://www.group.com/static/js/Uploader.swf',
+				server: "/index.php?c=My&a=ajaxWebUpload",
+				pick: {
+					id:'#upload_list3',
+					multiple:false
+				},
+				accept: {
+					title: 'Images',
+					extensions: 'gif,jpg,jpeg,png',
+					mimeTypes: 'image/*'
+				}
+			});
+			uploader2.on('uploadSuccess',function(file,response){
+				if(response.error == 0){
+					$('#upload_list3 li img').attr('src',response.url);
+					$('#image3').val(response.title);
+				}else{
+					alert(response.info);
+				}
+			});
+			uploader2.on('uploadError', function(file,reason){
+				alert('上传失败！请重试。');
+			});
+			var uploader3 = WebUploader.create({
+				auto: true,
+				swf: 'http://www.group.com/static/js/Uploader.swf',
+				server: "/index.php?c=My&a=ajaxWebUpload",
+				pick: {
+					id:'#uploadPicBtn',
+					multiple:false
+				},
+				accept: {
+					title: 'Images',
+					extensions: 'gif,jpg,jpeg,png',
+					mimeTypes: 'image/*'
+				}
+			});
+
+	    </script>
+		<script>
+			$("#submit").click(function(){
+				var name	=	$('#name').val();
+				var uid		=	$('#uid').val();
+				var image1	=	$('#image1').val();
+				var image2	=	$('#image2').val();
+				var image3	=	$('#image3').val();
+				if(name==''){
+					alert('姓名不能为空');
+					return false;
+				}
+				var check = checkCardId(uid);
+				if(check == false){
+					return false;
+				}
+				if(image1 == ''){
+					alert('身份证正面不能为空');
+					return false;
+				}
+				if(image2 == ''){
+					alert('身份证反面不能为空');
+					return false;
+				}
+				if(image3 == ''){
+					alert('手持身份证不能为空');
+					return false;
+				}
+				var request = true;
+				if(request == true){
+					request = false;
+					$.ajax({
+						type : "post",
+						url : "/wap.php?g=Wap&c=My&a=authentication_json",
+						dataType : "json",
+						data:{
+							user_truename	:	name,
+							user_id_number	:	uid,
+							authentication_img	:	image1,
+							authentication_back_img	:	image2,
+							hand_authentication	:	image3,
+						},
+						success : function(result){
+							var rideList	=	result;
+							if(result.errorCode == 0){
+								if((/(pigcmso2olifeapp)/.test(navigator.userAgent.toLowerCase()) && /(life_app)/.test(navigator.userAgent.toLowerCase())) || /(pigcmso2oreallifeapp)/.test(navigator.userAgent.toLowerCase())){
+									if(/(iphone|ipad|ipod)/.test(navigator.userAgent.toLowerCase())){
+										alert(123);
+										$('body').append('<iframe src="pigcmso2o://closeWebView" style="display:none;"></iframe>');
+									}else{
+										window.lifepasslogin.closeWebView();
+									}
+								}else{
+									window.location.href	=	rideList.result;
+								}
+							}else{
+								request = true;
+								alert(result.errorMsg);
+							}
+						},
+						error:function(){
+							request = true;
+							alert('接口出错');
+						}
+					})
+				}
+			})
+</script>

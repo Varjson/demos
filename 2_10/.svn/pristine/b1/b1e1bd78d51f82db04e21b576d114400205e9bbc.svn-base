@@ -1,0 +1,114 @@
+.express_bg {
+	background: url(../images/express_bg.jpg) no-repeat top left;
+	height: 760px;
+	clear: both;
+}
+
+.express_bg_md {
+	height: 410px;
+	background: #fff;
+	margin-top: 300px;
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0);
+}
+
+.express_search {
+	margin-top: 100px;
+}
+
+.express_search .title {
+	color: #002222;
+	height: 40px;
+	line-height: 40px;
+}
+
+.express_search input#search {
+	width: 100%;
+	border: 1px solid #ddd;
+	height: 40px;
+}
+
+.express_search .desc {
+	height: 60px;
+	line-height: 60px;
+	color: #999
+}
+
+.express_search .search_button {
+	width: 400px;
+	margin: 0 auto;
+	display: block;
+	height: 40px;
+	border: none;
+	background: #d40a1d;
+	color: #fff
+}
+
+.express_info .title,
+.express_company .title {
+	font-size: 24px;
+}
+
+.express_info .nav,
+.express_info .nav div {
+	padding: 0;
+	height: 40px;
+	line-height: 40px;
+}
+
+.express_info .nav {
+	border-bottom: 1px dashed #999
+}
+
+.express_info .nav .green {
+	color: #14c9a5
+}
+
+.express_info .desc ul li {
+	height: 60px;
+	line-height: 60px;
+}
+
+.express_info .desc ul li img {
+	margin-right: 15px;
+}
+
+.express_info .desc ul li .pull-right {
+	color: #999
+}
+
+.express_company .title {
+	margin-top: 50px;
+}
+
+.express_company .desc {
+	margin-top: 50px;
+	padding: 0;
+}
+
+.express_company .desc ul li {
+	width: 24%;
+	display: block;
+	float: left;
+	margin-right: 1%;
+}
+
+.express_company .desc ul li img {
+	width: 100%;
+}
+
+.express_info img {
+	margin: 0 auto;
+	display: block;
+}
+
+.express_info .express_wz {
+	text-align: center;
+	font-size: 16px;
+}
+
+.express_info .express_wz .red {
+	color: #d40a1d
+}
