@@ -36,6 +36,7 @@ body {
 	padding: .35rem .36rem;
 	background: #FFFFFF;
 	border-bottom: .01rem solid #ECECEC;
+	font-weight: normal;
 }
 .title h2{
 	font-size: .55rem;
@@ -74,14 +75,14 @@ body {
 /*分享的链接开始*/
 .share{
 	margin:.2rem 0 .2rem;
-	padding: .3rem .36rem .4rem;
+	padding: .75rem .36rem .8rem;
 	background: #ffffff;
 }
 .share p{
-	font-size: .45rem;
+	font-size: .5rem;
 	color: #292727;
 	text-align: center;
-	margin-bottom: .4rem;
+	margin-bottom: .75rem;
 	position: relative;
 }
 .share p span{
@@ -92,13 +93,13 @@ body {
 	z-index: 10;
 }
 .share p font{
-	width: 8rem;
+	width: 10rem;
 	height: .06rem;
 	background: #ECECEC;
 	position: absolute;
 	display: inline-block;
 	top: .3rem;
-	left: calc(50% - 4rem);	
+	left: calc(50% - 5rem);	
 }
 .share .share-way{
 	width: 100%;
@@ -121,7 +122,7 @@ body {
 }
 .share .share-way a span{
 	display: inline-block;
-	margin-top: .15rem;
+	margin-top: .2rem;
 }
 /*分享的链接结束*/
 /*广告部分开始*/

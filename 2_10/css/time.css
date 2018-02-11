@@ -170,6 +170,10 @@ body {
 	border: none;
 	padding-bottom: .2rem;
 }
+
+.article-group .article-group-video{
+	display: inline-block;
+}
 .article-group img {
 	width: 5.04rem;
 	height: 2.85rem;

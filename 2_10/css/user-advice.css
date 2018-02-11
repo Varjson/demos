@@ -84,6 +84,7 @@ body {
 	height:1.7rem ;
 	line-height: 1.7rem;
 	padding-left: .5rem;
+	border-bottom: .01rem solid #ececec;
 }
 .section-info-content p{
 	font-size:.52rem ;
@@ -93,6 +94,7 @@ body {
 	height:5rem ;
 	text-align: center;
 	padding: 0 .5rem;
+	margin-top: .4rem;
 }
 .section-advice textarea{
 	width: 98%;
