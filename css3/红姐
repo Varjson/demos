@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>红姐</title>
+		<link rel="stylesheet" type="text/css" href="../base.css"/>
+		<style type="text/css">
+			.running {
+			  width: 60px;
+			  height: 60px;
+			  background-color: cyan;
+			  margin: 20px auto;
+			  animation: runs 1.2s infinite ease-in-out;
+			}
+			.run {
+			  width: 150px;
+			  height: 150px;
+			  margin: 80px auto;
+			  background-color: pink;
+			  border-radius: 100%; 
+			  animation: run 1.0s infinite ease-in-out;
+			}
+			@keyframes runs {
+			  0% { transform:  rotateX(0deg) rotateY(0deg);} 
+			  50% { transform:  rotateX(-180deg) rotateY(0deg);}
+			  100% { transform:  rotateX(-180deg) rotateY(-180deg);  }
+			}
+			@keyframes run {
+			 0%  { transform: scale(0);} 
+			100% {transform: scale(1.0);opacity: 0;}
+			}
+			h1,h3{
+			text-align:center;
+			}
+			h1{
+			color:skyblue;
+			}
+			h3{
+			color:orange;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="running"></div>
+	<div class="run"></div>	
+		<h1>大家好！！！</h1>
+		<h1>我叫互联网红姐</h1>
+    <h3>羊城暴雨直下药不能停，商务见客收款势在必行。</h3>
+		<h3>签约逼单关键全靠决心，要说谁最美我只服红姐。</h3>
+	</body>
+</html>
